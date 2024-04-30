@@ -17,14 +17,20 @@ namespace GeraDados.DataModel.models
 
         public virtual void Valida()
         {
-            if(_msgErro.Length > 0) 
+            if (_msgErro.Length > 0)
                 throw new Exception(_msgErro.ToString());
         }
 
-        public void ValidaCampoTexto(string valorCampo, string nomeCampo) 
+        public void ValidaCampoTexto(string valorCampo, string nomeCampo)
         {
             if (string.IsNullOrEmpty(valorCampo))
                 _msgErro.Append($"O campo {nomeCampo} é obrigatório! {Environment.NewLine}");
+        }
+
+        public void ValidaCampoNumerico(int campoNumerico, string nomeCampo)
+        {
+            if (campoNumerico <= 0)
+                _msgErro.Append($"O campo {campoNumerico} deve ser maior que zero!");
         }
     }
 }
