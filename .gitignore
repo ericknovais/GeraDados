@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/GeraDados/.vs/GeraDados/FileContentIndex
+/GeraDados/GeraDados.App/obj/Debug/net6.0-windows
+/GeraDados/Geradados.DataAccess/obj/Debug/net6.0
+/GeraDados/GeraDados.DataModel/obj/Debug/net6.0
