@@ -1,39 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GeraDados.DataModel.models
+namespace GeraDados.DataModel.models;
+
+[Table("TipoContatos")]
+public class TipoContato : EntityBase
 {
-    [Table("TipoContatos")]
-    public class TipoContato : EntityBase
-    {
-        public string Descricao { get; set; }
+    public string Descricao { get; set; }
 
-        public List<TipoContato> CarregaListaTipoContato() 
+    public List<TipoContato> CarregaListaTipoContato() 
+    {
+        List<TipoContato> tipoContatos = new List<TipoContato>()
         {
-            List<TipoContato> tipoContatos = new List<TipoContato>()
-            {
-                new TipoContato() { 
-                    Descricao = "Email",
-                    DataCadastro = DateTime.Now,
-                    DataAtualizacao = DateTime.Now,
-                },
-                new TipoContato() {
-                    Descricao = "Telefone Fixo",
-                    DataCadastro = DateTime.Now,
-                    DataAtualizacao = DateTime.Now,
-                },
-                new TipoContato() {
-                    Descricao = "Celular",
-                    DataCadastro = DateTime.Now,
-                    DataAtualizacao = DateTime.Now,
-                }
-            };
-            return tipoContatos;
-        }
+            new TipoContato() { 
+                Descricao = "Email",
+                DataCadastro = DateTime.Now,
+                DataAtualizacao = DateTime.Now,
+            },
+            new TipoContato() {
+                Descricao = "Telefone Fixo",
+                DataCadastro = DateTime.Now,
+                DataAtualizacao = DateTime.Now,
+            },
+            new TipoContato() {
+                Descricao = "Celular",
+                DataCadastro = DateTime.Now,
+                DataAtualizacao = DateTime.Now,
+            }
+        };
+        return tipoContatos;
     }
 }
