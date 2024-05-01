@@ -3,4 +3,9 @@
 public interface IRepository
 {
     void SaveChanges();
+    public IPessoaRepository Pessoa { get;}
+    public IEnderecoRepository Endereco { get;}
+    public IContatoRepository Contato { get;}
+    public ITipoContato TipoContato { get;}
+
 }
