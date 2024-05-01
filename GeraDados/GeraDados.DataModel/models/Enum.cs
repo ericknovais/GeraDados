@@ -2,7 +2,7 @@
 
 public enum TipoContatos
 {
-    Email = 0,
-    Fixo = 1,
-    Celular = 2,
+    Email = 1,
+    Fixo = 2,
+    Celular = 3,
 }

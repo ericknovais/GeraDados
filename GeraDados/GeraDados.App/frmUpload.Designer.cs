@@ -49,6 +49,7 @@
             btnUpload.TabIndex = 1;
             btnUpload.Text = "Upload";
             btnUpload.UseVisualStyleBackColor = true;
+            btnUpload.Click += btnUpload_Click;
             // 
             // btnSalvar
             // 
@@ -58,6 +59,7 @@
             btnSalvar.TabIndex = 2;
             btnSalvar.Text = "Salvar";
             btnSalvar.UseVisualStyleBackColor = true;
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // frmUpload
             // 
