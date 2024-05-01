@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GeraDados.DataModel.repository
 {
-    public interface ITipoContato :IRepositoryBase<TipoContato>
+    public interface ITipoContatoRepository :IRepositoryBase<TipoContato>
     {
     }
 }

@@ -6,6 +6,6 @@ public interface IRepository
     public IPessoaRepository Pessoa { get;}
     public IEnderecoRepository Endereco { get;}
     public IContatoRepository Contato { get;}
-    public ITipoContato TipoContato { get;}
+    public ITipoContatoRepository TipoContato { get;}
 
 }

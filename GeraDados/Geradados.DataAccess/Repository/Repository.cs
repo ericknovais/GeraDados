@@ -15,13 +15,18 @@ namespace Geradados.DataAccess.Repository
         {
             ctx = new ContextoDataBase();
         }
-        public IPessoaRepository Pessoa => throw new NotImplementedException();
 
-        public IEnderecoRepository Endereco => throw new NotImplementedException();
+        IPessoaRepository pessoa;
+        public IPessoaRepository Pessoa { get { return pessoa ?? (pessoa = new PessoaRepository(ctx)); } }
 
-        public IContatoRepository Contato => throw new NotImplementedException();
+        IEnderecoRepository endereco;
+        public IEnderecoRepository Endereco { get { return endereco ?? (endereco = new EnderecoRepository(ctx)); } }
 
-        public ITipoContato TipoContato => throw new NotImplementedException();
+        IContatoRepository contato;
+        public IContatoRepository Contato { get { return contato ?? (contato = new ContatoRepository(ctx)); } }
+
+        ITipoContatoRepository tipoContato;
+        public ITipoContatoRepository TipoContato { get { return tipoContato ?? (tipoContato = new TipoContatoRepository(ctx)); } }
 
         public void SaveChanges()
         {
