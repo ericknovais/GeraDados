@@ -2,7 +2,7 @@
 
 namespace GeraDados.DataModel.repository;
 
-public interface IContatoRepository:IRepositoryBase<Contato>
+public interface IContatoRepository : IRepositoryBase<Contato>
 {
-    IList<Contato> ObtemContatosPorIdPessoa(int IdPessoa);
+    IList<Contato> ObtemContatosPorIdPessoa(int idPessoa);
 }
