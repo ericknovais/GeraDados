@@ -18,10 +18,9 @@ public partial class frmUpload : Form
 
     private void CarregaTipoDeContatos()
     {
-        var listadeTipocontatos = new TipoContato().CarregaListaTipoContato();
+        List<TipoContato> listadeTipocontatos = new TipoContato().CarregaListaTipoContato();
         foreach (var tipoContato in listadeTipocontatos)
             repository.TipoContato.Salvar(tipoContato);
-
         repository.SaveChanges();
     }
 
@@ -38,10 +37,8 @@ public partial class frmUpload : Form
     {
         try
         {
-            StreamReader reader = new StreamReader(txtArquivo.Text);
-            string json = reader.ReadToEnd();
-            IList<PessoaJson>? pessoas = JsonConvert.DeserializeObject<IList<PessoaJson>>(json);
-            
+            IList<PessoaJson>? pessoas = LerArquivoJson();
+
             if (pessoas != null)
                 foreach (var item in pessoas)
                 {
@@ -51,19 +48,29 @@ public partial class frmUpload : Form
                     Pessoa pessoa = NovaPessoa(item);
                     List<Contato> contatos = ContatosPessoa(item, pessoa);
                     Endereco endereco = EnderecoPessoa(item, pessoa);
+
                     repository.Pessoa.Salvar(pessoa);
                     foreach (Contato contato in contatos)
                         repository.Contato.Salvar(contato);
                     repository.Endereco.Salvar(endereco);
+
                     repository.SaveChanges();
                 }
+
             MessageBox.Show("Salvo");
             txtArquivo.Text = string.Empty;
         }
         catch (Exception ex)
         {
-            MessageBox.Show(ex.Message);
+            MessageBox.Show(ex.Message, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
+    }
+
+    private IList<PessoaJson>? LerArquivoJson()
+    {
+        StreamReader reader = new StreamReader(txtArquivo.Text);
+        string json = reader.ReadToEnd();
+        return JsonConvert.DeserializeObject<IList<PessoaJson>>(json);
     }
 
     private Endereco EnderecoPessoa(PessoaJson pessoaJson, Pessoa pessoa)
