@@ -6,7 +6,6 @@ namespace GeraDados.DataModel.models;
 public class Endereco : EntityBase
 {
     public Pessoa Pessoa { get; set; }
-    public int IdPessoa { get; set; }
     public string CEP { get; set; }
     public string Logradouro { get; set; }
     public int Numero { get; set; } = 0;

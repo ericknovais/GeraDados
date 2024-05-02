@@ -37,16 +37,96 @@ public partial class frmUpload : Form
 
     private void btnSalvar_Click(object sender, EventArgs e)
     {
-        StreamReader reader = new StreamReader(txtArquivo.Text);
-        string json = reader.ReadToEnd();
-        IList<PessoaJson> pessoas = JsonConvert.DeserializeObject<IList<PessoaJson>>(json);
-
-        foreach (var item in pessoas)
+        try
         {
-            Pessoa pessoa = new Pessoa()
+            StreamReader reader = new StreamReader(txtArquivo.Text);
+            string json = reader.ReadToEnd();
+            IList<PessoaJson> pessoas = JsonConvert.DeserializeObject<IList<PessoaJson>>(json);
+
+            foreach (var item in pessoas)
             {
-                CPF = item.CPF,
-            };
+                Pessoa pessoa = NovaPessoa(item);
+                List<Contato> contatos = ContatosPessoa(item, pessoa);
+                Endereco endereco = EnderecoPessoa(item, pessoa);
+                pessoa.Valida();
+                repository.Pessoa.Salvar(pessoa);
+                foreach (Contato contato in contatos)
+                {
+                    contato.Valida();
+                    repository.Contato.Salvar(contato);
+                }
+                endereco.Valida();
+                repository.Endereco.Salvar(endereco);
+                repository.SaveChanges();
+            }
+            MessageBox.Show("Salvo");
+            txtArquivo.Text = string.Empty;
         }
+        catch (Exception ex)
+        {
+            MessageBox.Show(ex.Message);
+        }
+    }
+
+    private Endereco EnderecoPessoa(PessoaJson pessoaJson, Pessoa pessoa)
+    {
+        return new Endereco()
+        {
+            Pessoa = pessoa,
+            Bairro = pessoaJson.Bairro,
+            CEP = pessoaJson.CEP,
+            Cidade = pessoaJson.Cidade,
+            Estado = pessoaJson.Estado,
+            Logradouro = pessoaJson.Endereco,
+            Numero = pessoaJson.Numero,
+            DataCadastro = DateTime.Now,
+            DataAtualizacao = DateTime.Now
+        };
+    }
+
+    private Pessoa NovaPessoa(PessoaJson pessoaJson)
+    {
+        return new Pessoa()
+        {
+            Nome = pessoaJson.Nome,
+            CPF = pessoaJson.CPF,
+            RG = pessoaJson.RG,
+            Sexo = pessoaJson.Sexo,
+            DataNascimento = pessoaJson.Data_nasc,
+            DataCadastro = DateTime.Now,
+            DataAtualizacao = DateTime.Now
+        };
+
+    }
+
+    private List<Contato> ContatosPessoa(PessoaJson pessoaJson, Pessoa pessoa)
+    {
+        return new List<Contato>()
+        {
+            new Contato()
+            {
+                Pessoa = pessoa,
+                TipoContato = repository.TipoContato.ObterPorId((int)TipoContatos.Email),
+                Valor = pessoaJson.Email,
+                DataCadastro = DateTime.Now,
+                DataAtualizacao = DateTime.Now
+            },
+             new Contato()
+            {
+                Pessoa = pessoa,
+                TipoContato = repository.TipoContato.ObterPorId((int)TipoContatos.Fixo),
+                Valor = pessoaJson.Telefone_fixo,
+                DataCadastro = DateTime.Now,
+                DataAtualizacao = DateTime.Now
+            },
+            new Contato()
+            {
+                Pessoa = pessoa,
+                TipoContato = repository.TipoContato.ObterPorId((int)TipoContatos.Celular),
+                Valor = pessoaJson.Celular,
+                DataCadastro = DateTime.Now,
+                DataAtualizacao = DateTime.Now
+            }
+        };
     }
 }

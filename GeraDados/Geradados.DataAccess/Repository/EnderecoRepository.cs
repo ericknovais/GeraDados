@@ -19,7 +19,7 @@ namespace Geradados.DataAccess.Repository
 
         public Endereco ObtemEnderecoPorIdPessoa(int idPessoa)
         {
-            return ctx.Enderecos.FirstOrDefault(endereco => endereco.IdPessoa.Equals(idPessoa));
+            return ctx.Enderecos.FirstOrDefault(endereco => endereco.Pessoa.ID.Equals(idPessoa));
         }
     }
 }

@@ -19,7 +19,7 @@ namespace Geradados.DataAccess.Repository
 
         IList<Contato> IContatoRepository.ObtemContatosPorIdPessoa(int idPessoa)
         {
-            return ctx.Contatos.Where(contato => contato.IdPessoa.Equals(idPessoa)).ToList();
+            return ctx.Contatos.Where(contato => contato.Pessoa.ID.Equals(idPessoa)).ToList();
         }
     }
 }

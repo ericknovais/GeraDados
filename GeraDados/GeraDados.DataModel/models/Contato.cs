@@ -6,16 +6,14 @@ namespace GeraDados.DataModel.models;
 public class Contato : EntityBase
 {
     public Pessoa Pessoa { get; set; }
-    public int IdPessoa { get; set; }
     public TipoContato TipoContato { get; set; }
-    public int IdTipoContato { get; set; }
     public string Valor { get; set; }
 
     public override void Valida()
     {
-        var descricaoCampo = DescricaoCampo(IdTipoContato);
+        var descricaoCampo = DescricaoCampo(TipoContato.ID);
         ValidaCampoTexto(Valor, descricaoCampo);
-        if (IdTipoContato.Equals((int)TipoContatos.Email))
+        if (TipoContato.ID.Equals((int)TipoContatos.Email))
             ValidaEmail();
         base.Valida();
     }
