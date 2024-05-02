@@ -1,38 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Security.Principal;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GeraDados.DataModel.models
+namespace GeraDados.DataModel.models;
+
+[Table("Contatos")]
+public class Contato : EntityBase
 {
-    [Table("Contatos")]
-    public class Contato : EntityBase
+    public Contato()
     {
-        public Pessoa Pessoa { get; set; }
-        public int IdPessoa { get; set; }
-        public TipoContato TipoContato { get; set; }
-        public int IdTipoContato { get; set; }
-        public string Valor { get; set; }
+        Pessoa = new Pessoa();
+        TipoContato = new TipoContato();
+        Valor = string.Empty;
+    }
 
-        public override void Valida()
-        {
-            var descricaoCampo = DescricaoCampo(IdTipoContato);
-            ValidaCampoTexto(Valor, descricaoCampo);
-            if (IdTipoContato.Equals((int)TipoContatos.Email))
-                ValidaEmail();
-            base.Valida();
-        }
+    public Pessoa Pessoa { get; set; }
+    public TipoContato? TipoContato { get; set; }
+    public string Valor { get; set; }
 
-        private string DescricaoCampo(int idTipoContato)
-        {
-            var descricaoCampo = string.Empty;
-            switch (idTipoContato) 
+    public override void Valida()
+    {
+        var descricaoCampo = DescricaoCampo(TipoContato);
+        ValidaCampoTexto(Valor, descricaoCampo);
+        if (TipoContato != null && TipoContato.ID.Equals((int)TipoContatos.Email))
+            ValidaEmail();
+        base.Valida();
+    }
+
+    private string DescricaoCampo(TipoContato? tipoContato)
+    {
+        var descricaoCampo = string.Empty;
+        if (tipoContato != null)
+            switch (tipoContato.ID)
             {
                 case (int)TipoContatos.Email:
-                    descricaoCampo = "Email";
+                    descricaoCampo = "E-mail";
                     break;
                 case (int)TipoContatos.Fixo:
                     descricaoCampo = "Telefone Fixo";
@@ -41,13 +41,12 @@ namespace GeraDados.DataModel.models
                     descricaoCampo = "Celular";
                     break;
             }
-            return descricaoCampo;
-        }
+        return descricaoCampo;
+    }
 
-        private void ValidaEmail() 
-        {
-            if (!Valor.Contains("@") || !Valor.Contains(".com"))
-                _msgErro.Append($"E-mail com formato invalido! {Environment.NewLine}");
-        }
+    private void ValidaEmail()
+    {
+        if (!Valor.Contains("@") || !Valor.Contains(".com"))
+            _msgErro.Append($"E-mail com formato invalido! {Environment.NewLine}");
     }
 }

@@ -10,3 +10,7 @@
 /GeraDados/GeraDados.DataModel/obj
 /GeraDados/Geradados.DataAccess/obj
 /GeraDados/GeraDados.App/obj
+/GeraDados/GeraDados.App/bin/Debug/net6.0-windows
+/GeraDados/Geradados.DataAccess/bin/Debug/net6.0
+/GeraDados/GeraDados.DataModel/bin/Debug/net6.0
+/GeraDados/.vs/ProjectEvaluation
