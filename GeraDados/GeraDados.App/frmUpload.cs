@@ -2,8 +2,6 @@ using Geradados.DataAccess.DB.Dtos;
 using Geradados.DataAccess.Repository;
 using GeraDados.DataModel.models;
 using Newtonsoft.Json;
-using System.Runtime.InteropServices;
-
 
 namespace GeraDados.App;
 
@@ -42,22 +40,23 @@ public partial class frmUpload : Form
         {
             StreamReader reader = new StreamReader(txtArquivo.Text);
             string json = reader.ReadToEnd();
-            IList<PessoaJson> pessoas = JsonConvert.DeserializeObject<IList<PessoaJson>>(json);
+            IList<PessoaJson>? pessoas = JsonConvert.DeserializeObject<IList<PessoaJson>>(json);
+            
+            if (pessoas != null)
+                foreach (var item in pessoas)
+                {
+                    if (repository.Pessoa.ObtemPessoaPorCPF(item.CPF) != null)
+                        continue;
 
-            foreach (var item in pessoas)
-            {
-                if (repository.Pessoa.ObtemPessoaPorCPF(item.CPF) != null)
-                    continue;
-
-                Pessoa pessoa = NovaPessoa(item);
-                List<Contato> contatos = ContatosPessoa(item, pessoa);
-                Endereco endereco = EnderecoPessoa(item, pessoa);
-                repository.Pessoa.Salvar(pessoa);
-                foreach (Contato contato in contatos)
-                    repository.Contato.Salvar(contato);
-                repository.Endereco.Salvar(endereco);
-                repository.SaveChanges();
-            }
+                    Pessoa pessoa = NovaPessoa(item);
+                    List<Contato> contatos = ContatosPessoa(item, pessoa);
+                    Endereco endereco = EnderecoPessoa(item, pessoa);
+                    repository.Pessoa.Salvar(pessoa);
+                    foreach (Contato contato in contatos)
+                        repository.Contato.Salvar(contato);
+                    repository.Endereco.Salvar(endereco);
+                    repository.SaveChanges();
+                }
             MessageBox.Show("Salvo");
             txtArquivo.Text = string.Empty;
         }

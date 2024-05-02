@@ -5,6 +5,11 @@ namespace GeraDados.DataModel.models;
 [Table("TipoContatos")]
 public class TipoContato : EntityBase
 {
+    public TipoContato()
+    {
+        Descricao = string.Empty;
+    }
+
     public string Descricao { get; set; }
 
     public List<TipoContato> CarregaListaTipoContato() 

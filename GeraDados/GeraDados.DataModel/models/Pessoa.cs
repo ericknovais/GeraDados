@@ -5,6 +5,14 @@ namespace GeraDados.DataModel.models;
 [Table("Pessoas")]
 public class Pessoa : EntityBase
 {
+    public Pessoa()
+    {
+        Nome = string.Empty;
+        CPF = string.Empty;
+        RG = string.Empty;
+        Sexo = string.Empty;
+    }
+
     public string Nome { get; set; }
     public string CPF { get; set; }
     public string RG { get; set; }

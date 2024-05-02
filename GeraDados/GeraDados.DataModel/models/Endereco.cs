@@ -5,6 +5,17 @@ namespace GeraDados.DataModel.models;
 [Table("Enderecos")]
 public class Endereco : EntityBase
 {
+    public Endereco()
+    {
+        Pessoa = new Pessoa();
+        CEP = string.Empty;
+        Logradouro = string.Empty;
+        Numero = 0;
+        Bairro = string.Empty;
+        Cidade = string.Empty;
+        Estado = string.Empty;
+    }
+
     public Pessoa Pessoa { get; set; }
     public string CEP { get; set; }
     public string Logradouro { get; set; }

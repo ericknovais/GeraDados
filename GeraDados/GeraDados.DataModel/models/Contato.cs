@@ -5,38 +5,46 @@ namespace GeraDados.DataModel.models;
 [Table("Contatos")]
 public class Contato : EntityBase
 {
+    public Contato()
+    {
+        Pessoa = new Pessoa();
+        TipoContato = new TipoContato();
+        Valor = string.Empty;
+    }
+
     public Pessoa Pessoa { get; set; }
-    public TipoContato TipoContato { get; set; }
+    public TipoContato? TipoContato { get; set; }
     public string Valor { get; set; }
 
     public override void Valida()
     {
-        var descricaoCampo = DescricaoCampo(TipoContato.ID);
+        var descricaoCampo = DescricaoCampo(TipoContato);
         ValidaCampoTexto(Valor, descricaoCampo);
-        if (TipoContato.ID.Equals((int)TipoContatos.Email))
+        if (TipoContato != null && TipoContato.ID.Equals((int)TipoContatos.Email))
             ValidaEmail();
         base.Valida();
     }
 
-    private string DescricaoCampo(int idTipoContato)
+    private string DescricaoCampo(TipoContato? tipoContato)
     {
         var descricaoCampo = string.Empty;
-        switch (idTipoContato) 
-        {
-            case (int)TipoContatos.Email:
-                descricaoCampo = "E-mail";
-                break;
-            case (int)TipoContatos.Fixo:
-                descricaoCampo = "Telefone Fixo";
-                break;
-            case (int)TipoContatos.Celular:
-                descricaoCampo = "Celular";
-                break;
-        }
+        if (tipoContato != null)
+            switch (tipoContato.ID)
+            {
+                case (int)TipoContatos.Email:
+                    descricaoCampo = "E-mail";
+                    break;
+                case (int)TipoContatos.Fixo:
+                    descricaoCampo = "Telefone Fixo";
+                    break;
+                case (int)TipoContatos.Celular:
+                    descricaoCampo = "Celular";
+                    break;
+            }
         return descricaoCampo;
     }
 
-    private void ValidaEmail() 
+    private void ValidaEmail()
     {
         if (!Valor.Contains("@") || !Valor.Contains(".com"))
             _msgErro.Append($"E-mail com formato invalido! {Environment.NewLine}");
