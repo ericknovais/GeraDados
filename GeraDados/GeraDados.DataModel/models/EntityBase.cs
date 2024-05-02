@@ -16,13 +16,13 @@ public abstract class EntityBase
             throw new Exception(_msgErro.ToString());
     }
 
-    public void ValidaCampoTexto(string valorCampo, string nomeCampo)
+    protected void ValidaCampoTexto(string valorCampo, string nomeCampo)
     {
         if (string.IsNullOrEmpty(valorCampo))
             _msgErro.Append($"O campo {nomeCampo} é obrigatório! {Environment.NewLine}");
     }
 
-    public void ValidaCampoNumerico(int campoNumerico, string nomeCampo)
+    protected void ValidaCampoNumerico(int campoNumerico, string nomeCampo)
     {
         if (campoNumerico <= 0)
             _msgErro.Append($"O campo {campoNumerico} deve ser maior que zero!");

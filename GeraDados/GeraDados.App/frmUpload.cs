@@ -2,6 +2,7 @@ using Geradados.DataAccess.DB.Dtos;
 using Geradados.DataAccess.Repository;
 using GeraDados.DataModel.models;
 using Newtonsoft.Json;
+using System.Runtime.InteropServices;
 
 
 namespace GeraDados.App;
@@ -45,17 +46,15 @@ public partial class frmUpload : Form
 
             foreach (var item in pessoas)
             {
+                if (repository.Pessoa.ObtemPessoaPorCPF(item.CPF) != null)
+                    continue;
+
                 Pessoa pessoa = NovaPessoa(item);
                 List<Contato> contatos = ContatosPessoa(item, pessoa);
                 Endereco endereco = EnderecoPessoa(item, pessoa);
-                pessoa.Valida();
                 repository.Pessoa.Salvar(pessoa);
                 foreach (Contato contato in contatos)
-                {
-                    contato.Valida();
                     repository.Contato.Salvar(contato);
-                }
-                endereco.Valida();
                 repository.Endereco.Salvar(endereco);
                 repository.SaveChanges();
             }
@@ -70,7 +69,7 @@ public partial class frmUpload : Form
 
     private Endereco EnderecoPessoa(PessoaJson pessoaJson, Pessoa pessoa)
     {
-        return new Endereco()
+        Endereco endereo = new Endereco()
         {
             Pessoa = pessoa,
             Bairro = pessoaJson.Bairro,
@@ -82,26 +81,30 @@ public partial class frmUpload : Form
             DataCadastro = DateTime.Now,
             DataAtualizacao = DateTime.Now
         };
+
+        endereo.Valida();
+        return endereo;
     }
 
     private Pessoa NovaPessoa(PessoaJson pessoaJson)
     {
-        return new Pessoa()
+        var pessoa = new Pessoa()
         {
             Nome = pessoaJson.Nome,
             CPF = pessoaJson.CPF,
             RG = pessoaJson.RG,
             Sexo = pessoaJson.Sexo,
-            DataNascimento = pessoaJson.Data_nasc,
+            DataNascimento = Convert.ToDateTime(pessoaJson.Data_nasc),
             DataCadastro = DateTime.Now,
             DataAtualizacao = DateTime.Now
         };
-
+        pessoa.Valida();
+        return pessoa;
     }
 
     private List<Contato> ContatosPessoa(PessoaJson pessoaJson, Pessoa pessoa)
     {
-        return new List<Contato>()
+        List<Contato> contatos = new List<Contato>()
         {
             new Contato()
             {
@@ -128,5 +131,8 @@ public partial class frmUpload : Form
                 DataAtualizacao = DateTime.Now
             }
         };
+        foreach (var item in contatos)
+            item.Valida();
+        return contatos;
     }
 }

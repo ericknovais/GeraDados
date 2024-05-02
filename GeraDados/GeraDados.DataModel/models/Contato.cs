@@ -24,7 +24,7 @@ public class Contato : EntityBase
         switch (idTipoContato) 
         {
             case (int)TipoContatos.Email:
-                descricaoCampo = "Email";
+                descricaoCampo = "E-mail";
                 break;
             case (int)TipoContatos.Fixo:
                 descricaoCampo = "Telefone Fixo";
