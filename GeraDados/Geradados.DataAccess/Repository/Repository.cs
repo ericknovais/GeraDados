@@ -26,6 +26,9 @@ public class Repository : IRepository
     ITipoDeAtivoRepository? tipoDeAtivo;
     public ITipoDeAtivoRepository TipoDeAtivo { get { return tipoDeAtivo ?? (tipoDeAtivo = new TipoDeAtivoRepository(ctx)); } }
 
+    IAtivoRepository? ativo;
+    public IAtivoRepository Ativo { get { return ativo ?? (ativo = new AtivoRepository(ctx)); } }
+
     public void SaveChanges()
     {
         ctx.SaveChanges();

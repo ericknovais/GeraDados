@@ -11,8 +11,10 @@ namespace Geradados.DataAccess.Repository
 {
     public class TipoDeAtivoRepository : RepositoryBase<TipoDeAtivo>, ITipoDeAtivoRepository
     {
+        ContextoDataBase ctx = new ContextoDataBase();
         public TipoDeAtivoRepository(ContextoDataBase contexto) : base(contexto)
         {
+            ctx = contexto;
         }
     }
 }
