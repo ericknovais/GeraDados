@@ -65,7 +65,7 @@ public partial class frmUpload : Form
         if (repository.TipoDeAtivo.ObterTodos().Count.Equals(0))
             SalvaTipoDeAtivosNoBanco();
         TipoDeAtivo? acao = repository.TipoDeAtivo.ObterPorId((int)eTipoDeAtivo.Acao);
-        if (repository.Ativo.ObtemAtivosPorTipoDeAtivo(acao).Count.Equals(0))
+        //if (repository.Ativo.ObtemAtivosPorTipoDeAtivo(acao).Count.Equals(0))
             SalvarAtivosNoBancoDeDados(acao);
         TipoDeAtivo? fii = repository.TipoDeAtivo.ObterPorId((int)eTipoDeAtivo.FundoImobiliario);
         if (repository.Ativo.ObtemAtivosPorTipoDeAtivo(fii).Count.Equals(0))
@@ -76,29 +76,30 @@ public partial class frmUpload : Form
         if (tipoDeAtivo != null)
             if (tipoDeAtivo.ID.Equals((int)eTipoDeAtivo.Acao))
             {
-                IList<AtivoJson>? acoes = LerArquivoJson<AtivoJson>(@"C:\\Users\\erick\\Downloads\\csvAcoesjson.json");
+                IList<AtivoJson>? acoes = LerArquivoJson<AtivoJson>(@"..\..\..\CargaDeAtivos\acoes.json");
                 if (acoes != null)
-                    foreach (AtivoJson item in acoes)
-                    {
-                        Ativo ativo = NovoAtivo(item, tipoDeAtivo);
-                        repository.Ativo.Salvar(ativo);
-                        repository.SaveChanges();
-                    }
+                    SalvaListaDeAtivos(acoes.ToList(), tipoDeAtivo);
             }
             else if (tipoDeAtivo.ID.Equals((int)eTipoDeAtivo.FundoImobiliario))
             {
-                IList<AtivoJson>? fii = LerArquivoJson<AtivoJson>(@"C:\\Users\\erick\\Downloads\\csvFiisjson.json");
+                IList<AtivoJson>? fii = LerArquivoJson<AtivoJson>(@"..\..\..\CargaDeAtivos\fiis.json");
                 if (fii != null)
-                    foreach (AtivoJson item in fii.Where(fii => fii.Ultimo != "0").ToList())
-                    {
-                        Ativo ativo = NovoAtivo(item, tipoDeAtivo);
-                        repository.Ativo.Salvar(ativo);
-                        repository.SaveChanges();
-                    }
+                    SalvaListaDeAtivos(fii.Where(fii => fii.Ultimo != "0").ToList(), tipoDeAtivo);
             }
+    }
+
+    private void SalvaListaDeAtivos(List<AtivoJson> ativos, TipoDeAtivo tipoDeAtivo)
+    {
+        foreach (AtivoJson item in ativos)
+        {
+            Ativo ativo = NovoAtivo(item, tipoDeAtivo);
+            repository.Ativo.Salvar(ativo);
+            repository.SaveChanges();
+        }
     }
     private Ativo NovoAtivo(AtivoJson? item, TipoDeAtivo? tipoDeAtivo)
     {
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
         Ativo ativo = new Ativo()
         {
             TipoDeAtivo = tipoDeAtivo,
@@ -108,6 +109,7 @@ public partial class frmUpload : Form
             DataCadastro = DateTime.Now,
             DataAtualizacao = DateTime.Now,
         };
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
 
         ativo.Valida();
         return ativo;
