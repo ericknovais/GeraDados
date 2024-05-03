@@ -27,7 +27,7 @@ public partial class frmUpload : Form
     {
         try
         {
-            IList<PessoaJson>? pessoas = LerArquivoJsonPessoas();
+            IList<PessoaJson>? pessoas = LerArquivoJson<PessoaJson>(txtArquivo.Text);
 
             if (pessoas != null)
                 foreach (var item in pessoas)
@@ -70,7 +70,7 @@ public partial class frmUpload : Form
     }
     private void SalvarAtivosDoTipoAcao(TipoDeAtivo? tipoDeAtivo)
     {
-        var acoes = LerArquivoJsonAcoes(@"C:\\Users\\erick\\Downloads\\csvjson.json");
+        IList<AtivoAcoesJson>? acoes = LerArquivoJson<AtivoAcoesJson>(@"C:\\Users\\erick\\Downloads\\csvjson.json");
         if (acoes != null)
             foreach (AtivoAcoesJson item in acoes)
             {
@@ -94,10 +94,6 @@ public partial class frmUpload : Form
         ativo.Valida();
         return ativo;
     }
-    private IList<AtivoAcoesJson>? LerArquivoJsonAcoes(string caminho)
-    {
-        return JsonConvert.DeserializeObject<IList<AtivoAcoesJson>>(LeitorDeArquivo(caminho));
-    }
     private void SalvaTipoDeAtivosNoBanco()
     {
         List<TipoDeAtivo> listaTipoDeAtivos = new TipoDeAtivo().CarregaTipoDeAtivo();
@@ -112,9 +108,9 @@ public partial class frmUpload : Form
             repository.TipoContato.Salvar(tipoContato);
         repository.SaveChanges();
     }
-    private IList<PessoaJson>? LerArquivoJsonPessoas()
+    private IList<T>? LerArquivoJson<T>(string caminho)
     {
-        return JsonConvert.DeserializeObject<IList<PessoaJson>>(LeitorDeArquivo(txtArquivo.Text));
+        return JsonConvert.DeserializeObject<IList<T>>(LeitorDeArquivo(caminho));
     }
     private string LeitorDeArquivo(string caminho)
     {
