@@ -66,20 +66,38 @@ public partial class frmUpload : Form
             SalvaTipoDeAtivosNoBanco();
         TipoDeAtivo? acao = repository.TipoDeAtivo.ObterPorId((int)eTipoDeAtivo.Acao);
         if (repository.Ativo.ObtemAtivosPorTipoDeAtivo(acao).Count.Equals(0))
-            SalvarAtivosDoTipoAcao(acao);
+            SalvarAtivosNoBancoDeDados(acao);
+        TipoDeAtivo? fii = repository.TipoDeAtivo.ObterPorId((int)eTipoDeAtivo.FundoImobiliario);
+        if (repository.Ativo.ObtemAtivosPorTipoDeAtivo(fii).Count.Equals(0))
+            SalvarAtivosNoBancoDeDados(fii);
     }
-    private void SalvarAtivosDoTipoAcao(TipoDeAtivo? tipoDeAtivo)
+    private void SalvarAtivosNoBancoDeDados(TipoDeAtivo? tipoDeAtivo)
     {
-        IList<AtivoAcoesJson>? acoes = LerArquivoJson<AtivoAcoesJson>(@"C:\\Users\\erick\\Downloads\\csvjson.json");
-        if (acoes != null)
-            foreach (AtivoAcoesJson item in acoes)
+        if (tipoDeAtivo != null)
+            if (tipoDeAtivo.ID.Equals((int)eTipoDeAtivo.Acao))
             {
-                Ativo ativo = NovoAtivo(item, tipoDeAtivo);
-                repository.Ativo.Salvar(ativo);
-                repository.SaveChanges();
+                IList<AtivoJson>? acoes = LerArquivoJson<AtivoJson>(@"C:\\Users\\erick\\Downloads\\csvAcoesjson.json");
+                if (acoes != null)
+                    foreach (AtivoJson item in acoes)
+                    {
+                        Ativo ativo = NovoAtivo(item, tipoDeAtivo);
+                        repository.Ativo.Salvar(ativo);
+                        repository.SaveChanges();
+                    }
+            }
+            else if (tipoDeAtivo.ID.Equals((int)eTipoDeAtivo.FundoImobiliario))
+            {
+                IList<AtivoJson>? fii = LerArquivoJson<AtivoJson>(@"C:\\Users\\erick\\Downloads\\csvFiisjson.json");
+                if (fii != null)
+                    foreach (AtivoJson item in fii.Where(fii => fii.Ultimo != "0").ToList())
+                    {
+                        Ativo ativo = NovoAtivo(item, tipoDeAtivo);
+                        repository.Ativo.Salvar(ativo);
+                        repository.SaveChanges();
+                    }
             }
     }
-    private Ativo NovoAtivo(AtivoAcoesJson item, TipoDeAtivo? tipoDeAtivo)
+    private Ativo NovoAtivo(AtivoJson? item, TipoDeAtivo? tipoDeAtivo)
     {
         Ativo ativo = new Ativo()
         {
