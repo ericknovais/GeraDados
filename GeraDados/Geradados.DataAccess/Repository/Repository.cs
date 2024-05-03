@@ -23,6 +23,9 @@ public class Repository : IRepository
     ITipoContatoRepository? tipoContato;
     public ITipoContatoRepository TipoContato { get { return tipoContato ?? (tipoContato = new TipoContatoRepository(ctx)); } }
 
+    ITipoDeAtivoRepository? tipoDeAtivo;
+    public ITipoDeAtivoRepository TipoDeAtivo { get { return tipoDeAtivo ?? (tipoDeAtivo = new TipoDeAtivoRepository(ctx)); } }
+
     public void SaveChanges()
     {
         ctx.SaveChanges();

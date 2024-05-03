@@ -13,13 +13,23 @@ public partial class frmUpload : Form
     {
         InitializeComponent();
         if (repository.TipoContato.ObterTodos().Count.Equals(0))
-            CarregaTipoDeContatos();
+            SalvaTipoDeContatosNoBanco();
+        if (repository.TipoDeAtivo.ObterTodos().Count.Equals(0))
+            SalvaTipoDeAtivosNoBanco();
     }
 
-    private void CarregaTipoDeContatos()
+    private void SalvaTipoDeAtivosNoBanco()
+    {
+        List<TipoDeAtivo> listaTipoDeAtivos = new TipoDeAtivo().CarregaTipoDeAtivo();
+        foreach (TipoDeAtivo tipoDeAtivo in listaTipoDeAtivos)
+            repository.TipoDeAtivo.Salvar(tipoDeAtivo);
+        repository.SaveChanges();
+    }
+
+    private void SalvaTipoDeContatosNoBanco()
     {
         List<TipoContato> listadeTipocontatos = new TipoContato().CarregaListaTipoContato();
-        foreach (var tipoContato in listadeTipocontatos)
+        foreach (TipoContato tipoContato in listadeTipocontatos)
             repository.TipoContato.Salvar(tipoContato);
         repository.SaveChanges();
     }
@@ -115,7 +125,7 @@ public partial class frmUpload : Form
             new Contato()
             {
                 Pessoa = pessoa,
-                TipoContato = repository.TipoContato.ObterPorId((int)TipoContatos.Email),
+                TipoContato = repository.TipoContato.ObterPorId((int)eTipoContato.Email),
                 Valor = pessoaJson.Email,
                 DataCadastro = DateTime.Now,
                 DataAtualizacao = DateTime.Now
@@ -123,7 +133,7 @@ public partial class frmUpload : Form
              new Contato()
             {
                 Pessoa = pessoa,
-                TipoContato = repository.TipoContato.ObterPorId((int)TipoContatos.Fixo),
+                TipoContato = repository.TipoContato.ObterPorId((int)eTipoContato.Fixo),
                 Valor = pessoaJson.Telefone_fixo,
                 DataCadastro = DateTime.Now,
                 DataAtualizacao = DateTime.Now
@@ -131,7 +141,7 @@ public partial class frmUpload : Form
             new Contato()
             {
                 Pessoa = pessoa,
-                TipoContato = repository.TipoContato.ObterPorId((int)TipoContatos.Celular),
+                TipoContato = repository.TipoContato.ObterPorId((int)eTipoContato.Celular),
                 Valor = pessoaJson.Celular,
                 DataCadastro = DateTime.Now,
                 DataAtualizacao = DateTime.Now
