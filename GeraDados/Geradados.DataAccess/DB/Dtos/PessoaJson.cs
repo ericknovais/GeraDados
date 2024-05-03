@@ -33,6 +33,4 @@ public class PessoaJson
     public string Estado { get; set; }
     public string Telefone_fixo { get; set; }
     public string Celular { get; set; }
-
-
 }

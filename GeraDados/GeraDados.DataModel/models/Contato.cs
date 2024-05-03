@@ -20,7 +20,7 @@ public class Contato : EntityBase
     {
         var descricaoCampo = DescricaoCampo(TipoContato);
         ValidaCampoTexto(Valor, descricaoCampo);
-        if (TipoContato != null && TipoContato.ID.Equals((int)TipoContatos.Email))
+        if (TipoContato != null && TipoContato.ID.Equals((int)eTipoContato.Email))
             ValidaEmail();
         base.Valida();
     }
@@ -31,13 +31,13 @@ public class Contato : EntityBase
         if (tipoContato != null)
             switch (tipoContato.ID)
             {
-                case (int)TipoContatos.Email:
+                case (int)eTipoContato.Email:
                     descricaoCampo = "E-mail";
                     break;
-                case (int)TipoContatos.Fixo:
+                case (int)eTipoContato.Fixo:
                     descricaoCampo = "Telefone Fixo";
                     break;
-                case (int)TipoContatos.Celular:
+                case (int)eTipoContato.Celular:
                     descricaoCampo = "Celular";
                     break;
             }

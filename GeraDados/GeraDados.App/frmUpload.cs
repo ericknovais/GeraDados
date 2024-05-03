@@ -9,21 +9,12 @@ public partial class frmUpload : Form
 {
     Repository repository = new Repository();
 
+    #region Métodos Do Forms
     public frmUpload()
     {
         InitializeComponent();
-        if (repository.TipoContato.ObterTodos().Count.Equals(0))
-            CarregaTipoDeContatos();
+        InicializaDadosNoBanco();
     }
-
-    private void CarregaTipoDeContatos()
-    {
-        List<TipoContato> listadeTipocontatos = new TipoContato().CarregaListaTipoContato();
-        foreach (var tipoContato in listadeTipocontatos)
-            repository.TipoContato.Salvar(tipoContato);
-        repository.SaveChanges();
-    }
-
     private void btnUpload_Click(object sender, EventArgs e)
     {
         OpenFileDialog ofd = new OpenFileDialog();
@@ -32,12 +23,11 @@ public partial class frmUpload : Form
         if (ofd.ShowDialog() == DialogResult.OK)
             txtArquivo.Text = ofd.FileName;
     }
-
     private void btnSalvar_Click(object sender, EventArgs e)
     {
         try
         {
-            IList<PessoaJson>? pessoas = LerArquivoJson();
+            IList<PessoaJson>? pessoas = LerArquivoJsonPessoas();
 
             if (pessoas != null)
                 foreach (var item in pessoas)
@@ -65,14 +55,72 @@ public partial class frmUpload : Form
             MessageBox.Show(ex.Message, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
     }
+    #endregion
 
-    private IList<PessoaJson>? LerArquivoJson()
+    #region Métodos privados
+    private void InicializaDadosNoBanco()
     {
-        StreamReader reader = new StreamReader(txtArquivo.Text);
-        string json = reader.ReadToEnd();
-        return JsonConvert.DeserializeObject<IList<PessoaJson>>(json);
+        if (repository.TipoContato.ObterTodos().Count.Equals(0))
+            SalvaTipoDeContatosNoBanco();
+        if (repository.TipoDeAtivo.ObterTodos().Count.Equals(0))
+            SalvaTipoDeAtivosNoBanco();
+        TipoDeAtivo? acao = repository.TipoDeAtivo.ObterPorId((int)eTipoDeAtivo.Acao);
+        if (repository.Ativo.ObtemAtivosPorTipoDeAtivo(acao).Count.Equals(0))
+            SalvarAtivosDoTipoAcao(acao);
     }
+    private void SalvarAtivosDoTipoAcao(TipoDeAtivo? tipoDeAtivo)
+    {
+        var acoes = LerArquivoJsonAcoes(@"C:\\Users\\erick\\Downloads\\csvjson.json");
+        if (acoes != null)
+            foreach (AtivoAcoesJson item in acoes)
+            {
+                Ativo ativo = NovoAtivo(item, tipoDeAtivo);
+                repository.Ativo.Salvar(ativo);
+                repository.SaveChanges();
+            }
+    }
+    private Ativo NovoAtivo(AtivoAcoesJson item, TipoDeAtivo? tipoDeAtivo)
+    {
+        Ativo ativo = new Ativo()
+        {
+            TipoDeAtivo = tipoDeAtivo,
+            Nome = item.Nome,
+            Ticker = item.Ticker,
+            UltimaNegociacao = Convert.ToDecimal($"{item.Ultimo},{item.Decimal}"),
+            DataCadastro = DateTime.Now,
+            DataAtualizacao = DateTime.Now,
+        };
 
+        ativo.Valida();
+        return ativo;
+    }
+    private IList<AtivoAcoesJson>? LerArquivoJsonAcoes(string caminho)
+    {
+        return JsonConvert.DeserializeObject<IList<AtivoAcoesJson>>(LeitorDeArquivo(caminho));
+    }
+    private void SalvaTipoDeAtivosNoBanco()
+    {
+        List<TipoDeAtivo> listaTipoDeAtivos = new TipoDeAtivo().CarregaTipoDeAtivo();
+        foreach (TipoDeAtivo tipoDeAtivo in listaTipoDeAtivos)
+            repository.TipoDeAtivo.Salvar(tipoDeAtivo);
+        repository.SaveChanges();
+    }
+    private void SalvaTipoDeContatosNoBanco()
+    {
+        List<TipoContato> listadeTipocontatos = new TipoContato().CarregaListaTipoContato();
+        foreach (TipoContato tipoContato in listadeTipocontatos)
+            repository.TipoContato.Salvar(tipoContato);
+        repository.SaveChanges();
+    }
+    private IList<PessoaJson>? LerArquivoJsonPessoas()
+    {
+        return JsonConvert.DeserializeObject<IList<PessoaJson>>(LeitorDeArquivo(txtArquivo.Text));
+    }
+    private string LeitorDeArquivo(string caminho)
+    {
+        StreamReader reader = new StreamReader(caminho);
+        return reader.ReadToEnd();
+    }
     private Endereco EnderecoPessoa(PessoaJson pessoaJson, Pessoa pessoa)
     {
         Endereco endereo = new Endereco()
@@ -91,7 +139,6 @@ public partial class frmUpload : Form
         endereo.Valida();
         return endereo;
     }
-
     private Pessoa NovaPessoa(PessoaJson pessoaJson)
     {
         var pessoa = new Pessoa()
@@ -107,7 +154,6 @@ public partial class frmUpload : Form
         pessoa.Valida();
         return pessoa;
     }
-
     private List<Contato> ContatosPessoa(PessoaJson pessoaJson, Pessoa pessoa)
     {
         List<Contato> contatos = new List<Contato>()
@@ -115,7 +161,7 @@ public partial class frmUpload : Form
             new Contato()
             {
                 Pessoa = pessoa,
-                TipoContato = repository.TipoContato.ObterPorId((int)TipoContatos.Email),
+                TipoContato = repository.TipoContato.ObterPorId((int)eTipoContato.Email),
                 Valor = pessoaJson.Email,
                 DataCadastro = DateTime.Now,
                 DataAtualizacao = DateTime.Now
@@ -123,7 +169,7 @@ public partial class frmUpload : Form
              new Contato()
             {
                 Pessoa = pessoa,
-                TipoContato = repository.TipoContato.ObterPorId((int)TipoContatos.Fixo),
+                TipoContato = repository.TipoContato.ObterPorId((int)eTipoContato.Fixo),
                 Valor = pessoaJson.Telefone_fixo,
                 DataCadastro = DateTime.Now,
                 DataAtualizacao = DateTime.Now
@@ -131,7 +177,7 @@ public partial class frmUpload : Form
             new Contato()
             {
                 Pessoa = pessoa,
-                TipoContato = repository.TipoContato.ObterPorId((int)TipoContatos.Celular),
+                TipoContato = repository.TipoContato.ObterPorId((int)eTipoContato.Celular),
                 Valor = pessoaJson.Celular,
                 DataCadastro = DateTime.Now,
                 DataAtualizacao = DateTime.Now
@@ -141,4 +187,5 @@ public partial class frmUpload : Form
             item.Valida();
         return contatos;
     }
+    #endregion
 }

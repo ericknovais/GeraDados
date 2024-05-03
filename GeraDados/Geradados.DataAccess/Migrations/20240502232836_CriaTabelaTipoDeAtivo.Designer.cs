@@ -4,6 +4,7 @@ using Geradados.DataAccess.DB;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Geradados.DataAccess.Migrations
 {
     [DbContext(typeof(ContextoDataBase))]
-    partial class ContextoDataBaseModelSnapshot : ModelSnapshot
+    [Migration("20240502232836_CriaTabelaTipoDeAtivo")]
+    partial class CriaTabelaTipoDeAtivo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,41 +24,6 @@ namespace Geradados.DataAccess.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("GeraDados.DataModel.models.Ativo", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-
-                    b.Property<DateTime>("DataAtualizacao")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DataCadastro")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Ticker")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("TipoDeAtivoID")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("UltimaNegociacao")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("TipoDeAtivoID");
-
-                    b.ToTable("Ativos");
-                });
 
             modelBuilder.Entity("GeraDados.DataModel.models.Contato", b =>
                 {
@@ -219,15 +187,6 @@ namespace Geradados.DataAccess.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("TipoDeAtivos");
-                });
-
-            modelBuilder.Entity("GeraDados.DataModel.models.Ativo", b =>
-                {
-                    b.HasOne("GeraDados.DataModel.models.TipoDeAtivo", "TipoDeAtivo")
-                        .WithMany()
-                        .HasForeignKey("TipoDeAtivoID");
-
-                    b.Navigation("TipoDeAtivo");
                 });
 
             modelBuilder.Entity("GeraDados.DataModel.models.Contato", b =>
