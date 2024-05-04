@@ -38,13 +38,12 @@ public partial class frmUpload : Form
                     Pessoa pessoa = NovaPessoa(item);
                     List<Contato> contatos = ContatosPessoa(item, pessoa);
                     Endereco endereco = EnderecoPessoa(item, pessoa);
+                    CarteiraConfigurada carteiraConfigurada = NovaCarteiraConfiguracao();
 
                     repository.Pessoa.Salvar(pessoa);
                     foreach (Contato contato in contatos)
                         repository.Contato.Salvar(contato);
                     repository.Endereco.Salvar(endereco);
-
-                    CarteiraConfigurada carteiraConfigurada = SetCarteiraConfigurada();
                     ValidaSeCampoCotaEstaZerado(carteiraConfigurada.Acoes, pessoa, carteiraConfigurada.ValorPorAcoes);
                     ValidaSeCampoCotaEstaZerado(carteiraConfigurada.Fiis, pessoa, carteiraConfigurada.ValorPorFiis);
                     repository.SaveChanges();
@@ -58,20 +57,9 @@ public partial class frmUpload : Form
             MessageBox.Show(ex.Message, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
     }
-
-    private void ValidaSeCampoCotaEstaZerado(List<Ativo> Ativos, Pessoa pessoa, double valorPorAtivo)
-    {
-        foreach (var ativo in Ativos)
-        {
-            Carteira carteira = NovoAtivoParaCarteira(pessoa, ativo, valorPorAtivo);
-            if (carteira.Cota > 0)
-                repository.Carteira.Salvar(carteira);                
-        }
-
-    }
     #endregion
 
-    #region Métodos privados
+    #region Métodos void
     private void InicializaDadosNoBanco()
     {
         if (repository.TipoContato.ObterTodos().Count.Equals(0))
@@ -85,52 +73,6 @@ public partial class frmUpload : Form
         if (repository.Ativo.ObtemAtivosPorTipoDeAtivo(fii).Count.Equals(0))
             SalvarAtivosNoBancoDeDados(fii);
     }
-
-    private Carteira NovoAtivoParaCarteira(Pessoa pessoa, Ativo ativo, double valorPorAtivo)
-    {
-        var carteira = new Carteira()
-        {
-            Pessoa = pessoa,
-            Ativo = ativo,
-            Cota = Carteira.QuantidadeDeUmAtivo(valorPorAtivo, (double)ativo.UltimaNegociacao),
-            DataCadastro = DateTime.Now,
-            DataAtualizacao = DateTime.Now,
-        };
-        //carteira.Valida();
-        return carteira;
-    }
-
-    private CarteiraConfigurada SetCarteiraConfigurada()
-    {
-        var valorInicial = Carteira.InicializaValorInicialDaPessoa();
-        var valorParaAcoes = Carteira.PorcentagelDoValorParaUmTipoDeAtivo(valorInicial);
-        var qtdAcoes = new Random().Next(5, 25);
-        var valorPorAcoes = valorParaAcoes / qtdAcoes;
-        //var qtdDoAtivoAcoes = Carteira.QuantidadeDeUmAtivo(valorPorAcoes, 10.39);
-        var valorParaFiis = valorInicial - valorParaAcoes;
-        var qtdFiis = new Random().Next(5, 15);
-        var valorPorFiis = valorParaFiis / qtdFiis;
-        //var qtdDoAtivoFiis = Carteira.QuantidadeDeUmAtivo(valorPorFiis, 90.00);
-        var valorTotal = valorParaAcoes + valorParaFiis;
-        var listaAcoes = repository.Ativo.ObtemAtivosPorTipoDeAtivo(repository.TipoDeAtivo.ObterPorId((int)eTipoDeAtivo.Acao));
-        var listaFiis = repository.Ativo.ObtemAtivosPorTipoDeAtivo(repository.TipoDeAtivo.ObterPorId((int)eTipoDeAtivo.FundoImobiliario));
-        var ordenaLista = new Random();
-        CarteiraConfigurada carteiraConfigurada = new CarteiraConfigurada()
-        {
-            ValorInicial = valorInicial,
-            ValorParaAcoes = valorParaAcoes,
-            QuantidadeDeAcoes = qtdAcoes,
-            ValorPorAcoes = valorPorAcoes,
-            ValorParaFiis = valorParaFiis,
-            QuantidaDeFiis = qtdFiis,
-            ValorPorFiis = valorPorFiis,
-            ValorTotal = (int)valorTotal,
-            Acoes = listaAcoes.OrderBy(acoes => ordenaLista.Next()).Take(qtdAcoes).ToList(),
-            Fiis = listaFiis.OrderBy(fiis => ordenaLista.Next()).Take(qtdFiis).ToList(),
-        };
-        return carteiraConfigurada;
-    }
-
     private void SalvarAtivosNoBancoDeDados(TipoDeAtivo? tipoDeAtivo)
     {
         if (tipoDeAtivo != null)
@@ -156,23 +98,6 @@ public partial class frmUpload : Form
             repository.SaveChanges();
         }
     }
-    private Ativo NovoAtivo(AtivoJson? item, TipoDeAtivo? tipoDeAtivo)
-    {
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
-        Ativo ativo = new Ativo()
-        {
-            TipoDeAtivo = tipoDeAtivo,
-            Nome = item.Nome,
-            Ticker = item.Ticker,
-            UltimaNegociacao = Convert.ToDecimal($"{item.Ultimo},{item.Decimal}"),
-            DataCadastro = DateTime.Now,
-            DataAtualizacao = DateTime.Now,
-        };
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
-
-        ativo.Valida();
-        return ativo;
-    }
     private void SalvaTipoDeAtivosNoBanco()
     {
         List<TipoDeAtivo> listaTipoDeAtivos = new TipoDeAtivo().CarregaTipoDeAtivo();
@@ -195,6 +120,82 @@ public partial class frmUpload : Form
     {
         StreamReader reader = new StreamReader(caminho);
         return reader.ReadToEnd();
+    }
+    private void ValidaSeCampoCotaEstaZerado(List<Ativo> Ativos, Pessoa pessoa, double valorPorAtivo)
+    {
+        foreach (var ativo in Ativos)
+        {
+            Carteira carteira = NovoAtivoParaCarteira(pessoa, ativo, valorPorAtivo);
+            if (carteira.Cota > 0)
+                repository.Carteira.Salvar(carteira);
+        }
+    }
+    #endregion
+
+    #region Métodos com return
+    private List<Ativo> ObtemListaDeAtivosPorTipoDeAtivo(int idTipoAtivo)
+    {
+        return repository.Ativo.ObtemAtivosPorTipoDeAtivo(repository.TipoDeAtivo.ObterPorId(idTipoAtivo));
+    }
+    private List<Ativo> ListaDeAtivosAleatoriaEComQuantidadeDeAtivo(List<Ativo> listaAtivo, int quantidade, Random ordenaLista)
+    {
+        return listaAtivo.OrderBy(acoes => ordenaLista.Next()).Take(quantidade).ToList();
+    }
+    private Carteira NovoAtivoParaCarteira(Pessoa pessoa, Ativo ativo, double valorPorAtivo)
+    {
+        return new Carteira()
+        {
+            Pessoa = pessoa,
+            Ativo = ativo,
+            Cota = Carteira.QuantidadeDeUmAtivo(valorPorAtivo, (double)ativo.UltimaNegociacao),
+            DataCadastro = DateTime.Now,
+            DataAtualizacao = DateTime.Now,
+        };
+    }
+    private CarteiraConfigurada NovaCarteiraConfiguracao()
+    {
+        Random rdm = new Random();
+        int valorInicial = Carteira.InicializaValorInicialDaPessoa();
+        double valorParaAcoes = Carteira.PorcentagelDoValorParaUmTipoDeAtivo(valorInicial);
+        int qtdAcoes = rdm.Next(5, 30);
+        double valorPorAcoes = valorParaAcoes / qtdAcoes;
+        double valorParaFiis = valorInicial - valorParaAcoes;
+        int qtdFiis = rdm.Next(5, 15);
+        double valorPorFiis = valorParaFiis / qtdFiis;
+        double valorTotal = valorParaAcoes + valorParaFiis;
+        List<Ativo> listaAcoes = ObtemListaDeAtivosPorTipoDeAtivo((int)eTipoDeAtivo.Acao);
+        List<Ativo> listaFiis = ObtemListaDeAtivosPorTipoDeAtivo((int)eTipoDeAtivo.FundoImobiliario);
+        
+        return new CarteiraConfigurada()
+        {
+            ValorInicial = valorInicial,
+            ValorParaAcoes = valorParaAcoes,
+            QuantidadeDeAcoes = qtdAcoes,
+            ValorPorAcoes = valorPorAcoes,
+            ValorParaFiis = valorParaFiis,
+            QuantidaDeFiis = qtdFiis,
+            ValorPorFiis = valorPorFiis,
+            ValorTotal = (int)valorTotal,
+            Acoes = ListaDeAtivosAleatoriaEComQuantidadeDeAtivo(listaAcoes, qtdAcoes, rdm),
+            Fiis = ListaDeAtivosAleatoriaEComQuantidadeDeAtivo(listaFiis, qtdFiis, rdm),
+        };
+    }
+    private Ativo NovoAtivo(AtivoJson? item, TipoDeAtivo? tipoDeAtivo)
+    {
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+        Ativo ativo = new Ativo()
+        {
+            TipoDeAtivo = tipoDeAtivo,
+            Nome = item.Nome,
+            Ticker = item.Ticker,
+            UltimaNegociacao = Convert.ToDecimal($"{item.Ultimo},{item.Decimal}"),
+            DataCadastro = DateTime.Now,
+            DataAtualizacao = DateTime.Now,
+        };
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
+
+        ativo.Valida();
+        return ativo;
     }
     private Endereco EnderecoPessoa(PessoaJson pessoaJson, Pessoa pessoa)
     {
@@ -258,11 +259,11 @@ public partial class frmUpload : Form
                 DataAtualizacao = DateTime.Now
             }
         };
+
         foreach (var item in contatos)
             item.Valida();
         return contatos;
     }
-
     private TipoContato? CarregaTipoContato(int id)
     {
         return repository.TipoContato.ObterPorId(id);
