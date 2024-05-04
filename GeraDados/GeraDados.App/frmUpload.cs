@@ -111,16 +111,7 @@ public partial class frmUpload : Form
         foreach (TipoContato tipoContato in listadeTipocontatos)
             repository.TipoContato.Salvar(tipoContato);
         repository.SaveChanges();
-    }
-    private IList<T>? LerArquivoJson<T>(string caminho)
-    {
-        return JsonConvert.DeserializeObject<IList<T>>(LeitorDeArquivo(caminho));
-    }
-    private string LeitorDeArquivo(string caminho)
-    {
-        StreamReader reader = new StreamReader(caminho);
-        return reader.ReadToEnd();
-    }
+    } 
     private void ValidaSeCampoCotaEstaZerado(List<Ativo> Ativos, Pessoa pessoa, double valorPorAtivo)
     {
         foreach (var ativo in Ativos)
@@ -133,6 +124,15 @@ public partial class frmUpload : Form
     #endregion
 
     #region Métodos com return
+    private IList<T>? LerArquivoJson<T>(string caminho)
+    {
+        return JsonConvert.DeserializeObject<IList<T>>(LeitorDeArquivo(caminho));
+    }
+    private string LeitorDeArquivo(string caminho)
+    {
+        StreamReader reader = new StreamReader(caminho);
+        return reader.ReadToEnd();
+    }
     private List<Ativo> ObtemListaDeAtivosPorTipoDeAtivo(int idTipoAtivo)
     {
         return repository.Ativo.ObtemAtivosPorTipoDeAtivo(repository.TipoDeAtivo.ObterPorId(idTipoAtivo));
