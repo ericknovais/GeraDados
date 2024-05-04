@@ -5,6 +5,8 @@ namespace GeraDados.DataModel.models;
 [Table("TipoDeAtivos")]
 public class TipoDeAtivo : EntityBase
 {
+    [DatabaseGenerated(DatabaseGeneratedOption.None)]
+    public new int ID { get; set; }
     public TipoDeAtivo()
     {
         Descricao = string.Empty;
@@ -24,12 +26,14 @@ public class TipoDeAtivo : EntityBase
         {
             new TipoDeAtivo()
             {
+                ID = 1,
                 Descricao = "Ação",
                 DataCadastro = DateTime.Now,
                 DataAtualizacao = DateTime.Now,
             },
             new TipoDeAtivo()
             {
+                ID = 2,
                 Descricao = "Fundo Imobiliario",
                 DataCadastro = DateTime.Now,
                 DataAtualizacao =  DateTime.Now

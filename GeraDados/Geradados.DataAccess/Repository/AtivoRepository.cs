@@ -19,9 +19,8 @@ namespace Geradados.DataAccess.Repository
 
         public List<Ativo> ObtemAtivosPorTipoDeAtivo(TipoDeAtivo? tipoDeAtivo)
         {
-            if (tipoDeAtivo != null)
-                return ctx.Ativos.Where(ativo => ativo.TipoDeAtivo.ID.Equals(tipoDeAtivo.ID)).ToList();
-            return new List<Ativo>();
+#pragma warning disable  // Dereference of a possibly null reference.
+            return ctx.Ativos.Where(ativo => ativo.TipoDeAtivo.ID.Equals(tipoDeAtivo.ID)).ToList();
         }
     }
 }

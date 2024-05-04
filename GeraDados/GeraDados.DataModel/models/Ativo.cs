@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GeraDados.DataModel.models;
 
@@ -11,7 +12,8 @@ public class Ativo : EntityBase
         Ticker = string.Empty;
         Nome = string.Empty;
     }
-
+    
+    [Required]
     public TipoDeAtivo? TipoDeAtivo { get; set; }
     public string Ticker { get; set; }
     public string Nome { get; set; }

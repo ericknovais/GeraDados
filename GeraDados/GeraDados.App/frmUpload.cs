@@ -66,7 +66,7 @@ public partial class frmUpload : Form
             SalvaTipoDeAtivosNoBanco();
         TipoDeAtivo? acao = repository.TipoDeAtivo.ObterPorId((int)eTipoDeAtivo.Acao);
         //if (repository.Ativo.ObtemAtivosPorTipoDeAtivo(acao).Count.Equals(0))
-            SalvarAtivosNoBancoDeDados(acao);
+        SalvarAtivosNoBancoDeDados(acao);
         TipoDeAtivo? fii = repository.TipoDeAtivo.ObterPorId((int)eTipoDeAtivo.FundoImobiliario);
         if (repository.Ativo.ObtemAtivosPorTipoDeAtivo(fii).Count.Equals(0))
             SalvarAtivosNoBancoDeDados(fii);
@@ -87,7 +87,6 @@ public partial class frmUpload : Form
                     SalvaListaDeAtivos(fii.Where(fii => fii.Ultimo != "0").ToList(), tipoDeAtivo);
             }
     }
-
     private void SalvaListaDeAtivos(List<AtivoJson> ativos, TipoDeAtivo tipoDeAtivo)
     {
         foreach (AtivoJson item in ativos)
@@ -177,7 +176,7 @@ public partial class frmUpload : Form
             new Contato()
             {
                 Pessoa = pessoa,
-                TipoContato = repository.TipoContato.ObterPorId((int)eTipoContato.Email),
+                TipoContato = CarregaTipoContato((int)eTipoContato.Email),
                 Valor = pessoaJson.Email,
                 DataCadastro = DateTime.Now,
                 DataAtualizacao = DateTime.Now
@@ -185,7 +184,7 @@ public partial class frmUpload : Form
              new Contato()
             {
                 Pessoa = pessoa,
-                TipoContato = repository.TipoContato.ObterPorId((int)eTipoContato.Fixo),
+                TipoContato = CarregaTipoContato((int)eTipoContato.Fixo),
                 Valor = pessoaJson.Telefone_fixo,
                 DataCadastro = DateTime.Now,
                 DataAtualizacao = DateTime.Now
@@ -193,7 +192,7 @@ public partial class frmUpload : Form
             new Contato()
             {
                 Pessoa = pessoa,
-                TipoContato = repository.TipoContato.ObterPorId((int)eTipoContato.Celular),
+                TipoContato = CarregaTipoContato((int)eTipoContato.Celular),
                 Valor = pessoaJson.Celular,
                 DataCadastro = DateTime.Now,
                 DataAtualizacao = DateTime.Now
@@ -202,6 +201,11 @@ public partial class frmUpload : Form
         foreach (var item in contatos)
             item.Valida();
         return contatos;
+    }
+
+    private TipoContato? CarregaTipoContato(int id)
+    {
+        return repository.TipoContato.ObterPorId(id);
     }
     #endregion
 }

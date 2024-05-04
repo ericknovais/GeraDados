@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Geradados.DataAccess.Migrations
 {
     [DbContext(typeof(ContextoDataBase))]
-    [Migration("20240503014103_CriaTabelaAtivos")]
-    partial class CriaTabelaAtivos
+    [Migration("20240504002018_CriaBanco")]
+    partial class CriaBanco
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -47,7 +47,7 @@ namespace Geradados.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("TipoDeAtivoID")
+                    b.Property<int>("TipoDeAtivoID")
                         .HasColumnType("int");
 
                     b.Property<decimal>("UltimaNegociacao")
@@ -181,10 +181,7 @@ namespace Geradados.DataAccess.Migrations
             modelBuilder.Entity("GeraDados.DataModel.models.TipoContato", b =>
                 {
                     b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<DateTime>("DataAtualizacao")
                         .HasColumnType("datetime2");
@@ -204,10 +201,7 @@ namespace Geradados.DataAccess.Migrations
             modelBuilder.Entity("GeraDados.DataModel.models.TipoDeAtivo", b =>
                 {
                     b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<DateTime>("DataAtualizacao")
                         .HasColumnType("datetime2");
@@ -228,7 +222,9 @@ namespace Geradados.DataAccess.Migrations
                 {
                     b.HasOne("GeraDados.DataModel.models.TipoDeAtivo", "TipoDeAtivo")
                         .WithMany()
-                        .HasForeignKey("TipoDeAtivoID");
+                        .HasForeignKey("TipoDeAtivoID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("TipoDeAtivo");
                 });
