@@ -20,17 +20,20 @@ namespace GeraDados.DataModel.models
             base.Valida();
         }
 
-        public int InicializaValorInicialDaPessoa()
+        public static int InicializaValorInicialDaPessoa()
         {
-            Random random = new Random();
-            return random.Next(200, 1000000);
+            return new Random().Next(200, 1000000);
         }
 
-        public Double PorcentagelDoValorParaUmTipoDeAtivo(int valorInicial)
+        public static double PorcentagelDoValorParaUmTipoDeAtivo(int valorInicial)
         {
-            Random random = new Random();
-            double porcentagem = Convert.ToDouble(random.Next(1, 100) / 100.00);
-            return ((Double)valorInicial * (porcentagem));
+            double porcentagem = Convert.ToDouble(new Random().Next(1, 100) / 100.00);
+            return (valorInicial * porcentagem);
+        }
+
+        public static int QuantidadeDeUmAtivo(double valorParaAtivo, double valorDoAtivo) 
+        {
+            return (int)(valorParaAtivo / valorDoAtivo);
         }
     }
 }

@@ -14,11 +14,6 @@ public partial class frmUpload : Form
     {
         InitializeComponent();
         InicializaDadosNoBanco();
-        var carteira = new Carteira();
-        var valorInicial = carteira.InicializaValorInicialDaPessoa();
-        var valorParaAcoes = carteira.PorcentagelDoValorParaUmTipoDeAtivo(valorInicial);
-        var valorParaFiis = valorInicial - valorParaAcoes;
-        var valorTotal = valorParaAcoes + valorParaFiis;
     }
     private void btnUpload_Click(object sender, EventArgs e)
     {
@@ -49,6 +44,9 @@ public partial class frmUpload : Form
                         repository.Contato.Salvar(contato);
                     repository.Endereco.Salvar(endereco);
 
+                    CarteiraConfigurada carteiraConfigurada = SetCarteiraConfigurada();
+                    ValidaSeCampoCotaEstaZerado(carteiraConfigurada.Acoes, pessoa, carteiraConfigurada.ValorPorAcoes);
+                    ValidaSeCampoCotaEstaZerado(carteiraConfigurada.Fiis, pessoa, carteiraConfigurada.ValorPorFiis);
                     repository.SaveChanges();
                 }
 
@@ -60,6 +58,17 @@ public partial class frmUpload : Form
             MessageBox.Show(ex.Message, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
     }
+
+    private void ValidaSeCampoCotaEstaZerado(List<Ativo> Ativos, Pessoa pessoa, double valorPorAtivo)
+    {
+        foreach (var ativo in Ativos)
+        {
+            Carteira carteira = NovoAtivoParaCarteira(pessoa, ativo, valorPorAtivo);
+            if (carteira.Cota > 0)
+                repository.Carteira.Salvar(carteira);                
+        }
+
+    }
     #endregion
 
     #region Métodos privados
@@ -70,12 +79,58 @@ public partial class frmUpload : Form
         if (repository.TipoDeAtivo.ObterTodos().Count.Equals(0))
             SalvaTipoDeAtivosNoBanco();
         TipoDeAtivo? acao = repository.TipoDeAtivo.ObterPorId((int)eTipoDeAtivo.Acao);
-        //if (repository.Ativo.ObtemAtivosPorTipoDeAtivo(acao).Count.Equals(0))
-        SalvarAtivosNoBancoDeDados(acao);
+        if (repository.Ativo.ObtemAtivosPorTipoDeAtivo(acao).Count.Equals(0))
+            SalvarAtivosNoBancoDeDados(acao);
         TipoDeAtivo? fii = repository.TipoDeAtivo.ObterPorId((int)eTipoDeAtivo.FundoImobiliario);
         if (repository.Ativo.ObtemAtivosPorTipoDeAtivo(fii).Count.Equals(0))
             SalvarAtivosNoBancoDeDados(fii);
     }
+
+    private Carteira NovoAtivoParaCarteira(Pessoa pessoa, Ativo ativo, double valorPorAtivo)
+    {
+        var carteira = new Carteira()
+        {
+            Pessoa = pessoa,
+            Ativo = ativo,
+            Cota = Carteira.QuantidadeDeUmAtivo(valorPorAtivo, (double)ativo.UltimaNegociacao),
+            DataCadastro = DateTime.Now,
+            DataAtualizacao = DateTime.Now,
+        };
+        //carteira.Valida();
+        return carteira;
+    }
+
+    private CarteiraConfigurada SetCarteiraConfigurada()
+    {
+        var valorInicial = Carteira.InicializaValorInicialDaPessoa();
+        var valorParaAcoes = Carteira.PorcentagelDoValorParaUmTipoDeAtivo(valorInicial);
+        var qtdAcoes = new Random().Next(5, 25);
+        var valorPorAcoes = valorParaAcoes / qtdAcoes;
+        //var qtdDoAtivoAcoes = Carteira.QuantidadeDeUmAtivo(valorPorAcoes, 10.39);
+        var valorParaFiis = valorInicial - valorParaAcoes;
+        var qtdFiis = new Random().Next(5, 15);
+        var valorPorFiis = valorParaFiis / qtdFiis;
+        //var qtdDoAtivoFiis = Carteira.QuantidadeDeUmAtivo(valorPorFiis, 90.00);
+        var valorTotal = valorParaAcoes + valorParaFiis;
+        var listaAcoes = repository.Ativo.ObtemAtivosPorTipoDeAtivo(repository.TipoDeAtivo.ObterPorId((int)eTipoDeAtivo.Acao));
+        var listaFiis = repository.Ativo.ObtemAtivosPorTipoDeAtivo(repository.TipoDeAtivo.ObterPorId((int)eTipoDeAtivo.FundoImobiliario));
+        var ordenaLista = new Random();
+        CarteiraConfigurada carteiraConfigurada = new CarteiraConfigurada()
+        {
+            ValorInicial = valorInicial,
+            ValorParaAcoes = valorParaAcoes,
+            QuantidadeDeAcoes = qtdAcoes,
+            ValorPorAcoes = valorPorAcoes,
+            ValorParaFiis = valorParaFiis,
+            QuantidaDeFiis = qtdFiis,
+            ValorPorFiis = valorPorFiis,
+            ValorTotal = (int)valorTotal,
+            Acoes = listaAcoes.OrderBy(acoes => ordenaLista.Next()).Take(qtdAcoes).ToList(),
+            Fiis = listaFiis.OrderBy(fiis => ordenaLista.Next()).Take(qtdFiis).ToList(),
+        };
+        return carteiraConfigurada;
+    }
+
     private void SalvarAtivosNoBancoDeDados(TipoDeAtivo? tipoDeAtivo)
     {
         if (tipoDeAtivo != null)
