@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Geradados.DataAccess.Migrations
 {
     [DbContext(typeof(ContextoDataBase))]
-    [Migration("20240501013201_AtualizaNome")]
-    partial class AtualizaNome
+    [Migration("20240504002018_CriaBanco")]
+    partial class CriaBanco
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,6 +24,41 @@ namespace Geradados.DataAccess.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("GeraDados.DataModel.models.Ativo", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<DateTime>("DataAtualizacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataCadastro")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Ticker")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TipoDeAtivoID")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("UltimaNegociacao")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("TipoDeAtivoID");
+
+                    b.ToTable("Ativos");
+                });
 
             modelBuilder.Entity("GeraDados.DataModel.models.Contato", b =>
                 {
@@ -39,19 +74,10 @@ namespace Geradados.DataAccess.Migrations
                     b.Property<DateTime>("DataCadastro")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("IdPessoa")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdTipoContato")
-                        .HasColumnType("int");
-
-                    b.Property<int>("MyProperty")
-                        .HasColumnType("int");
-
                     b.Property<int>("PessoaID")
                         .HasColumnType("int");
 
-                    b.Property<int>("TipoContatoID")
+                    b.Property<int?>("TipoContatoID")
                         .HasColumnType("int");
 
                     b.Property<string>("Valor")
@@ -97,9 +123,6 @@ namespace Geradados.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("IdPessoa")
-                        .HasColumnType("int");
-
                     b.Property<string>("Logradouro")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -136,7 +159,7 @@ namespace Geradados.DataAccess.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("DataNascimento")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("Date");
 
                     b.Property<string>("Nome")
                         .IsRequired()
@@ -158,10 +181,7 @@ namespace Geradados.DataAccess.Migrations
             modelBuilder.Entity("GeraDados.DataModel.models.TipoContato", b =>
                 {
                     b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<DateTime>("DataAtualizacao")
                         .HasColumnType("datetime2");
@@ -178,6 +198,37 @@ namespace Geradados.DataAccess.Migrations
                     b.ToTable("TipoContatos");
                 });
 
+            modelBuilder.Entity("GeraDados.DataModel.models.TipoDeAtivo", b =>
+                {
+                    b.Property<int>("ID")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DataAtualizacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataCadastro")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("TipoDeAtivos");
+                });
+
+            modelBuilder.Entity("GeraDados.DataModel.models.Ativo", b =>
+                {
+                    b.HasOne("GeraDados.DataModel.models.TipoDeAtivo", "TipoDeAtivo")
+                        .WithMany()
+                        .HasForeignKey("TipoDeAtivoID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TipoDeAtivo");
+                });
+
             modelBuilder.Entity("GeraDados.DataModel.models.Contato", b =>
                 {
                     b.HasOne("GeraDados.DataModel.models.Pessoa", "Pessoa")
@@ -188,9 +239,7 @@ namespace Geradados.DataAccess.Migrations
 
                     b.HasOne("GeraDados.DataModel.models.TipoContato", "TipoContato")
                         .WithMany()
-                        .HasForeignKey("TipoContatoID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("TipoContatoID");
 
                     b.Navigation("Pessoa");
 

@@ -26,6 +26,7 @@ public class ContextoDataBase : DbContext
     public DbSet<TipoContato> TipoContatos { get; set; }
     public DbSet<TipoDeAtivo> TipoDeAtivos { get; set; }
     public DbSet<Ativo> Ativos { get; set; }
+    public DbSet<Carteira> Carteiras { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

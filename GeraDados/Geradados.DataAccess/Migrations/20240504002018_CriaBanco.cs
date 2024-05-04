@@ -17,10 +17,10 @@ namespace Geradados.DataAccess.Migrations
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Nome = table.Column<string>(type: "Varchar(max)", nullable: false),
                     CPF = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     RG = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DataNascimento = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DataNascimento = table.Column<DateTime>(type: "Date", nullable: false),
                     Sexo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DataCadastro = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DataAtualizacao = table.Column<DateTime>(type: "datetime2", nullable: false)
@@ -34,8 +34,7 @@ namespace Geradados.DataAccess.Migrations
                 name: "TipoContatos",
                 columns: table => new
                 {
-                    ID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ID = table.Column<int>(type: "int", nullable: false),
                     Descricao = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DataCadastro = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DataAtualizacao = table.Column<DateTime>(type: "datetime2", nullable: false)
@@ -46,13 +45,26 @@ namespace Geradados.DataAccess.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "TipoDeAtivos",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "int", nullable: false),
+                    Descricao = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DataCadastro = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DataAtualizacao = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TipoDeAtivos", x => x.ID);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Enderecos",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     PessoaID = table.Column<int>(type: "int", nullable: false),
-                    IdPessoa = table.Column<int>(type: "int", nullable: false),
                     CEP = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Logradouro = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Numero = table.Column<int>(type: "int", nullable: false),
@@ -80,11 +92,8 @@ namespace Geradados.DataAccess.Migrations
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     PessoaID = table.Column<int>(type: "int", nullable: false),
-                    IdPessoa = table.Column<int>(type: "int", nullable: false),
-                    TipoContatoID = table.Column<int>(type: "int", nullable: false),
-                    IdTipoContato = table.Column<int>(type: "int", nullable: false),
+                    TipoContatoID = table.Column<int>(type: "int", nullable: true),
                     Valor = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    MyProperty = table.Column<int>(type: "int", nullable: false),
                     DataCadastro = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DataAtualizacao = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
@@ -101,9 +110,37 @@ namespace Geradados.DataAccess.Migrations
                         name: "FK_Contatos_TipoContatos_TipoContatoID",
                         column: x => x.TipoContatoID,
                         principalTable: "TipoContatos",
+                        principalColumn: "ID");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Ativos",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    TipoDeAtivoID = table.Column<int>(type: "int", nullable: false),
+                    Ticker = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UltimaNegociacao = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    DataCadastro = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DataAtualizacao = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Ativos", x => x.ID);
+                    table.ForeignKey(
+                        name: "FK_Ativos_TipoDeAtivos_TipoDeAtivoID",
+                        column: x => x.TipoDeAtivoID,
+                        principalTable: "TipoDeAtivos",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Ativos_TipoDeAtivoID",
+                table: "Ativos",
+                column: "TipoDeAtivoID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Contatos_PessoaID",
@@ -125,10 +162,16 @@ namespace Geradados.DataAccess.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "Ativos");
+
+            migrationBuilder.DropTable(
                 name: "Contatos");
 
             migrationBuilder.DropTable(
                 name: "Enderecos");
+
+            migrationBuilder.DropTable(
+                name: "TipoDeAtivos");
 
             migrationBuilder.DropTable(
                 name: "TipoContatos");

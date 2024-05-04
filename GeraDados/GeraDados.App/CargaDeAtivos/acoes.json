@@ -1,0 +1,2830 @@
+[
+  {
+    "Ticker": "MGLU3",
+    "Nome": "Magazine Luiza",
+    "Negócios": "129.022.800",
+    "Ultimo": 1,
+    "decimal": 46
+  },
+  {
+    "Ticker": "BBDC4",
+    "Nome": "Banco Bradesco",
+    "Negócios": "79.741.800",
+    "Ultimo": 13,
+    "decimal": 82
+  },
+  {
+    "Ticker": "HAPV3",
+    "Nome": "Hapvida",
+    "Negócios": "64.792.500",
+    "Ultimo": 3,
+    "decimal": 72
+  },
+  {
+    "Ticker": "HBSA3",
+    "Nome": "Hidrovias do Brasil",
+    "Negócios": "59.665.400",
+    "Ultimo": 4,
+    "decimal": 54
+  },
+  {
+    "Ticker": "B3SA3",
+    "Nome": "B3",
+    "Negócios": "45.152.100",
+    "Ultimo": 11,
+    "decimal": "06"
+  },
+  {
+    "Ticker": "CIEL3",
+    "Nome": "Cielo",
+    "Negócios": "41.050.700",
+    "Ultimo": 5,
+    "decimal": 59
+  },
+  {
+    "Ticker": "PETR4",
+    "Nome": "Petrobras",
+    "Negócios": "33.114.400",
+    "Ultimo": 40,
+    "decimal": 42
+  },
+  {
+    "Ticker": "PCAR3",
+    "Nome": "Grupo Pão de Açúcar",
+    "Negócios": "31.951.600",
+    "Ultimo": 3,
+    "decimal": 18
+  },
+  {
+    "Ticker": "CMIG4",
+    "Nome": "CEMIG",
+    "Negócios": "28.869.500",
+    "Ultimo": 10,
+    "decimal": 39
+  },
+  {
+    "Ticker": "ITUB4",
+    "Nome": "Itaú Unibanco",
+    "Negócios": "27.906.800",
+    "Ultimo": 31,
+    "decimal": 80
+  },
+  {
+    "Ticker": "ABEV3",
+    "Nome": "Ambev",
+    "Negócios": "27.772.100",
+    "Ultimo": 12,
+    "decimal": 33
+  },
+  {
+    "Ticker": "CVCB3",
+    "Nome": "CVC",
+    "Negócios": "26.538.400",
+    "Ultimo": 2,
+    "decimal": 26
+  },
+  {
+    "Ticker": "CPLE6",
+    "Nome": "Copel",
+    "Negócios": "26.497.300",
+    "Ultimo": 9,
+    "decimal": 38
+  },
+  {
+    "Ticker": "CSAN3",
+    "Nome": "Cosan",
+    "Negócios": "25.423.200",
+    "Ultimo": 14,
+    "decimal": 45
+  },
+  {
+    "Ticker": "COGN3",
+    "Nome": "Cogna",
+    "Negócios": "22.839.900",
+    "Ultimo": 2,
+    "decimal": 23
+  },
+  {
+    "Ticker": "ITSA4",
+    "Nome": "Itaúsa",
+    "Negócios": "22.388.400",
+    "Ultimo": 9,
+    "decimal": 71
+  },
+  {
+    "Ticker": "AURE3",
+    "Nome": "Auren Energia",
+    "Negócios": "20.543.400",
+    "Ultimo": 11,
+    "decimal": 48
+  },
+  {
+    "Ticker": "RENT3",
+    "Nome": "Localiza",
+    "Negócios": "20.055.500",
+    "Ultimo": 48,
+    "decimal": 51
+  },
+  {
+    "Ticker": "BHIA3",
+    "Nome": "Casas Bahia",
+    "Negócios": "18.137.100",
+    "Ultimo": 7,
+    "decimal": 89
+  },
+  {
+    "Ticker": "POMO4",
+    "Nome": "Marcopolo",
+    "Negócios": "18.007.500",
+    "Ultimo": 6,
+    "decimal": 64
+  },
+  {
+    "Ticker": "VALE3",
+    "Nome": "Vale",
+    "Negócios": "17.727.300",
+    "Ultimo": 63,
+    "decimal": 92
+  },
+  {
+    "Ticker": "SOMA3",
+    "Nome": "Grupo Soma",
+    "Negócios": "16.121.400",
+    "Ultimo": 6,
+    "decimal": 11
+  },
+  {
+    "Ticker": "RAIZ4",
+    "Nome": "Raízen",
+    "Negócios": "14.924.200",
+    "Ultimo": 3,
+    "decimal": 14
+  },
+  {
+    "Ticker": "BBAS3",
+    "Nome": "Banco do Brasil",
+    "Negócios": "14.574.700",
+    "Ultimo": 27,
+    "decimal": 71
+  },
+  {
+    "Ticker": "MRVE3",
+    "Nome": "MRV",
+    "Negócios": "14.117.700",
+    "Ultimo": 7,
+    "decimal": "05"
+  },
+  {
+    "Ticker": "BBDC3",
+    "Nome": "Banco Bradesco",
+    "Negócios": "13.906.200",
+    "Ultimo": 12,
+    "decimal": 38
+  },
+  {
+    "Ticker": "LREN3",
+    "Nome": "Lojas Renner",
+    "Negócios": "13.569.900",
+    "Ultimo": 15,
+    "decimal": 63
+  },
+  {
+    "Ticker": "WEGE3",
+    "Nome": "WEG",
+    "Negócios": "12.240.200",
+    "Ultimo": 38,
+    "decimal": 85
+  },
+  {
+    "Ticker": "ASAI3",
+    "Nome": "Assaí",
+    "Negócios": "12.233.100",
+    "Ultimo": 13,
+    "decimal": 12
+  },
+  {
+    "Ticker": "PETR3",
+    "Nome": "Petrobras",
+    "Negócios": "12.131.000",
+    "Ultimo": 44,
+    "decimal": 43
+  },
+  {
+    "Ticker": "AZUL4",
+    "Nome": "Azul",
+    "Negócios": "12.067.300",
+    "Ultimo": 10,
+    "decimal": 16
+  },
+  {
+    "Ticker": "RAIL3",
+    "Nome": "Rumo",
+    "Negócios": "11.557.500",
+    "Ultimo": 20,
+    "decimal": 53
+  },
+  {
+    "Ticker": "ANIM3",
+    "Nome": "Ânima Educação",
+    "Negócios": "10.937.500",
+    "Ultimo": 3,
+    "decimal": 65
+  },
+  {
+    "Ticker": "USIM5",
+    "Nome": "Usiminas",
+    "Negócios": "10.930.400",
+    "Ultimo": 7,
+    "decimal": 98
+  },
+  {
+    "Ticker": "BRFS3",
+    "Nome": "BRF",
+    "Negócios": "10.899.000",
+    "Ultimo": 16,
+    "decimal": 71
+  },
+  {
+    "Ticker": "AMER3",
+    "Nome": "Americanas",
+    "Negócios": "10.687.900",
+    "Ultimo": 0,
+    "decimal": 56
+  },
+  {
+    "Ticker": "STBP3",
+    "Nome": "Santos Brasil",
+    "Negócios": "10.238.600",
+    "Ultimo": 14,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "CMIN3",
+    "Nome": "CSN Mineração",
+    "Negócios": "9.637.800",
+    "Ultimo": 5,
+    "decimal": 12
+  },
+  {
+    "Ticker": "MULT3",
+    "Nome": "Multiplan",
+    "Negócios": "9.516.700",
+    "Ultimo": 23,
+    "decimal": 43
+  },
+  {
+    "Ticker": "VBBR3",
+    "Nome": "Vibra Energia",
+    "Negócios": "9.128.400",
+    "Ultimo": 23,
+    "decimal": 31
+  },
+  {
+    "Ticker": "JBSS3",
+    "Nome": "JBS",
+    "Negócios": "9.067.800",
+    "Ultimo": 23,
+    "decimal": 87
+  },
+  {
+    "Ticker": "GGBR4",
+    "Nome": "Gerdau",
+    "Negócios": "9.015.200",
+    "Ultimo": 18,
+    "decimal": 63
+  },
+  {
+    "Ticker": "PETZ3",
+    "Nome": "Petz",
+    "Negócios": "8.962.000",
+    "Ultimo": 4,
+    "decimal": 86
+  },
+  {
+    "Ticker": "EQTL3",
+    "Nome": "Equatorial Energia",
+    "Negócios": "8.948.900",
+    "Ultimo": 30,
+    "decimal": 20
+  },
+  {
+    "Ticker": "PRIO3",
+    "Nome": "PetroRio",
+    "Negócios": "8.804.400",
+    "Ultimo": 47,
+    "decimal": 42
+  },
+  {
+    "Ticker": "TIMS3",
+    "Nome": "TIM",
+    "Negócios": "8.787.400",
+    "Ultimo": 18,
+    "decimal": 14
+  },
+  {
+    "Ticker": "VAMO3",
+    "Nome": "Grupo Vamos",
+    "Negócios": "8.663.700",
+    "Ultimo": 7,
+    "decimal": 21
+  },
+  {
+    "Ticker": "GOAU4",
+    "Nome": "Metalúrgica Gerdau",
+    "Negócios": "8.620.200",
+    "Ultimo": 10,
+    "decimal": 84
+  },
+  {
+    "Ticker": "ELET3",
+    "Nome": "Eletrobras",
+    "Negócios": "8.549.300",
+    "Ultimo": 38,
+    "decimal": 38
+  },
+  {
+    "Ticker": "CYRE3",
+    "Nome": "Cyrela",
+    "Negócios": "8.274.200",
+    "Ultimo": 20,
+    "decimal": 59
+  },
+  {
+    "Ticker": "EMBR3",
+    "Nome": "Embraer",
+    "Negócios": "8.042.800",
+    "Ultimo": 32,
+    "decimal": 72
+  },
+  {
+    "Ticker": "BEEF3",
+    "Nome": "Minerva",
+    "Negócios": "7.666.300",
+    "Ultimo": 6,
+    "decimal": "07"
+  },
+  {
+    "Ticker": "CPFE3",
+    "Nome": "CPFL Energia",
+    "Negócios": "7.325.100",
+    "Ultimo": 32,
+    "decimal": 31
+  },
+  {
+    "Ticker": "LWSA3",
+    "Nome": "Locaweb",
+    "Negócios": "7.105.100",
+    "Ultimo": 4,
+    "decimal": 93
+  },
+  {
+    "Ticker": "SBSP3",
+    "Nome": "Sabesp",
+    "Negócios": "6.847.100",
+    "Ultimo": 80,
+    "decimal": 29
+  },
+  {
+    "Ticker": "IFCM3",
+    "Nome": "Infracommerce",
+    "Negócios": "6.695.600",
+    "Ultimo": 0,
+    "decimal": 73
+  },
+  {
+    "Ticker": "OIBR3",
+    "Nome": "Oi",
+    "Negócios": "6.540.000",
+    "Ultimo": 0,
+    "decimal": 73
+  },
+  {
+    "Ticker": "SIMH3",
+    "Nome": "Simpar",
+    "Negócios": "6.318.800",
+    "Ultimo": 5,
+    "decimal": 77
+  },
+  {
+    "Ticker": "GMAT3",
+    "Nome": "Grupo Mateus",
+    "Negócios": "6.276.900",
+    "Ultimo": 7,
+    "decimal": 35
+  },
+  {
+    "Ticker": "RADL3",
+    "Nome": "RaiaDrogasil",
+    "Negócios": "5.643.700",
+    "Ultimo": 25,
+    "decimal": 64
+  },
+  {
+    "Ticker": "ALOS3",
+    "Nome": "ALOS3",
+    "Negócios": "5.471.800",
+    "Ultimo": 20,
+    "decimal": 27
+  },
+  {
+    "Ticker": "RRRP3",
+    "Nome": "3R Petroleum",
+    "Negócios": "5.397.600",
+    "Ultimo": 32,
+    "decimal": 97
+  },
+  {
+    "Ticker": "SEQL3",
+    "Nome": "Sequoia Logística",
+    "Negócios": "5.395.200",
+    "Ultimo": 0,
+    "decimal": 40
+  },
+  {
+    "Ticker": "HYPE3",
+    "Nome": "Hypera",
+    "Negócios": "5.307.700",
+    "Ultimo": 29,
+    "decimal": 79
+  },
+  {
+    "Ticker": "RDOR3",
+    "Nome": "Rede D'Or",
+    "Negócios": "5.257.500",
+    "Ultimo": 26,
+    "decimal": 47
+  },
+  {
+    "Ticker": "GOLL4",
+    "Nome": "GOL",
+    "Negócios": "5.185.100",
+    "Ultimo": 1,
+    "decimal": 34
+  },
+  {
+    "Ticker": "MLAS3",
+    "Nome": "Multilaser",
+    "Negócios": "5.152.400",
+    "Ultimo": 2,
+    "decimal": "02"
+  },
+  {
+    "Ticker": "MRFG3",
+    "Nome": "Marfrig",
+    "Negócios": "5.108.700",
+    "Ultimo": 9,
+    "decimal": 51
+  },
+  {
+    "Ticker": "VIVA3",
+    "Nome": "Vivara",
+    "Negócios": "5.079.200",
+    "Ultimo": 22,
+    "decimal": 59
+  },
+  {
+    "Ticker": "CSNA3",
+    "Nome": "Siderúrgica Nacional",
+    "Negócios": "5.044.000",
+    "Ultimo": 14,
+    "decimal": "02"
+  },
+  {
+    "Ticker": "MTRE3",
+    "Nome": "Mitre Realty",
+    "Negócios": "5.019.600",
+    "Ultimo": 4,
+    "decimal": "09"
+  },
+  {
+    "Ticker": "LJQQ3",
+    "Nome": "Lojas Quero-Quero",
+    "Negócios": "4.968.300",
+    "Ultimo": 4,
+    "decimal": 27
+  },
+  {
+    "Ticker": "BRAP4",
+    "Nome": "Bradespar",
+    "Negócios": "4.958.900",
+    "Ultimo": 20,
+    "decimal": 21
+  },
+  {
+    "Ticker": "TRPL4",
+    "Nome": "Transmissão Paulista",
+    "Negócios": "4.884.400",
+    "Ultimo": 25,
+    "decimal": 70
+  },
+  {
+    "Ticker": "ENJU3",
+    "Nome": "Enjoei",
+    "Negócios": "4.761.300",
+    "Ultimo": 2,
+    "decimal": 57
+  },
+  {
+    "Ticker": "NTCO3",
+    "Nome": "Natura",
+    "Negócios": "4.630.700",
+    "Ultimo": 16,
+    "decimal": 72
+  },
+  {
+    "Ticker": "DXCO3",
+    "Nome": "Dexco",
+    "Negócios": "4.574.100",
+    "Ultimo": 7,
+    "decimal": 51
+  },
+  {
+    "Ticker": "CEAB3",
+    "Nome": "C&A",
+    "Negócios": "4.242.400",
+    "Ultimo": 11,
+    "decimal": 14
+  },
+  {
+    "Ticker": "CPLE3",
+    "Nome": "Copel",
+    "Negócios": "4.223.000",
+    "Ultimo": 8,
+    "decimal": 46
+  },
+  {
+    "Ticker": "SUZB3",
+    "Nome": "Suzano",
+    "Negócios": "4.070.700",
+    "Ultimo": 59,
+    "decimal": "01"
+  },
+  {
+    "Ticker": "CRFB3",
+    "Nome": "Carrefour Brasil",
+    "Negócios": "3.952.000",
+    "Ultimo": 11,
+    "decimal": 15
+  },
+  {
+    "Ticker": "CCRO3",
+    "Nome": "Grupo CCR",
+    "Negócios": "3.924.100",
+    "Ultimo": 12,
+    "decimal": 53
+  },
+  {
+    "Ticker": "ENEV3",
+    "Nome": "Eneva",
+    "Negócios": "3.918.800",
+    "Ultimo": 12,
+    "decimal": 50
+  },
+  {
+    "Ticker": "ALPA4",
+    "Nome": "Alpargatas",
+    "Negócios": "3.834.300",
+    "Ultimo": 9,
+    "decimal": 76
+  },
+  {
+    "Ticker": "CXSE3",
+    "Nome": "Caixa Seguridade",
+    "Negócios": "3.755.700",
+    "Ultimo": 15,
+    "decimal": 90
+  },
+  {
+    "Ticker": "QUAL3",
+    "Nome": "Qualicorp",
+    "Negócios": "3.709.800",
+    "Ultimo": 1,
+    "decimal": 62
+  },
+  {
+    "Ticker": "BBSE3",
+    "Nome": "BB Seguridade",
+    "Negócios": "3.643.900",
+    "Ultimo": 32,
+    "decimal": 42
+  },
+  {
+    "Ticker": "RAPT4",
+    "Nome": "Randon",
+    "Negócios": "3.509.000",
+    "Ultimo": 10,
+    "decimal": 75
+  },
+  {
+    "Ticker": "CSMG3",
+    "Nome": "COPASA",
+    "Negócios": "3.501.800",
+    "Ultimo": 19,
+    "decimal": 59
+  },
+  {
+    "Ticker": "BRKM5",
+    "Nome": "Braskem",
+    "Negócios": "3.422.200",
+    "Ultimo": 22,
+    "decimal": "06"
+  },
+  {
+    "Ticker": "VIVT3",
+    "Nome": "Vivo",
+    "Negócios": "3.354.000",
+    "Ultimo": 49,
+    "decimal": 66
+  },
+  {
+    "Ticker": "ECOR3",
+    "Nome": "EcoRodovias",
+    "Negócios": "3.304.000",
+    "Ultimo": 7,
+    "decimal": 27
+  },
+  {
+    "Ticker": "UGPA3",
+    "Nome": "Ultrapar",
+    "Negócios": "3.293.300",
+    "Ultimo": 26,
+    "decimal": 34
+  },
+  {
+    "Ticker": "TOTS3",
+    "Nome": "Totvs",
+    "Negócios": "3.266.600",
+    "Ultimo": 27,
+    "decimal": 75
+  },
+  {
+    "Ticker": "CBAV3",
+    "Nome": "CBA",
+    "Negócios": "3.156.400",
+    "Ultimo": 5,
+    "decimal": 14
+  },
+  {
+    "Ticker": "YDUQ3",
+    "Nome": "YDUQS",
+    "Negócios": "3.052.000",
+    "Ultimo": 15,
+    "decimal": 14
+  },
+  {
+    "Ticker": "RECV3",
+    "Nome": "PetroRecôncavo",
+    "Negócios": "3.021.100",
+    "Ultimo": 21,
+    "decimal": 80
+  },
+  {
+    "Ticker": "LAVV3",
+    "Nome": "Lavvi Incorporadora",
+    "Negócios": "2.881.000",
+    "Ultimo": 9,
+    "decimal": "05"
+  },
+  {
+    "Ticker": "FLRY3",
+    "Nome": "Fleury",
+    "Negócios": "2.792.900",
+    "Ultimo": 14,
+    "decimal": 56
+  },
+  {
+    "Ticker": "JHSF3",
+    "Nome": "JHSF",
+    "Negócios": "2.778.500",
+    "Ultimo": 4,
+    "decimal": 32
+  },
+  {
+    "Ticker": "AZEV4",
+    "Nome": "Azevedo & Travassos",
+    "Negócios": "2.703.900",
+    "Ultimo": 1,
+    "decimal": 21
+  },
+  {
+    "Ticker": "VVEO3",
+    "Nome": "Viveo",
+    "Negócios": "2.696.600",
+    "Ultimo": 5,
+    "decimal": "03"
+  },
+  {
+    "Ticker": "NGRD3",
+    "Nome": "Neogrid",
+    "Negócios": "2.615.400",
+    "Ultimo": 1,
+    "decimal": "06"
+  },
+  {
+    "Ticker": "SBFG3",
+    "Nome": "Grupo SBF",
+    "Negócios": "2.439.600",
+    "Ultimo": 11,
+    "decimal": 48
+  },
+  {
+    "Ticker": "CSED3",
+    "Nome": "Cruzeiro do Sul Educacional",
+    "Negócios": "2.436.300",
+    "Ultimo": 4,
+    "decimal": 33
+  },
+  {
+    "Ticker": "RANI3",
+    "Nome": "Irani",
+    "Negócios": "2.350.800",
+    "Ultimo": 8,
+    "decimal": 92
+  },
+  {
+    "Ticker": "KEPL3",
+    "Nome": "Kepler Weber",
+    "Negócios": "2.350.600",
+    "Ultimo": 10,
+    "decimal": 35
+  },
+  {
+    "Ticker": "ELET6",
+    "Nome": "Eletrobras",
+    "Negócios": "2.335.000",
+    "Ultimo": 42,
+    "decimal": 40
+  },
+  {
+    "Ticker": "SLCE3",
+    "Nome": "SLC Agrícola",
+    "Negócios": "2.321.100",
+    "Ultimo": 18,
+    "decimal": 12
+  },
+  {
+    "Ticker": "GUAR3",
+    "Nome": "Guararapes",
+    "Negócios": "2.285.000",
+    "Ultimo": 7,
+    "decimal": 74
+  },
+  {
+    "Ticker": "MOVI3",
+    "Nome": "Movida",
+    "Negócios": "2.212.900",
+    "Ultimo": 7,
+    "decimal": 22
+  },
+  {
+    "Ticker": "ONCO3",
+    "Nome": "Oncoclínicas",
+    "Negócios": "2.167.500",
+    "Ultimo": 7,
+    "decimal": 15
+  },
+  {
+    "Ticker": "CASH3",
+    "Nome": "Méliuz",
+    "Negócios": "2.101.600",
+    "Ultimo": 4,
+    "decimal": 60
+  },
+  {
+    "Ticker": "AERI3",
+    "Nome": "Aeris Energy",
+    "Negócios": "2.092.600",
+    "Ultimo": 0,
+    "decimal": 56
+  },
+  {
+    "Ticker": "IRBR3",
+    "Nome": "IRB Brasil RE",
+    "Negócios": "2.062.600",
+    "Ultimo": 43,
+    "decimal": 75
+  },
+  {
+    "Ticker": "PSSA3",
+    "Nome": "Porto Seguro",
+    "Negócios": "2.061.700",
+    "Ultimo": 29,
+    "decimal": 87
+  },
+  {
+    "Ticker": "TEND3",
+    "Nome": "Construtora Tenda",
+    "Negócios": "1.910.500",
+    "Ultimo": 12,
+    "decimal": 59
+  },
+  {
+    "Ticker": "ESPA3",
+    "Nome": "Espaçolaser",
+    "Negócios": "1.891.200",
+    "Ultimo": 0,
+    "decimal": 93
+  },
+  {
+    "Ticker": "CLSA3",
+    "Nome": "ClearSale",
+    "Negócios": "1.890.400",
+    "Ultimo": 7,
+    "decimal": 81
+  },
+  {
+    "Ticker": "EZTC3",
+    "Nome": "EZTEC",
+    "Negócios": "1.833.000",
+    "Ultimo": 13,
+    "decimal": 81
+  },
+  {
+    "Ticker": "INTB3",
+    "Nome": "Intelbras",
+    "Negócios": "1.820.200",
+    "Ultimo": 22,
+    "decimal": 81
+  },
+  {
+    "Ticker": "ARZZ3",
+    "Nome": "Arezzo",
+    "Negócios": "1.804.700",
+    "Ultimo": 52,
+    "decimal": 55
+  },
+  {
+    "Ticker": "EGIE3",
+    "Nome": "Engie",
+    "Negócios": "1.659.900",
+    "Ultimo": 41,
+    "decimal": 49
+  },
+  {
+    "Ticker": "DIRR3",
+    "Nome": "Direcional",
+    "Negócios": "1.636.600",
+    "Ultimo": 23,
+    "decimal": 85
+  },
+  {
+    "Ticker": "CURY3",
+    "Nome": "Cury",
+    "Negócios": "1.632.900",
+    "Ultimo": 19,
+    "decimal": 82
+  },
+  {
+    "Ticker": "POSI3",
+    "Nome": "Positivo",
+    "Negócios": "1.619.700",
+    "Ultimo": 9,
+    "decimal": 28
+  },
+  {
+    "Ticker": "PORT3",
+    "Nome": "Wilson Sons",
+    "Negócios": "1.606.500",
+    "Ultimo": 17,
+    "decimal": 10
+  },
+  {
+    "Ticker": "AMBP3",
+    "Nome": "Ambipar",
+    "Negócios": "1.604.000",
+    "Ultimo": 10,
+    "decimal": 41
+  },
+  {
+    "Ticker": "ENAT3",
+    "Nome": "Enauta",
+    "Negócios": "1.599.400",
+    "Ultimo": 27,
+    "decimal": 30
+  },
+  {
+    "Ticker": "GGPS3",
+    "Nome": "GPS",
+    "Negócios": "1.578.800",
+    "Ultimo": 18,
+    "decimal": 65
+  },
+  {
+    "Ticker": "SMTO3",
+    "Nome": "São Martinho",
+    "Negócios": "1.539.900",
+    "Ultimo": 28,
+    "decimal": 39
+  },
+  {
+    "Ticker": "AMAR3",
+    "Nome": "Lojas Marisa",
+    "Negócios": "1.517.000",
+    "Ultimo": 1,
+    "decimal": 67
+  },
+  {
+    "Ticker": "MILS3",
+    "Nome": "Mills",
+    "Negócios": "1.501.600",
+    "Ultimo": 13,
+    "decimal": 81
+  },
+  {
+    "Ticker": "SAPR4",
+    "Nome": "Sanepar",
+    "Negócios": "1.455.700",
+    "Ultimo": 5,
+    "decimal": 29
+  },
+  {
+    "Ticker": "KRSA3",
+    "Nome": "Kora Saúde",
+    "Negócios": "1.454.100",
+    "Ultimo": 0,
+    "decimal": 85
+  },
+  {
+    "Ticker": "AESB3",
+    "Nome": "AES Brasil",
+    "Negócios": "1.376.900",
+    "Ultimo": 9,
+    "decimal": 59
+  },
+  {
+    "Ticker": "PDGR3",
+    "Nome": "PDG Realty",
+    "Negócios": "1.325.500",
+    "Ultimo": 0,
+    "decimal": 21
+  },
+  {
+    "Ticker": "SMFT3",
+    "Nome": "Smart Fit",
+    "Negócios": "1.318.000",
+    "Ultimo": 24,
+    "decimal": 48
+  },
+  {
+    "Ticker": "KLBN4",
+    "Nome": "Klabin",
+    "Negócios": "1.300.500",
+    "Ultimo": 4,
+    "decimal": 25
+  },
+  {
+    "Ticker": "ODPV3",
+    "Nome": "Odontoprev",
+    "Negócios": "1.216.500",
+    "Ultimo": 12,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "GRND3",
+    "Nome": "Grendene",
+    "Negócios": "1.185.500",
+    "Ultimo": 6,
+    "decimal": "07"
+  },
+  {
+    "Ticker": "JSLG3",
+    "Nome": "JSL",
+    "Negócios": "1.164.500",
+    "Ultimo": 11,
+    "decimal": 83
+  },
+  {
+    "Ticker": "NEOE3",
+    "Nome": "Neoenergia",
+    "Negócios": "1.158.100",
+    "Ultimo": 19,
+    "decimal": 30
+  },
+  {
+    "Ticker": "RCSL3",
+    "Nome": "Recrusul",
+    "Negócios": "1.118.000",
+    "Ultimo": 1,
+    "decimal": 61
+  },
+  {
+    "Ticker": "SRNA3",
+    "Nome": "SRNA3",
+    "Negócios": "1.072.200",
+    "Ultimo": 8,
+    "decimal": 39
+  },
+  {
+    "Ticker": "GFSA3",
+    "Nome": "Gafisa",
+    "Negócios": "1.033.300",
+    "Ultimo": 5,
+    "decimal": 26
+  },
+  {
+    "Ticker": "ABCB4",
+    "Nome": "Banco ABC Brasil",
+    "Negócios": "1.028.300",
+    "Ultimo": 22,
+    "decimal": 49
+  },
+  {
+    "Ticker": "TGMA3",
+    "Nome": "Tegma",
+    "Negócios": "1.024.200",
+    "Ultimo": 24,
+    "decimal": 59
+  },
+  {
+    "Ticker": "MYPK3",
+    "Nome": "Iochpe-Maxion",
+    "Negócios": 994.5,
+    "Ultimo": 12,
+    "decimal": 87
+  },
+  {
+    "Ticker": "OPCT3",
+    "Nome": "OceanPact",
+    "Negócios": 974.3,
+    "Ultimo": 6,
+    "decimal": 58
+  },
+  {
+    "Ticker": "MDIA3",
+    "Nome": "M. Dias Branco",
+    "Negócios": 949,
+    "Ultimo": 33,
+    "decimal": 87
+  },
+  {
+    "Ticker": "ARML3",
+    "Nome": "Armac",
+    "Negócios": 926.4,
+    "Ultimo": 10,
+    "decimal": 45
+  },
+  {
+    "Ticker": "EVEN3",
+    "Nome": "Even",
+    "Negócios": 922.2,
+    "Ultimo": 7,
+    "decimal": "05"
+  },
+  {
+    "Ticker": "BPAN4",
+    "Nome": "Banco Pan",
+    "Negócios": 903.5,
+    "Ultimo": 9,
+    "decimal": 42
+  },
+  {
+    "Ticker": "BRSR6",
+    "Nome": "Banrisul",
+    "Negócios": 880.1,
+    "Ultimo": 12,
+    "decimal": 61
+  },
+  {
+    "Ticker": "BRIT3",
+    "Nome": "Brisanet",
+    "Negócios": 865,
+    "Ultimo": 4,
+    "decimal": 44
+  },
+  {
+    "Ticker": "TTEN3",
+    "Nome": "3tentos",
+    "Negócios": 837.4,
+    "Ultimo": 10,
+    "decimal": 17
+  },
+  {
+    "Ticker": "USIM3",
+    "Nome": "Usiminas",
+    "Negócios": 810.6,
+    "Ultimo": 7,
+    "decimal": 51
+  },
+  {
+    "Ticker": "ZAMP3",
+    "Nome": "Zamp",
+    "Negócios": 770.5,
+    "Ultimo": 3,
+    "decimal": 94
+  },
+  {
+    "Ticker": "FESA4",
+    "Nome": "Ferbasa",
+    "Negócios": 708.1,
+    "Ultimo": 8,
+    "decimal": "06"
+  },
+  {
+    "Ticker": "TRAD3",
+    "Nome": "Traders Club",
+    "Negócios": 643.5,
+    "Ultimo": 0,
+    "decimal": 82
+  },
+  {
+    "Ticker": "LEVE3",
+    "Nome": "Mahle Metal Leve",
+    "Negócios": 640.6,
+    "Ultimo": 30,
+    "decimal": 95
+  },
+  {
+    "Ticker": "HBOR3",
+    "Nome": "Helbor",
+    "Negócios": 636.5,
+    "Ultimo": 2,
+    "decimal": 71
+  },
+  {
+    "Ticker": "DMVF3",
+    "Nome": "D1000 Varejo Farma",
+    "Negócios": 604.4,
+    "Ultimo": 7,
+    "decimal": 81
+  },
+  {
+    "Ticker": "FIQE3",
+    "Nome": "Unifique",
+    "Negócios": 599.9,
+    "Ultimo": 3,
+    "decimal": 75
+  },
+  {
+    "Ticker": "CMIG3",
+    "Nome": "CEMIG",
+    "Negócios": 596.6,
+    "Ultimo": 12,
+    "decimal": "09"
+  },
+  {
+    "Ticker": "RCSL4",
+    "Nome": "Recrusul",
+    "Negócios": 595.4,
+    "Ultimo": 0,
+    "decimal": 50
+  },
+  {
+    "Ticker": "MEAL3",
+    "Nome": "IMC Alimentação",
+    "Negócios": 589.8,
+    "Ultimo": 1,
+    "decimal": 57
+  },
+  {
+    "Ticker": "VLID3",
+    "Nome": "Valid",
+    "Negócios": 587.1,
+    "Ultimo": 17,
+    "decimal": 40
+  },
+  {
+    "Ticker": "MDNE3",
+    "Nome": "Moura Dubeux",
+    "Negócios": 549.5,
+    "Ultimo": 12,
+    "decimal": "09"
+  },
+  {
+    "Ticker": "PTBL3",
+    "Nome": "Portobello",
+    "Negócios": 538.4,
+    "Ultimo": 5,
+    "decimal": 88
+  },
+  {
+    "Ticker": "MATD3",
+    "Nome": "Mater Dei",
+    "Negócios": 535.2,
+    "Ultimo": 5,
+    "decimal": 75
+  },
+  {
+    "Ticker": "PRNR3",
+    "Nome": "Priner",
+    "Negócios": 521.5,
+    "Ultimo": 13,
+    "decimal": "01"
+  },
+  {
+    "Ticker": "LIGT3",
+    "Nome": "Light",
+    "Negócios": 510.7,
+    "Ultimo": 4,
+    "decimal": 93
+  },
+  {
+    "Ticker": "SGPS3",
+    "Nome": "Springs",
+    "Negócios": 500.5,
+    "Ultimo": 0,
+    "decimal": 77
+  },
+  {
+    "Ticker": "BMGB4",
+    "Nome": "Banco BMG",
+    "Negócios": 495.1,
+    "Ultimo": 3,
+    "decimal": 28
+  },
+  {
+    "Ticker": "DASA3",
+    "Nome": "Dasa",
+    "Negócios": 474.8,
+    "Ultimo": 4,
+    "decimal": 70
+  },
+  {
+    "Ticker": "SHUL4",
+    "Nome": "Schulz",
+    "Negócios": 473.9,
+    "Ultimo": 6,
+    "decimal": 20
+  },
+  {
+    "Ticker": "SOJA3",
+    "Nome": "Boa Safra Sementes",
+    "Negócios": 460,
+    "Ultimo": 18,
+    "decimal": "06"
+  },
+  {
+    "Ticker": "PLPL3",
+    "Nome": "Plano&Plano",
+    "Negócios": 449.1,
+    "Ultimo": 11,
+    "decimal": 30
+  },
+  {
+    "Ticker": "PGMN3",
+    "Nome": "Pague Menos",
+    "Negócios": 446.9,
+    "Ultimo": 2,
+    "decimal": 55
+  },
+  {
+    "Ticker": "SEER3",
+    "Nome": "Ser Educacional",
+    "Negócios": 424,
+    "Ultimo": 5,
+    "decimal": 70
+  },
+  {
+    "Ticker": "POMO3",
+    "Nome": "Marcopolo",
+    "Negócios": 420.7,
+    "Ultimo": 5,
+    "decimal": 14
+  },
+  {
+    "Ticker": "KLBN3",
+    "Nome": "Klabin",
+    "Negócios": 416,
+    "Ultimo": 4,
+    "decimal": 25
+  },
+  {
+    "Ticker": "ITUB3",
+    "Nome": "Itaú Unibanco",
+    "Negócios": 410.1,
+    "Ultimo": 27,
+    "decimal": 72
+  },
+  {
+    "Ticker": "VULC3",
+    "Nome": "Vulcabras",
+    "Negócios": 408.3,
+    "Ultimo": 15,
+    "decimal": 98
+  },
+  {
+    "Ticker": "MBLY3",
+    "Nome": "Mobly",
+    "Negócios": 405,
+    "Ultimo": 2,
+    "decimal": 30
+  },
+  {
+    "Ticker": "ORVR3",
+    "Nome": "Orizon",
+    "Negócios": 402,
+    "Ultimo": 39,
+    "decimal": 10
+  },
+  {
+    "Ticker": "TUPY3",
+    "Nome": "Tupy",
+    "Negócios": 398.1,
+    "Ultimo": 26,
+    "decimal": 22
+  },
+  {
+    "Ticker": "TAEE4",
+    "Nome": "Taesa",
+    "Negócios": 397.9,
+    "Ultimo": 12,
+    "decimal": "09"
+  },
+  {
+    "Ticker": "TRIS3",
+    "Nome": "Trisul",
+    "Negócios": 396.6,
+    "Ultimo": 4,
+    "decimal": 66
+  },
+  {
+    "Ticker": "JALL3",
+    "Nome": "Jalles Machado",
+    "Negócios": 385.6,
+    "Ultimo": 7,
+    "decimal": "06"
+  },
+  {
+    "Ticker": "AGRO3",
+    "Nome": "BrasilAgro",
+    "Negócios": 385.1,
+    "Ultimo": 25,
+    "decimal": "06"
+  },
+  {
+    "Ticker": "TASA4",
+    "Nome": "Taurus",
+    "Negócios": 383.1,
+    "Ultimo": 11,
+    "decimal": 95
+  },
+  {
+    "Ticker": "LUPA3",
+    "Nome": "Lupatech",
+    "Negócios": 378.1,
+    "Ultimo": 1,
+    "decimal": 37
+  },
+  {
+    "Ticker": "WIZC3",
+    "Nome": "Wiz Soluções",
+    "Negócios": 371.8,
+    "Ultimo": 7,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "BLAU3",
+    "Nome": "Blau Farmacêutica",
+    "Negócios": 369.3,
+    "Ultimo": 10,
+    "decimal": 22
+  },
+  {
+    "Ticker": "HBRE3",
+    "Nome": "HBR Realty",
+    "Negócios": 353.3,
+    "Ultimo": 5,
+    "decimal": 18
+  },
+  {
+    "Ticker": "TAEE3",
+    "Nome": "Taesa",
+    "Negócios": 352.1,
+    "Ultimo": 12,
+    "decimal": "05"
+  },
+  {
+    "Ticker": "FRAS3",
+    "Nome": "Fras-le",
+    "Negócios": 325.3,
+    "Ultimo": 18,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "CTNM4",
+    "Nome": "Coteminas",
+    "Negócios": 316.8,
+    "Ultimo": 1,
+    "decimal": 12
+  },
+  {
+    "Ticker": "SANB3",
+    "Nome": "Banco Santander",
+    "Negócios": 301.8,
+    "Ultimo": 13,
+    "decimal": 74
+  },
+  {
+    "Ticker": "SAPR3",
+    "Nome": "Sanepar",
+    "Negócios": 301.8,
+    "Ultimo": 5,
+    "decimal": "08"
+  },
+  {
+    "Ticker": "PNVL3",
+    "Nome": "Dimed",
+    "Negócios": 285.9,
+    "Ultimo": 11,
+    "decimal": 25
+  },
+  {
+    "Ticker": "BIOM3",
+    "Nome": "Biomm",
+    "Negócios": 281.1,
+    "Ultimo": 18,
+    "decimal": 79
+  },
+  {
+    "Ticker": "BMOB3",
+    "Nome": "Bemobi",
+    "Negócios": 275.3,
+    "Ultimo": 11,
+    "decimal": 95
+  },
+  {
+    "Ticker": "SANB4",
+    "Nome": "Banco Santander",
+    "Negócios": 252.1,
+    "Ultimo": 15,
+    "decimal": 72
+  },
+  {
+    "Ticker": "SYNE3",
+    "Nome": "SYN",
+    "Negócios": 251.6,
+    "Ultimo": 9,
+    "decimal": "06"
+  },
+  {
+    "Ticker": "TECN3",
+    "Nome": "Technos",
+    "Negócios": 243.4,
+    "Ultimo": 4,
+    "decimal": 45
+  },
+  {
+    "Ticker": "ROMI3",
+    "Nome": "Indústrias ROMI",
+    "Negócios": 240,
+    "Ultimo": 10,
+    "decimal": 38
+  },
+  {
+    "Ticker": "AGXY3",
+    "Nome": "AgroGalaxy",
+    "Negócios": 235.5,
+    "Ultimo": 1,
+    "decimal": 70
+  },
+  {
+    "Ticker": "PFRM3",
+    "Nome": "Profarma",
+    "Negócios": 230.2,
+    "Ultimo": 5,
+    "decimal": 91
+  },
+  {
+    "Ticker": "CAML3",
+    "Nome": "Camil Alimentos",
+    "Negócios": 229.3,
+    "Ultimo": 8,
+    "decimal": 55
+  },
+  {
+    "Ticker": "UNIP6",
+    "Nome": "Unipar",
+    "Negócios": 203.2,
+    "Ultimo": 53,
+    "decimal": 36
+  },
+  {
+    "Ticker": "AZEV3",
+    "Nome": "Azevedo & Travassos",
+    "Negócios": 193.2,
+    "Ultimo": 1,
+    "decimal": 33
+  },
+  {
+    "Ticker": "PINE4",
+    "Nome": "PINE",
+    "Negócios": 191.2,
+    "Ultimo": 4,
+    "decimal": 44
+  },
+  {
+    "Ticker": "VITT3",
+    "Nome": "Vittia",
+    "Negócios": 189.2,
+    "Ultimo": 5,
+    "decimal": 65
+  },
+  {
+    "Ticker": "ETER3",
+    "Nome": "Eternit",
+    "Negócios": 187.7,
+    "Ultimo": 7,
+    "decimal": 18
+  },
+  {
+    "Ticker": "TCSA3",
+    "Nome": "Tecnisa",
+    "Negócios": 186.2,
+    "Ultimo": 2,
+    "decimal": 39
+  },
+  {
+    "Ticker": "CAMB3",
+    "Nome": "Cambuci",
+    "Negócios": 167.4,
+    "Ultimo": 10,
+    "decimal": "05"
+  },
+  {
+    "Ticker": "DESK3",
+    "Nome": "Desktop",
+    "Negócios": 157.7,
+    "Ultimo": 13,
+    "decimal": 18
+  },
+  {
+    "Ticker": "UCAS3",
+    "Nome": "Unicasa",
+    "Negócios": 147,
+    "Ultimo": 2,
+    "decimal": 45
+  },
+  {
+    "Ticker": "CSUD3",
+    "Nome": "CSU Cardsystem",
+    "Negócios": 132.1,
+    "Ultimo": 18,
+    "decimal": 57
+  },
+  {
+    "Ticker": "AALR3",
+    "Nome": "Alliança",
+    "Negócios": 130.7,
+    "Ultimo": 10,
+    "decimal": 26
+  },
+  {
+    "Ticker": "GGBR3",
+    "Nome": "Gerdau",
+    "Negócios": 122.2,
+    "Ultimo": 16,
+    "decimal": 51
+  },
+  {
+    "Ticker": "DEXP3",
+    "Nome": "Dexxos",
+    "Negócios": 112.4,
+    "Ultimo": 10,
+    "decimal": 68
+  },
+  {
+    "Ticker": "ALPK3",
+    "Nome": "Estapar",
+    "Negócios": 108.4,
+    "Ultimo": 3,
+    "decimal": 84
+  },
+  {
+    "Ticker": "LOGG3",
+    "Nome": "LOG CP",
+    "Negócios": 108.3,
+    "Ultimo": 22,
+    "decimal": 29
+  },
+  {
+    "Ticker": "RNEW3",
+    "Nome": "Renova Energia",
+    "Negócios": 108.2,
+    "Ultimo": 1,
+    "decimal": "07"
+  },
+  {
+    "Ticker": "TFCO4",
+    "Nome": "Track & Field",
+    "Negócios": 102.9,
+    "Ultimo": 11,
+    "decimal": 33
+  },
+  {
+    "Ticker": "RNEW4",
+    "Nome": "Renova Energia",
+    "Negócios": 102.3,
+    "Ultimo": 1,
+    "decimal": 10
+  },
+  {
+    "Ticker": "ALLD3",
+    "Nome": "Allied",
+    "Negócios": 101.9,
+    "Ultimo": 7,
+    "decimal": 30
+  },
+  {
+    "Ticker": "CTSA4",
+    "Nome": "Santanense",
+    "Negócios": 95.3,
+    "Ultimo": 1,
+    "decimal": 55
+  },
+  {
+    "Ticker": "SHOW3",
+    "Nome": "Time For Fun",
+    "Negócios": 94.9,
+    "Ultimo": 2,
+    "decimal": 50
+  },
+  {
+    "Ticker": "EUCA4",
+    "Nome": "Eucatex",
+    "Negócios": 94.7,
+    "Ultimo": 15,
+    "decimal": 56
+  },
+  {
+    "Ticker": "ITSA3",
+    "Nome": "Itaúsa",
+    "Negócios": 92.6,
+    "Ultimo": 9,
+    "decimal": 70
+  },
+  {
+    "Ticker": "GOAU3",
+    "Nome": "Metalúrgica Gerdau",
+    "Negócios": 79.9,
+    "Ultimo": 10,
+    "decimal": 99
+  },
+  {
+    "Ticker": "INEP3",
+    "Nome": "Inepar",
+    "Negócios": 78.5,
+    "Ultimo": 3,
+    "decimal": 10
+  },
+  {
+    "Ticker": "VIVR3",
+    "Nome": "Viver",
+    "Negócios": 75.8,
+    "Ultimo": 2,
+    "decimal": 96
+  },
+  {
+    "Ticker": "PMAM3",
+    "Nome": "Paranapanema",
+    "Negócios": 75,
+    "Ultimo": 2,
+    "decimal": 69
+  },
+  {
+    "Ticker": "MELK3",
+    "Nome": "Melnick",
+    "Negócios": 74.6,
+    "Ultimo": 4,
+    "decimal": 40
+  },
+  {
+    "Ticker": "CTSA3",
+    "Nome": "Santanense",
+    "Negócios": 67.3,
+    "Ultimo": 2,
+    "decimal": 96
+  },
+  {
+    "Ticker": "LPSB3",
+    "Nome": "Lopes",
+    "Negócios": 65.9,
+    "Ultimo": 2,
+    "decimal": 23
+  },
+  {
+    "Ticker": "INEP4",
+    "Nome": "Inepar",
+    "Negócios": 53.8,
+    "Ultimo": 2,
+    "decimal": 97
+  },
+  {
+    "Ticker": "BRAP3",
+    "Nome": "Bradespar",
+    "Negócios": 53.5,
+    "Ultimo": 19,
+    "decimal": 43
+  },
+  {
+    "Ticker": "DOTZ3",
+    "Nome": "Dotz",
+    "Negócios": 53,
+    "Ultimo": 8,
+    "decimal": 75
+  },
+  {
+    "Ticker": "IGTI3",
+    "Nome": "Jereissati Participações",
+    "Negócios": 52.3,
+    "Ultimo": 2,
+    "decimal": 98
+  },
+  {
+    "Ticker": "IGTI3",
+    "Nome": "Iguatemi",
+    "Negócios": 52.3,
+    "Ultimo": 2,
+    "decimal": 98
+  },
+  {
+    "Ticker": "LAND3",
+    "Nome": "Terra Santa",
+    "Negócios": 51.9,
+    "Ultimo": 15,
+    "decimal": 15
+  },
+  {
+    "Ticker": "ALUP4",
+    "Nome": "Alupar",
+    "Negócios": 51.1,
+    "Ultimo": 9,
+    "decimal": 50
+  },
+  {
+    "Ticker": "OIBR4",
+    "Nome": "Oi",
+    "Negócios": 49.6,
+    "Ultimo": 1,
+    "decimal": 89
+  },
+  {
+    "Ticker": "SCAR3",
+    "Nome": "São Carlos",
+    "Negócios": 46.4,
+    "Ultimo": 28,
+    "decimal": 96
+  },
+  {
+    "Ticker": "BEES3",
+    "Nome": "Banestes",
+    "Negócios": 43.3,
+    "Ultimo": 9,
+    "decimal": 67
+  },
+  {
+    "Ticker": "JFEN3",
+    "Nome": "João Fortes",
+    "Negócios": 37.5,
+    "Ultimo": 1,
+    "decimal": 53
+  },
+  {
+    "Ticker": "ELMD3",
+    "Nome": "Eletromidia",
+    "Negócios": 34.9,
+    "Ultimo": 17,
+    "decimal": 50
+  },
+  {
+    "Ticker": "RPAD5",
+    "Nome": "Alfa Holdings",
+    "Negócios": 32.8,
+    "Ultimo": 8,
+    "decimal": 30
+  },
+  {
+    "Ticker": "CLSC4",
+    "Nome": "Celesc",
+    "Negócios": 31.6,
+    "Ultimo": 74,
+    "decimal": 30
+  },
+  {
+    "Ticker": "WEST3",
+    "Nome": "Westwing",
+    "Negócios": 31.6,
+    "Ultimo": 1,
+    "decimal": 18
+  },
+  {
+    "Ticker": "PDTC3",
+    "Nome": "Padtec",
+    "Negócios": 31.2,
+    "Ultimo": 2,
+    "decimal": 26
+  },
+  {
+    "Ticker": "RDNI3",
+    "Nome": "RNI",
+    "Negócios": 30.9,
+    "Ultimo": 3,
+    "decimal": 55
+  },
+  {
+    "Ticker": "ALUP3",
+    "Nome": "Alupar",
+    "Negócios": 28.5,
+    "Ultimo": 9,
+    "decimal": 70
+  },
+  {
+    "Ticker": "ATMP3",
+    "Nome": "Atma",
+    "Negócios": 26.4,
+    "Ultimo": 2,
+    "decimal": 10
+  },
+  {
+    "Ticker": "BOBR4",
+    "Nome": "Bombril",
+    "Negócios": 22.9,
+    "Ultimo": 2,
+    "decimal": 22
+  },
+  {
+    "Ticker": "TPIS3",
+    "Nome": "Triunfo",
+    "Negócios": 22.3,
+    "Ultimo": 3,
+    "decimal": 85
+  },
+  {
+    "Ticker": "LOGN3",
+    "Nome": "Log-In",
+    "Negócios": 21.4,
+    "Ultimo": 41,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "RSID3",
+    "Nome": "Rossi Residencial",
+    "Negócios": 21.3,
+    "Ultimo": 5,
+    "decimal": 48
+  },
+  {
+    "Ticker": "HAGA4",
+    "Nome": "Haga",
+    "Negócios": 19.8,
+    "Ultimo": 1,
+    "decimal": 25
+  },
+  {
+    "Ticker": "ENGI4",
+    "Nome": "Energisa",
+    "Negócios": 19.5,
+    "Ultimo": 7,
+    "decimal": 76
+  },
+  {
+    "Ticker": "TASA3",
+    "Nome": "Taurus",
+    "Negócios": 16,
+    "Ultimo": 12,
+    "decimal": 51
+  },
+  {
+    "Ticker": "BMEB4",
+    "Nome": "Banco Mercantil do Brasil",
+    "Negócios": 15,
+    "Ultimo": 23,
+    "decimal": 45
+  },
+  {
+    "Ticker": "ATOM3",
+    "Nome": "ATOM",
+    "Negócios": 14.9,
+    "Ultimo": 2,
+    "decimal": 28
+  },
+  {
+    "Ticker": "OSXB3",
+    "Nome": "OSX Brasil",
+    "Negócios": 14.1,
+    "Ultimo": 4,
+    "decimal": 18
+  },
+  {
+    "Ticker": "CEBR3",
+    "Nome": "CEB",
+    "Negócios": 13.5,
+    "Ultimo": 26,
+    "decimal": 75
+  },
+  {
+    "Ticker": "BRKM3",
+    "Nome": "Braskem",
+    "Negócios": 13.2,
+    "Ultimo": 21,
+    "decimal": 10
+  },
+  {
+    "Ticker": "ENGI3",
+    "Nome": "Energisa",
+    "Negócios": 12.4,
+    "Ultimo": 15,
+    "decimal": 22
+  },
+  {
+    "Ticker": "NINJ3",
+    "Nome": "GetNinjas",
+    "Negócios": 12.2,
+    "Ultimo": 4,
+    "decimal": 90
+  },
+  {
+    "Ticker": "COCE5",
+    "Nome": "Coelce",
+    "Negócios": 12,
+    "Ultimo": 34,
+    "decimal": 57
+  },
+  {
+    "Ticker": "WHRL3",
+    "Nome": "Whirlpool",
+    "Negócios": 11.4,
+    "Ultimo": 4,
+    "decimal": 69
+  },
+  {
+    "Ticker": "CEBR6",
+    "Nome": "CEB",
+    "Negócios": 11.2,
+    "Ultimo": 23,
+    "decimal": 50
+  },
+  {
+    "Ticker": "WHRL4",
+    "Nome": "Whirlpool",
+    "Negócios": 10.8,
+    "Ultimo": 4,
+    "decimal": 65
+  },
+  {
+    "Ticker": "RAPT3",
+    "Nome": "Randon",
+    "Negócios": 9.9,
+    "Ultimo": 9,
+    "decimal": 27
+  },
+  {
+    "Ticker": "LVTC3",
+    "Nome": "WDC Networks",
+    "Negócios": 9.4,
+    "Ultimo": 3,
+    "decimal": 89
+  },
+  {
+    "Ticker": "NUTR3",
+    "Nome": "Nutriplant",
+    "Negócios": 9.2,
+    "Ultimo": 4,
+    "decimal": 98
+  },
+  {
+    "Ticker": "EPAR3",
+    "Nome": "Embpar Participações",
+    "Negócios": 8,
+    "Ultimo": 7,
+    "decimal": 47
+  },
+  {
+    "Ticker": "BEES4",
+    "Nome": "Banestes",
+    "Negócios": 7.4,
+    "Ultimo": 9,
+    "decimal": 94
+  },
+  {
+    "Ticker": "REDE3",
+    "Nome": "Rede Energia",
+    "Negócios": 6.7,
+    "Ultimo": 6,
+    "decimal": 85
+  },
+  {
+    "Ticker": "PLAS3",
+    "Nome": "Plascar",
+    "Negócios": 6.6,
+    "Ultimo": 6,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "CEBR5",
+    "Nome": "CEB",
+    "Negócios": 6.2,
+    "Ultimo": 22,
+    "decimal": 87
+  },
+  {
+    "Ticker": "EALT4",
+    "Nome": "Electro Aço Altona",
+    "Negócios": 6.2,
+    "Ultimo": 9,
+    "decimal": 76
+  },
+  {
+    "Ticker": "UNIP3",
+    "Nome": "Unipar",
+    "Negócios": 6.1,
+    "Ultimo": 52,
+    "decimal": 78
+  },
+  {
+    "Ticker": "VSTE3",
+    "Nome": "LE LIS BLANC",
+    "Negócios": 5.7,
+    "Ultimo": 14,
+    "decimal": 37
+  },
+  {
+    "Ticker": "BPAC5",
+    "Nome": "Banco BTG Pactual",
+    "Negócios": 5.2,
+    "Ultimo": 8,
+    "decimal": 51
+  },
+  {
+    "Ticker": "EQPA3",
+    "Nome": "Equatorial Energia Pará",
+    "Negócios": 4.9,
+    "Ultimo": 7,
+    "decimal": 56
+  },
+  {
+    "Ticker": "BRSR3",
+    "Nome": "Banrisul",
+    "Negócios": 4.4,
+    "Ultimo": 12,
+    "decimal": 73
+  },
+  {
+    "Ticker": "SNSY3",
+    "Nome": "Sansuy",
+    "Negócios": 4.3,
+    "Ultimo": 12,
+    "decimal": 15
+  },
+  {
+    "Ticker": "GEPA4",
+    "Nome": "Rio Paranapanema Energia",
+    "Negócios": 4.2,
+    "Ultimo": 24,
+    "decimal": 54
+  },
+  {
+    "Ticker": "BPAC3",
+    "Nome": "Banco BTG Pactual",
+    "Negócios": 4.2,
+    "Ultimo": 16,
+    "decimal": 97
+  },
+  {
+    "Ticker": "CEDO4",
+    "Nome": "Cedro Têxtil",
+    "Negócios": 3.8,
+    "Ultimo": 27,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "CGRA4",
+    "Nome": "Grazziotin",
+    "Negócios": 3.6,
+    "Ultimo": 26,
+    "decimal": 90
+  },
+  {
+    "Ticker": "SNSY5",
+    "Nome": "Sansuy",
+    "Negócios": 3.4,
+    "Ultimo": 6,
+    "decimal": 28
+  },
+  {
+    "Ticker": "AVLL3",
+    "Nome": "Alphaville",
+    "Negócios": 3.1,
+    "Ultimo": 3,
+    "decimal": 74
+  },
+  {
+    "Ticker": "OFSA3",
+    "Nome": "Ourofino Saúde Animal",
+    "Negócios": 2.9,
+    "Ultimo": 22,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "ALPA3",
+    "Nome": "Alpargatas",
+    "Negócios": 2.9,
+    "Ultimo": 9,
+    "decimal": 87
+  },
+  {
+    "Ticker": "TRPL3",
+    "Nome": "Transmissão Paulista",
+    "Negócios": 2.6,
+    "Ultimo": 33,
+    "decimal": 20
+  },
+  {
+    "Ticker": "PTNT4",
+    "Nome": "Pettenati",
+    "Negócios": 2.6,
+    "Ultimo": 7,
+    "decimal": 67
+  },
+  {
+    "Ticker": "BAZA3",
+    "Nome": "Banco da Amazônia",
+    "Negócios": 2.5,
+    "Ultimo": 101,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "CGRA3",
+    "Nome": "Grazziotin",
+    "Negócios": 2.5,
+    "Ultimo": 26,
+    "decimal": 64
+  },
+  {
+    "Ticker": "EMAE4",
+    "Nome": "EMAE",
+    "Negócios": 2.3,
+    "Ultimo": 57,
+    "decimal": 98
+  },
+  {
+    "Ticker": "CGAS5",
+    "Nome": "Comgás",
+    "Negócios": 2.2,
+    "Ultimo": 113,
+    "decimal": 50
+  },
+  {
+    "Ticker": "NEXP3",
+    "Nome": "Brasil Brokers",
+    "Negócios": 2.1,
+    "Ultimo": 4,
+    "decimal": 23
+  },
+  {
+    "Ticker": "APER3",
+    "Nome": "Alper",
+    "Negócios": 2,
+    "Ultimo": 43,
+    "decimal": "02"
+  },
+  {
+    "Ticker": "BAHI3",
+    "Nome": "Bahema",
+    "Negócios": 2,
+    "Ultimo": 7,
+    "decimal": 97
+  },
+  {
+    "Ticker": "AFLT3",
+    "Nome": "Afluente T",
+    "Negócios": 1.9,
+    "Ultimo": 7,
+    "decimal": 30
+  },
+  {
+    "Ticker": "RPMG3",
+    "Nome": "Refinaria de Manguinhos",
+    "Negócios": 1.3,
+    "Ultimo": 2,
+    "decimal": "05"
+  },
+  {
+    "Ticker": "TELB4",
+    "Nome": "Telebras",
+    "Negócios": 1.2,
+    "Ultimo": 9,
+    "decimal": 90
+  },
+  {
+    "Ticker": "MTSA4",
+    "Nome": "METISA",
+    "Negócios": 1.1,
+    "Ultimo": 48,
+    "decimal": 22
+  },
+  {
+    "Ticker": "HAGA3",
+    "Nome": "Haga",
+    "Negócios": 1.1,
+    "Ultimo": 2,
+    "decimal": 41
+  },
+  {
+    "Ticker": "CEEB3",
+    "Nome": "COELBA",
+    "Negócios": 900,
+    "Ultimo": 39,
+    "decimal": 63
+  },
+  {
+    "Ticker": "CEDO3",
+    "Nome": "Cedro Têxtil",
+    "Negócios": 900,
+    "Ultimo": 29,
+    "decimal": 64
+  },
+  {
+    "Ticker": "MNPR3",
+    "Nome": "Minupar",
+    "Negócios": 900,
+    "Ultimo": 17,
+    "decimal": 50
+  },
+  {
+    "Ticker": "FHER3",
+    "Nome": "Fertilizantes Heringer",
+    "Negócios": 900,
+    "Ultimo": 4,
+    "decimal": 96
+  },
+  {
+    "Ticker": "MGEL4",
+    "Nome": "Mangels",
+    "Negócios": 800,
+    "Ultimo": 17,
+    "decimal": 85
+  },
+  {
+    "Ticker": "BMIN4",
+    "Nome": "Banco Mercantil de Investimentos",
+    "Negócios": 700,
+    "Ultimo": 15,
+    "decimal": 33
+  },
+  {
+    "Ticker": "HOOT4",
+    "Nome": "Hotéis Othon",
+    "Negócios": 700,
+    "Ultimo": 2,
+    "decimal": 79
+  },
+  {
+    "Ticker": "CGAS3",
+    "Nome": "Comgás",
+    "Negócios": 600,
+    "Ultimo": 108,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "CRPG5",
+    "Nome": "Tronox Pigmentos",
+    "Negócios": 600,
+    "Ultimo": 29,
+    "decimal": 99
+  },
+  {
+    "Ticker": "BDLL4",
+    "Nome": "Bardella",
+    "Negócios": 600,
+    "Ultimo": 10,
+    "decimal": 51
+  },
+  {
+    "Ticker": "EKTR4",
+    "Nome": "Elektro",
+    "Negócios": 500,
+    "Ultimo": 37,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "MRSA6B",
+    "Nome": "MRS Logística",
+    "Negócios": 500,
+    "Ultimo": 25,
+    "decimal": 50
+  },
+  {
+    "Ticker": "CTKA4",
+    "Nome": "Karsten",
+    "Negócios": 500,
+    "Ultimo": 19,
+    "decimal": 45
+  },
+  {
+    "Ticker": "RPAD6",
+    "Nome": "Alfa Holdings",
+    "Negócios": 500,
+    "Ultimo": 9,
+    "decimal": 56
+  },
+  {
+    "Ticker": "HETA4",
+    "Nome": "Hercules",
+    "Negócios": 500,
+    "Ultimo": 5,
+    "decimal": 62
+  },
+  {
+    "Ticker": "RSUL4",
+    "Nome": "Metalúrgica Riosulense",
+    "Negócios": 400,
+    "Ultimo": 78,
+    "decimal": "04"
+  },
+  {
+    "Ticker": "DEXP4",
+    "Nome": "Dexxos",
+    "Negócios": 400,
+    "Ultimo": 10,
+    "decimal": 58
+  },
+  {
+    "Ticker": "MAPT3",
+    "Nome": "Cemepe",
+    "Negócios": 400,
+    "Ultimo": 6,
+    "decimal": 50
+  },
+  {
+    "Ticker": "TKNO4",
+    "Nome": "Tekno",
+    "Negócios": 300,
+    "Ultimo": 60,
+    "decimal": "05"
+  },
+  {
+    "Ticker": "WLMM4",
+    "Nome": "WLM",
+    "Negócios": 300,
+    "Ultimo": 34,
+    "decimal": 50
+  },
+  {
+    "Ticker": "BSLI4",
+    "Nome": "Banco de Brasília",
+    "Negócios": 300,
+    "Ultimo": 9,
+    "decimal": 97
+  },
+  {
+    "Ticker": "DOHL4",
+    "Nome": "Döhler",
+    "Negócios": 300,
+    "Ultimo": 4,
+    "decimal": 36
+  },
+  {
+    "Ticker": "MOAR3",
+    "Nome": "Monteiro Aranha",
+    "Negócios": 200,
+    "Ultimo": 396,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "CRPG6",
+    "Nome": "Tronox Pigmentos",
+    "Negócios": 200,
+    "Ultimo": 29,
+    "decimal": 31
+  },
+  {
+    "Ticker": "AHEB5",
+    "Nome": "São Paulo Turismo",
+    "Negócios": 200,
+    "Ultimo": 19,
+    "decimal": 21
+  },
+  {
+    "Ticker": "EUCA3",
+    "Nome": "Eucatex",
+    "Negócios": 200,
+    "Ultimo": 15,
+    "decimal": 40
+  },
+  {
+    "Ticker": "TELB3",
+    "Nome": "Telebras",
+    "Negócios": 200,
+    "Ultimo": 14,
+    "decimal": 27
+  },
+  {
+    "Ticker": "PTNT3",
+    "Nome": "Pettenati",
+    "Negócios": 200,
+    "Ultimo": 10,
+    "decimal": 38
+  },
+  {
+    "Ticker": "CBEE3",
+    "Nome": "Ampla Energia",
+    "Negócios": 200,
+    "Ultimo": 10,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "MWET4",
+    "Nome": "Wetzel",
+    "Negócios": 200,
+    "Ultimo": 5,
+    "decimal": 27
+  },
+  {
+    "Ticker": "SOND6",
+    "Nome": "Sondotécnica",
+    "Negócios": 100,
+    "Ultimo": 55,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "CSRN3",
+    "Nome": "COSERN",
+    "Negócios": 100,
+    "Ultimo": 24,
+    "decimal": 52
+  },
+  {
+    "Ticker": "AHEB3",
+    "Nome": "São Paulo Turismo",
+    "Negócios": 100,
+    "Ultimo": 22,
+    "decimal": 22
+  },
+  {
+    "Ticker": "BRKM6",
+    "Nome": "Braskem",
+    "Negócios": 100,
+    "Ultimo": 15,
+    "decimal": 89
+  },
+  {
+    "Ticker": "FESA3",
+    "Nome": "Ferbasa",
+    "Negócios": 100,
+    "Ultimo": 14,
+    "decimal": 88
+  },
+  {
+    "Ticker": "BALM3",
+    "Nome": "Baumer",
+    "Negócios": 100,
+    "Ultimo": 11,
+    "decimal": 24
+  },
+  {
+    "Ticker": "BALM4",
+    "Nome": "Baumer",
+    "Negócios": 100,
+    "Ultimo": 10,
+    "decimal": 49
+  },
+  {
+    "Ticker": "MAPT4",
+    "Nome": "Cemepe",
+    "Negócios": 100,
+    "Ultimo": 7,
+    "decimal": 50
+  },
+  {
+    "Ticker": "DOHL3",
+    "Nome": "Döhler",
+    "Negócios": 100,
+    "Ultimo": 6,
+    "decimal": 29
+  },
+  {
+    "Ticker": "ESTR4",
+    "Nome": "Estrela",
+    "Negócios": 100,
+    "Ultimo": 2,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "BMKS3",
+    "Nome": "Monark",
+    "Negócios": 15,
+    "Ultimo": 380,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "RPAD3",
+    "Nome": "Alfa Holdings",
+    "Negócios": "1.818.600",
+    "Ultimo": 9,
+    "decimal": 56
+  },
+  {
+    "Ticker": "EQPA7",
+    "Nome": "Equatorial Energia Pará",
+    "Negócios": 1,
+    "Ultimo": 9,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "GEPA3",
+    "Nome": "Rio Paranapanema Energia",
+    "Negócios": 600,
+    "Ultimo": 27,
+    "decimal": 98
+  },
+  {
+    "Ticker": "PEAB4",
+    "Nome": "Participações Aliança da Bahia",
+    "Negócios": 400,
+    "Ultimo": 52,
+    "decimal": 92
+  },
+  {
+    "Ticker": "MNDL3",
+    "Nome": "Mundial",
+    "Negócios": 300,
+    "Ultimo": 45,
+    "decimal": 55
+  },
+  {
+    "Ticker": "BRSR5",
+    "Nome": "Banrisul",
+    "Negócios": 200,
+    "Ultimo": 15,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "NORD3",
+    "Nome": "Nordon",
+    "Negócios": 200,
+    "Ultimo": 10,
+    "decimal": 32
+  },
+  {
+    "Ticker": "BSLI3",
+    "Nome": "Banco de Brasília",
+    "Negócios": 200,
+    "Ultimo": 9,
+    "decimal": 90
+  },
+  {
+    "Ticker": "EQPA5",
+    "Nome": "Equatorial Energia Pará",
+    "Negócios": 200,
+    "Ultimo": 9,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "ENMT3",
+    "Nome": "Energisa MT",
+    "Negócios": 100,
+    "Ultimo": 81,
+    "decimal": 90
+  },
+  {
+    "Ticker": "SOND5",
+    "Nome": "Sondotécnica",
+    "Negócios": 100,
+    "Ultimo": 60,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "HBTS5",
+    "Nome": "Habitasul",
+    "Negócios": 100,
+    "Ultimo": 42,
+    "decimal": 85
+  },
+  {
+    "Ticker": "CPLE5",
+    "Nome": "Copel",
+    "Negócios": 100,
+    "Ultimo": 20,
+    "decimal": 99
+  },
+  {
+    "Ticker": "IGTI4",
+    "Nome": "Jereissati Participações",
+    "Negócios": 100,
+    "Ultimo": 8,
+    "decimal": 95
+  },
+  {
+    "Ticker": "IGTI4",
+    "Nome": "Iguatemi",
+    "Negócios": 100,
+    "Ultimo": 8,
+    "decimal": 95
+  },
+  {
+    "Ticker": "BAUH4",
+    "Nome": "Excelsior",
+    "Negócios": 900,
+    "Ultimo": 79,
+    "decimal": 90
+  },
+  {
+    "Ticker": "PINE3",
+    "Nome": "PINE",
+    "Negócios": 600,
+    "Ultimo": 5,
+    "decimal": 86
+  },
+  {
+    "Ticker": "BGIP3",
+    "Nome": "Banese",
+    "Negócios": 400,
+    "Ultimo": 24,
+    "decimal": 20
+  },
+  {
+    "Ticker": "CEED3",
+    "Nome": "CEEE D",
+    "Negócios": 400,
+    "Ultimo": 19,
+    "decimal": "01"
+  },
+  {
+    "Ticker": "CLSC3",
+    "Nome": "Celesc",
+    "Negócios": 300,
+    "Ultimo": 67,
+    "decimal": 30
+  },
+  {
+    "Ticker": "BGIP4",
+    "Nome": "Banese",
+    "Negócios": 300,
+    "Ultimo": 22,
+    "decimal": 91
+  },
+  {
+    "Ticker": "DTCY3",
+    "Nome": "Dtcom",
+    "Negócios": 200,
+    "Ultimo": 5,
+    "decimal": 20
+  },
+  {
+    "Ticker": "EMAE3",
+    "Nome": "EMAE",
+    "Negócios": 100,
+    "Ultimo": 69,
+    "decimal": 28
+  },
+  {
+    "Ticker": "UNIP5",
+    "Nome": "Unipar",
+    "Negócios": 100,
+    "Ultimo": 57,
+    "decimal": 24
+  },
+  {
+    "Ticker": "LIPR3",
+    "Nome": "Eletropar",
+    "Negócios": 100,
+    "Ultimo": 49,
+    "decimal": 31
+  },
+  {
+    "Ticker": "PEAB3",
+    "Nome": "Participações Aliança da Bahia",
+    "Negócios": 100,
+    "Ultimo": 45,
+    "decimal": 51
+  },
+  {
+    "Ticker": "GSHP3",
+    "Nome": "General Shopping & Outlets",
+    "Negócios": 100,
+    "Ultimo": 10,
+    "decimal": 80
+  },
+  {
+    "Ticker": "EALT3",
+    "Nome": "Electro Aço Altona",
+    "Negócios": 100,
+    "Ultimo": 9,
+    "decimal": 87
+  },
+  {
+    "Ticker": "MRSA3B",
+    "Nome": "MRS Logística",
+    "Negócios": 700,
+    "Ultimo": 26,
+    "decimal": 90
+  },
+  {
+    "Ticker": "MERC4",
+    "Nome": "Mercantil do Brasil Financeira",
+    "Negócios": 400,
+    "Ultimo": 7,
+    "decimal": 71
+  },
+  {
+    "Ticker": "MRSA5B",
+    "Nome": "MRS Logística",
+    "Negócios": 300,
+    "Ultimo": 26,
+    "decimal": 90
+  },
+  {
+    "Ticker": "LUXM4",
+    "Nome": "Trevisa",
+    "Negócios": 100,
+    "Ultimo": 15,
+    "decimal": 69
+  },
+  {
+    "Ticker": "BDLL3",
+    "Nome": "Bardella",
+    "Negócios": 100,
+    "Ultimo": 13,
+    "decimal": "01"
+  },
+  {
+    "Ticker": "CTNM3",
+    "Nome": "Coteminas",
+    "Negócios": 400,
+    "Ultimo": 8,
+    "decimal": 65
+  },
+  {
+    "Ticker": "EQMA3B",
+    "Nome": "Equatorial Maranhão",
+    "Negócios": 300,
+    "Ultimo": 30,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "CSRN6",
+    "Nome": "COSERN",
+    "Negócios": 100,
+    "Ultimo": 23,
+    "decimal": 50
+  },
+  {
+    "Ticker": "WLMM3",
+    "Nome": "WLM",
+    "Negócios": 100,
+    "Ultimo": 23,
+    "decimal": 50
+  },
+  {
+    "Ticker": "USIM6",
+    "Nome": "Usiminas",
+    "Negócios": 500,
+    "Ultimo": 14,
+    "decimal": 48
+  },
+  {
+    "Ticker": "JOPA3",
+    "Nome": "Josapar",
+    "Negócios": 100,
+    "Ultimo": 21,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "CTKA3",
+    "Nome": "Karsten",
+    "Negócios": 100,
+    "Ultimo": 19,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "BNBR3",
+    "Nome": "Banco do Nordeste",
+    "Negócios": 100,
+    "Ultimo": 104,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "FIEI3",
+    "Nome": "Fica",
+    "Negócios": 3.8,
+    "Ultimo": 9,
+    "decimal": 95
+  },
+  {
+    "Ticker": "ENMT4",
+    "Nome": "Energisa MT",
+    "Negócios": 300,
+    "Ultimo": 79,
+    "decimal": 99
+  },
+  {
+    "Ticker": "ELET5",
+    "Nome": "Eletrobras",
+    "Negócios": 100,
+    "Ultimo": 99,
+    "decimal": "00"
+  },
+  {
+    "Ticker": "BMEB3",
+    "Nome": "Banco Mercantil do Brasil",
+    "Negócios": 100,
+    "Ultimo": 23,
+    "decimal": 25
+  },
+  {
+    "Ticker": "DMFN3",
+    "Nome": "DM Financeira",
+    "Negócios": 100,
+    "Ultimo": 12,
+    "decimal": 50
+  }
+]

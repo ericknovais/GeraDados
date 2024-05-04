@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Geradados.DataAccess.Migrations
 {
     [DbContext(typeof(ContextoDataBase))]
-    [Migration("20240503014103_CriaTabelaAtivos")]
-    partial class CriaTabelaAtivos
+    [Migration("20240504005317_CriaTabelaCarteiras")]
+    partial class CriaTabelaCarteiras
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -47,7 +47,7 @@ namespace Geradados.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("TipoDeAtivoID")
+                    b.Property<int>("TipoDeAtivoID")
                         .HasColumnType("int");
 
                     b.Property<decimal>("UltimaNegociacao")
@@ -58,6 +58,38 @@ namespace Geradados.DataAccess.Migrations
                     b.HasIndex("TipoDeAtivoID");
 
                     b.ToTable("Ativos");
+                });
+
+            modelBuilder.Entity("GeraDados.DataModel.models.Carteira", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<int>("AtivoID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Cota")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DataAtualizacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataCadastro")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("PessoaID")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("AtivoID");
+
+                    b.HasIndex("PessoaID");
+
+                    b.ToTable("Carteiras");
                 });
 
             modelBuilder.Entity("GeraDados.DataModel.models.Contato", b =>
@@ -181,10 +213,7 @@ namespace Geradados.DataAccess.Migrations
             modelBuilder.Entity("GeraDados.DataModel.models.TipoContato", b =>
                 {
                     b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<DateTime>("DataAtualizacao")
                         .HasColumnType("datetime2");
@@ -204,10 +233,7 @@ namespace Geradados.DataAccess.Migrations
             modelBuilder.Entity("GeraDados.DataModel.models.TipoDeAtivo", b =>
                 {
                     b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<DateTime>("DataAtualizacao")
                         .HasColumnType("datetime2");
@@ -228,9 +254,30 @@ namespace Geradados.DataAccess.Migrations
                 {
                     b.HasOne("GeraDados.DataModel.models.TipoDeAtivo", "TipoDeAtivo")
                         .WithMany()
-                        .HasForeignKey("TipoDeAtivoID");
+                        .HasForeignKey("TipoDeAtivoID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("TipoDeAtivo");
+                });
+
+            modelBuilder.Entity("GeraDados.DataModel.models.Carteira", b =>
+                {
+                    b.HasOne("GeraDados.DataModel.models.Ativo", "Ativo")
+                        .WithMany()
+                        .HasForeignKey("AtivoID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("GeraDados.DataModel.models.Pessoa", "Pessoa")
+                        .WithMany()
+                        .HasForeignKey("PessoaID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Ativo");
+
+                    b.Navigation("Pessoa");
                 });
 
             modelBuilder.Entity("GeraDados.DataModel.models.Contato", b =>

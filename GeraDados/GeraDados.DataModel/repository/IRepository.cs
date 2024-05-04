@@ -9,4 +9,6 @@ public interface IRepository
     public ITipoContatoRepository TipoContato { get;}
     public ITipoDeAtivoRepository TipoDeAtivo { get;}
     public IAtivoRepository Ativo { get;}
+    public ICarteiraRepository Carteira { get;}
+
 }

@@ -5,6 +5,8 @@ namespace GeraDados.DataModel.models;
 [Table("TipoContatos")]
 public class TipoContato : EntityBase
 {
+    [DatabaseGenerated(DatabaseGeneratedOption.None)]
+    public new int ID { get; set; }
     public TipoContato()
     {
         Descricao = string.Empty;
@@ -12,21 +14,24 @@ public class TipoContato : EntityBase
 
     public string Descricao { get; set; }
 
-    public List<TipoContato> CarregaListaTipoContato() 
+    public List<TipoContato> CarregaListaTipoContato()
     {
         List<TipoContato> tipoContatos = new List<TipoContato>()
         {
-            new TipoContato() { 
-                Descricao = "Email",
+            new TipoContato() {
+                ID = 1,
+                Descricao = "E-mail",
                 DataCadastro = DateTime.Now,
                 DataAtualizacao = DateTime.Now,
             },
             new TipoContato() {
+                ID = 2,
                 Descricao = "Telefone Fixo",
                 DataCadastro = DateTime.Now,
                 DataAtualizacao = DateTime.Now,
             },
             new TipoContato() {
+                ID = 3,
                 Descricao = "Celular",
                 DataCadastro = DateTime.Now,
                 DataAtualizacao = DateTime.Now,

@@ -1,0 +1,3208 @@
+[
+  {
+    "Nome": "ARX DOVER RECEBÍVEIS FDO DE INV IMOB",
+    "Código": "ARXD",
+    "Ticker": "ARXD11",
+    "Ultimo": 92,
+    "Decimal": 48
+  },
+  {
+    "Nome": "CANUMA CAPITAL MULTIESTRATÉGIA FDO DE INV IMOB",
+    "Código": "CCME",
+    "Ticker": "CCME11",
+    "Ultimo": 11,
+    "Decimal": 75
+  },
+  {
+    "Nome": "INTER TEVA INDICE DE TIJOLO FUNDO DE INVESTIMENTO",
+    "Código": "ITIT",
+    "Ticker": "ITIT11",
+    "Ultimo": 79,
+    "Decimal": 27
+  },
+  {
+    "Nome": "JASC RENDA VAREJO ESSENCIAL FDO DE INV IMOB - FII",
+    "Código": "JASC",
+    "Ticker": "JASC11",
+    "Ultimo": 116,
+    "Decimal": 38
+  },
+  {
+    "Nome": "LCP SPECIAL OPPORTUNITIES I FDO INV IMOB RESP",
+    "Código": "LSOI",
+    "Ticker": "LSOI11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "AF INVEST CRI FDO. INV. IMOB - RECEBÍVEIS IMOB.",
+    "Código": "AFHI",
+    "Ticker": "AFHI11",
+    "Ultimo": 98,
+    "Decimal": 28
+  },
+  {
+    "Nome": "AJ MALLS FDO DE INV IMOB",
+    "Código": "AJFI",
+    "Ticker": "AJFI11",
+    "Ultimo": 9,
+    "Decimal": 32
+  },
+  {
+    "Nome": "ALIANZA CRÉDITO  IMOBILIÁRIO FUNDO DE INVESTIMENTO",
+    "Código": "ALZC",
+    "Ticker": "ALZC11",
+    "Ultimo": 100,
+    "Decimal": ""
+  },
+  {
+    "Nome": "ALIANZA MULTIESTRATÉGIA FUNDO DE INVESTIMENTO IMOB",
+    "Código": "ALZM",
+    "Ticker": "ALZM11",
+    "Ultimo": 8,
+    "Decimal": 42
+  },
+  {
+    "Nome": "ALIANZA MULTIOFFICES  - FDO. INV. IMOB",
+    "Código": "MTOF",
+    "Ticker": "MTOF11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "ALIANZA TRUST RENDA IMOBILIARIA FDO INV IMOB",
+    "Código": "ALZR",
+    "Ticker": "ALZR11",
+    "Ultimo": 117,
+    "Decimal": "01"
+  },
+  {
+    "Nome": "ALIANZA URBAN HUB RENDA FUNDO DE INVESTIMENTO IMOB",
+    "Código": "AURB",
+    "Ticker": "AURB11",
+    "Ultimo": 85,
+    "Decimal": 1
+  },
+  {
+    "Nome": "APEX REALTY FDO DE INV IMOB  RESP LTDA",
+    "Código": "APXR",
+    "Ticker": "APXR11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "APEX URB FDO DE INV IMOB  RESP LTDA",
+    "Código": "APXU",
+    "Ticker": "APXU11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "AROEIRA 333 RENDA LOGÍSTICA FDO DE INV IMOB",
+    "Código": "AROA",
+    "Ticker": "AROA11",
+    "Ultimo": 0,
+    "Decimal": 98
+  },
+  {
+    "Nome": "ASA METROPOLIS FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "ASMT",
+    "Ticker": "ASMT11",
+    "Ultimo": 50,
+    "Decimal": 45
+  },
+  {
+    "Nome": "ASA RETROFITS I FDO DE INV IMOB - FII",
+    "Código": "ASRF",
+    "Ticker": "ASRF11",
+    "Ultimo": 10092,
+    "Decimal": ""
+  },
+  {
+    "Nome": "AUTONOMY EDIFÍCIOS CORPORATIVOS FUND. INV. IMOB.",
+    "Código": "AIEC",
+    "Ticker": "AIEC11",
+    "Ultimo": 52,
+    "Decimal": "01"
+  },
+  {
+    "Nome": "BANESTES RECEBÍVEIS IMOBILIÁRIOS FDO INV IMOB  FII",
+    "Código": "BCRI",
+    "Ticker": "BCRI11",
+    "Ultimo": 69,
+    "Decimal": "05"
+  },
+  {
+    "Nome": "BANRISUL NOVAS FRONTEIRAS FDO INV IMOB - FII",
+    "Código": "BNFS",
+    "Ticker": "BNFS11",
+    "Ultimo": 119,
+    "Decimal": 64
+  },
+  {
+    "Nome": "BARRA MALLS FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "BTML",
+    "Ticker": "BTML11",
+    "Ultimo": 111,
+    "Decimal": 28
+  },
+  {
+    "Nome": "BARZEL CD1 FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "BZEL",
+    "Ticker": "BZEL11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "BASÍLICA PARTNERS LED CORPORATE FDO INV IMOB FII",
+    "Código": "BPLC",
+    "Ticker": "BPLC11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "BB FDO INV IMOB PROGRESSIVO",
+    "Código": "BBFI",
+    "Ticker": "BBFI11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "BB FUNDO DE FUNDOS - FDO. INV. IMOB.",
+    "Código": "BBFO",
+    "Ticker": "BBFO11",
+    "Ultimo": 73,
+    "Decimal": "09"
+  },
+  {
+    "Nome": "BB PREMIUM MALLS FDO DE INV IMOB RESP LIM",
+    "Código": "BBIG",
+    "Ticker": "BBIG11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "BB RECEBIVEIS IMOBILIARIOS FDO INV IMOB - FII",
+    "Código": "BBIM",
+    "Ticker": "BBIM11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "BB RENDA CORPORATIVA FDO INV IMOB - FII",
+    "Código": "BBRC",
+    "Ticker": "BBRC11",
+    "Ultimo": 109,
+    "Decimal": 46
+  },
+  {
+    "Nome": "BB RENDA DE PAPÉIS IMOBILIÁRIOS FDO INV IMOB - FII",
+    "Código": "RNDP",
+    "Ticker": "RNDP11",
+    "Ultimo": 89,
+    "Decimal": 1
+  },
+  {
+    "Nome": "BLUECAP LOG FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "BLOG",
+    "Ticker": "BLOG11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "BLUEMACAW LOGÍSTICA FDO. INVEST. IMOB.",
+    "Código": "BLMG",
+    "Ticker": "BLMG11",
+    "Ultimo": 38,
+    "Decimal": 99
+  },
+  {
+    "Nome": "BR7 SENADO FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "BRSE",
+    "Ticker": "BRSE11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "BRADESCO CARTEIRA IMOBILIÁRIA ATIVA - FII",
+    "Código": "BCIA",
+    "Ticker": "BCIA11",
+    "Ultimo": 101,
+    "Decimal": 89
+  },
+  {
+    "Nome": "BRAZIL REALTY FDO INV IMOB",
+    "Código": "BZLI",
+    "Ticker": "BZLI11",
+    "Ultimo": 19,
+    "Decimal": 78
+  },
+  {
+    "Nome": "BRAZILIAN GRAVEYARD DEATH CARE FDO INV IMOB - FII",
+    "Código": "CARE",
+    "Ticker": "CARE11",
+    "Ultimo": 1,
+    "Decimal": 8
+  },
+  {
+    "Nome": "BRC - II FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "RTEL",
+    "Ticker": "RTEL11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "BRC RENDA CORPORATIVA FII",
+    "Código": "FATN",
+    "Ticker": "FATN11",
+    "Ultimo": 94,
+    "Decimal": "06"
+  },
+  {
+    "Nome": "BRESCO LOGÍSTICA - FDO INV IMOB",
+    "Código": "BRCO",
+    "Ticker": "BRCO11",
+    "Ultimo": 119,
+    "Decimal": 56
+  },
+  {
+    "Nome": "BRIO CRÉDITO ESTRUTURADO - FDO. INVEST. IMOB.",
+    "Código": "BICE",
+    "Ticker": "BICE11",
+    "Ultimo": 980,
+    "Decimal": ""
+  },
+  {
+    "Nome": "BRIO MULTIESTRATÉGIA FDO INV IMOB",
+    "Código": "BIME",
+    "Ticker": "BIME11",
+    "Ultimo": 7,
+    "Decimal": 3
+  },
+  {
+    "Nome": "BRIO REAL ESTATE II - FDO INV IMOB",
+    "Código": "BRIM",
+    "Ticker": "BRIM11",
+    "Ultimo": 1214,
+    "Decimal": 97
+  },
+  {
+    "Nome": "BRIO REAL ESTATE III FDO DE INVEST. IMOB.",
+    "Código": "BRIP",
+    "Ticker": "BRIP11",
+    "Ultimo": 900,
+    "Decimal": "02"
+  },
+  {
+    "Nome": "BRIO REAL ESTATE IV - FUNDO DE INVESTIMENTO IMOB",
+    "Código": "BIPD",
+    "Ticker": "BIPD11",
+    "Ultimo": 988,
+    "Decimal": 17
+  },
+  {
+    "Nome": "BRIO REAL ESTATE V - FII",
+    "Código": "BIPE",
+    "Ticker": "BIPE11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "BRIX FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "BRIX",
+    "Ticker": "BRIX11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "BRPR CORPORATE OFFICES FDO DE INV IMOB",
+    "Código": "BROF",
+    "Ticker": "BROF11",
+    "Ultimo": 53,
+    "Decimal": 62
+  },
+  {
+    "Nome": "BRPR E-TOWER FDO DE INV IMOB",
+    "Código": "BETW",
+    "Ticker": "BETW11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "BS2 ALLINVESTMENTS FDO DE INV IMOB",
+    "Código": "LLAO",
+    "Ticker": "LLAO11",
+    "Ultimo": 77,
+    "Decimal": 37
+  },
+  {
+    "Nome": "BTG PACTUAL HOTÉIS FII",
+    "Código": "BTHI",
+    "Ticker": "BTHI11",
+    "Ultimo": 42,
+    "Decimal": 95
+  },
+  {
+    "Nome": "BTG PACTUAL LOGISTICA FDO INV IMOB - FII",
+    "Código": "BTLG",
+    "Ticker": "BTLG11",
+    "Ultimo": 102,
+    "Decimal": 25
+  },
+  {
+    "Nome": "BTOWERS FII - FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "BTWR",
+    "Ticker": "BTWR11",
+    "Ultimo": 121,
+    "Decimal": 54
+  },
+  {
+    "Nome": "BTSP I FDO. INVEST. IMOB - FII",
+    "Código": "BTSG",
+    "Ticker": "BTSG11",
+    "Ultimo": 138,
+    "Decimal": 16
+  },
+  {
+    "Nome": "BTSP II FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "BTSI",
+    "Ticker": "BTSI11",
+    "Ultimo": 105,
+    "Decimal": 5
+  },
+  {
+    "Nome": "CAIXA RIO BRAVO FDO DE FDOS INV IMOB II",
+    "Código": "CRFF",
+    "Ticker": "CRFF11",
+    "Ultimo": 77,
+    "Decimal": 5
+  },
+  {
+    "Nome": "CAIXA RIO BRAVO FUNDO DE FDO INV IMOB - FII",
+    "Código": "CXRI",
+    "Ticker": "CXRI11",
+    "Ultimo": 79,
+    "Decimal": "05"
+  },
+  {
+    "Nome": "CAPITÂNIA LOGÍSTICA FDO DE INV IMOB",
+    "Código": "CPLG",
+    "Ticker": "CPLG11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "CAPITÂNIA OFFICE FII - FDO DE INV IMOB",
+    "Código": "CPOF",
+    "Ticker": "CPOF11",
+    "Ultimo": 107,
+    "Decimal": ""
+  },
+  {
+    "Nome": "CAPITÂNIA REIT FOF - FDO. INVEST. IMOB",
+    "Código": "CPFF",
+    "Ticker": "CPFF11",
+    "Ultimo": 77,
+    "Decimal": 63
+  },
+  {
+    "Nome": "CAPITANIA SECURITIES II FDO INV IMOB - FII",
+    "Código": "CPTS",
+    "Ticker": "CPTS11",
+    "Ultimo": 8,
+    "Decimal": 51
+  },
+  {
+    "Nome": "CAPITÂNIA SHOPPINGS FUNDO DE INVESTIMENTO IMOB",
+    "Código": "CPSH",
+    "Ticker": "CPSH11",
+    "Ultimo": 10,
+    "Decimal": 6
+  },
+  {
+    "Nome": "CARTESIA RECEBÍVEIS IMOBILIÁRIOS - FUNDO DE INVEST",
+    "Código": "CACR",
+    "Ticker": "CACR11",
+    "Ultimo": 105,
+    "Decimal": 1
+  },
+  {
+    "Nome": "CASTELLO BRANCO OFFICE PARK FDO INV IMOB - FII",
+    "Código": "CBOP",
+    "Ticker": "CBOP11",
+    "Ultimo": 30,
+    "Decimal": ""
+  },
+  {
+    "Nome": "CATUAÍ VBI TRIPLE A FDO DE INV IMOB",
+    "Código": "BLCA",
+    "Ticker": "BLCA11",
+    "Ultimo": 107,
+    "Decimal": 49
+  },
+  {
+    "Nome": "CENU - FDO DE INV IMOB",
+    "Código": "CENU",
+    "Ticker": "CENU11",
+    "Ultimo": 100,
+    "Decimal": ""
+  },
+  {
+    "Nome": "CF2 FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "CFHI",
+    "Ticker": "CFHI11",
+    "Ultimo": 650,
+    "Decimal": ""
+  },
+  {
+    "Nome": "CF3 FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII",
+    "Código": "CFII",
+    "Ticker": "CFII11",
+    "Ultimo": 1000,
+    "Decimal": ""
+  },
+  {
+    "Nome": "CIDADE JARDIM CONTINENAL TOWER FDO INV IMOB",
+    "Código": "CJCT",
+    "Ticker": "CJCT11",
+    "Ultimo": 64,
+    "Decimal": 19
+  },
+  {
+    "Nome": "CIX MUIRAQUITAN FDO DE INV IMOB",
+    "Código": "CIXM",
+    "Ticker": "CIXM11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "CIX RENDIMENTO FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "CIXR",
+    "Ticker": "CIXR11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "CLAVE ÍNDICES DE PREÇOS FDO DE INV IMOB",
+    "Código": "CLIN",
+    "Ticker": "CLIN11",
+    "Ultimo": 97,
+    "Decimal": 26
+  },
+  {
+    "Nome": "COSMIC FDO DE INV IMOB",
+    "Código": "CSMC",
+    "Ticker": "CSMC11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "CPV ENERGIA FDO DE INV IMOB RESP LIM",
+    "Código": "RENV",
+    "Ticker": "RENV11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "CSHG IMOB. FOF - FDO INV. IMOB. - FII",
+    "Código": "HGFF",
+    "Ticker": "HGFF11",
+    "Ultimo": 87,
+    "Decimal": 85
+  },
+  {
+    "Nome": "CSHG LOGÍSTICA FDO INV IMOB - FII",
+    "Código": "HGLG",
+    "Ticker": "HGLG11",
+    "Ultimo": 166,
+    "Decimal": 92
+  },
+  {
+    "Nome": "CSHG PRIME OFFICES FDO INV IMOB - FII",
+    "Código": "HGPO",
+    "Ticker": "HGPO11",
+    "Ultimo": 305,
+    "Decimal": "05"
+  },
+  {
+    "Nome": "CSHG REAL ESTATE FDO INV IMOB - FII",
+    "Código": "HGRE",
+    "Ticker": "HGRE11",
+    "Ultimo": 123,
+    "Decimal": 99
+  },
+  {
+    "Nome": "CSHG RECEBÍVEIS IMOBILIÁRIOS FDO INV IMOB - FII",
+    "Código": "HGCR",
+    "Ticker": "HGCR11",
+    "Ultimo": 102,
+    "Decimal": 87
+  },
+  {
+    "Nome": "CSHG RENDA URBANA - FDO INV IMOB - FII",
+    "Código": "HGRU",
+    "Ticker": "HGRU11",
+    "Ultimo": 132,
+    "Decimal": 87
+  },
+  {
+    "Nome": "CVPAR FUNDO DE INVESTIMENTO IMOBILIÁRIO DE CRI",
+    "Código": "CVPR",
+    "Ticker": "CVPR11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "CYRELA CRÉDITO - FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "CYCR",
+    "Ticker": "CYCR11",
+    "Ultimo": 9,
+    "Decimal": 57
+  },
+  {
+    "Nome": "CYRELA DESENVOLVIMENTO LOGÍSTICO FDO INV IMOB",
+    "Código": "CYLD",
+    "Ticker": "CYLD11",
+    "Ultimo": 100,
+    "Decimal": ""
+  },
+  {
+    "Nome": "DAMA FUNDO DE INVESTIMENTO IMOBILIÁRIO RESP LIMITA",
+    "Código": "DAMA",
+    "Ticker": "DAMA11",
+    "Ultimo": 10,
+    "Decimal": 11
+  },
+  {
+    "Nome": "DEL MONTE AJAX FDO INV IMOB - FII",
+    "Código": "DLMT",
+    "Ticker": "DLMT11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "DEVANT PROPERTIES FUNDO DE INVESTIMENTO IMOB",
+    "Código": "DPRO",
+    "Ticker": "DPRO11",
+    "Ultimo": 6,
+    "Decimal": 85
+  },
+  {
+    "Nome": "DEVANT RECEBÍVEIS IMOBILIÁRIOS FDO. INVEST. IMOB.",
+    "Código": "DEVA",
+    "Ticker": "DEVA11",
+    "Ultimo": 49,
+    "Decimal": 57
+  },
+  {
+    "Nome": "DIAMANTE FDO INV IMOB",
+    "Código": "DAMT",
+    "Ticker": "DAMT11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "DOVEL FDO INV IMOB",
+    "Código": "DOVL",
+    "Ticker": "DOVL11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "EMET MULTIESTRATÉGIA FDO DE INV IMOB",
+    "Código": "EMET",
+    "Ticker": "EMET11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "ENERGY RESORT FDO. INVEST. IMOB.",
+    "Código": "EGYR",
+    "Ticker": "EGYR11",
+    "Ultimo": 3,
+    "Decimal": 48
+  },
+  {
+    "Nome": "EQI RECEBÍVEIS IMOBILIÁRIOS FDO DE INV IMOBILIÁRIO",
+    "Código": "EQIR",
+    "Ticker": "EQIR11",
+    "Ultimo": 9,
+    "Decimal": "06"
+  },
+  {
+    "Nome": "ESTOQUE RESIDENCIAL E COMERCIAL RJ FDO INV IMOB",
+    "Código": "ERCR",
+    "Ticker": "ERCR11",
+    "Ultimo": 76000,
+    "Decimal": ""
+  },
+  {
+    "Nome": "EUROPA 105 - FDO INV IMOB",
+    "Código": "ERPA",
+    "Ticker": "ERPA11",
+    "Ultimo": 134,
+    "Decimal": 89
+  },
+  {
+    "Nome": "EVEN II KINEA FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "KEVE",
+    "Ticker": "KEVE11",
+    "Ultimo": 1120,
+    "Decimal": ""
+  },
+  {
+    "Nome": "EXES FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "EXES",
+    "Ticker": "EXES11",
+    "Ultimo": 9,
+    "Decimal": 7
+  },
+  {
+    "Nome": "FARIA LIMA CAPITAL RECEB. IMOB. I - FDO INV. IMOB.",
+    "Código": "FLCR",
+    "Ticker": "FLCR11",
+    "Ultimo": 99,
+    "Decimal": 1
+  },
+  {
+    "Nome": "FATOR RENDA GALPÃO FDO INV IMOB",
+    "Código": "FAGL",
+    "Ticker": "FAGL11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FATOR RENDA URBANA FDO DE INV IMOB",
+    "Código": "FARU",
+    "Ticker": "FARU11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FATOR VERITA FDO INV IMOB - FII",
+    "Código": "VRTA",
+    "Ticker": "VRTA11",
+    "Ultimo": 87,
+    "Decimal": 6
+  },
+  {
+    "Nome": "FATOR VERITÀ MULTIESTRATÉGIA FDO INV IMOB",
+    "Código": "VRTM",
+    "Ticker": "VRTM11",
+    "Ultimo": 10,
+    "Decimal": 35
+  },
+  {
+    "Nome": "FDO BRASÍLIO MACHADO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "BMII",
+    "Ticker": "BMII11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO DE INV IMOB FATOR RENDA ESTRUTURADA",
+    "Código": "FAOE",
+    "Ticker": "FAOE11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO DE INV IMOB LEBLON REALTY DESENVOLVIMENTO I",
+    "Código": "LRDI",
+    "Ticker": "LRDI11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO DE INV IMOB MAUA CAPITAL MPD DESENV RESID",
+    "Código": "MMPD",
+    "Ticker": "MMPD11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO DE INV IMOBILIÁRIO DE CRI INTEGRAL BREI",
+    "Código": "IBCR",
+    "Ticker": "IBCR11",
+    "Ultimo": 75,
+    "Decimal": 43
+  },
+  {
+    "Nome": "FDO DE INV IMOBILIÁRIO DE UNIDADES AUTÔNOMAS II",
+    "Código": "IDGR",
+    "Ticker": "IDGR11",
+    "Ultimo": 13,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO DE INV IMOBILIÁRIO DE UNIDADES AUTÔNOMAS IV",
+    "Código": "IDUA",
+    "Ticker": "IDUA11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO DE INVEST IMOB GUARDIAN MULTIESTRATÉGIA I",
+    "Código": "GAME",
+    "Ticker": "GAME11",
+    "Ultimo": 9,
+    "Decimal": 22
+  },
+  {
+    "Nome": "FDO DE INVEST IMOB TELLUS RIO BRAVO RENDA LOGISTIC",
+    "Código": "TRBL",
+    "Ticker": "TRBL11",
+    "Ultimo": 98,
+    "Decimal": 91
+  },
+  {
+    "Nome": "FDO INV IMOB - FII ANCAR IC",
+    "Código": "ANCR",
+    "Ticker": "ANCR11",
+    "Ultimo": 2548,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO INV IMOB - FII ANHANGUERA EDUCACIONAL",
+    "Código": "FAED",
+    "Ticker": "FAED11",
+    "Ultimo": 153,
+    "Decimal": "02"
+  },
+  {
+    "Nome": "FDO INV IMOB - FII BM BRASCAN LAJES CORPORATIVAS",
+    "Código": "BMLC",
+    "Ticker": "BMLC11",
+    "Ultimo": 99,
+    "Decimal": 99
+  },
+  {
+    "Nome": "FDO INV IMOB - FII BRLPROP",
+    "Código": "BPRP",
+    "Ticker": "BPRP11",
+    "Ultimo": 100,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO INV IMOB - FII BTG PACTUAL CORP. OFFICE FUND",
+    "Código": "BRCR",
+    "Ticker": "BRCR11",
+    "Ultimo": 55,
+    "Decimal": 62
+  },
+  {
+    "Nome": "FDO INV IMOB - FII BTG PACTUAL FUNDO DE FUNDOS",
+    "Código": "BCFF",
+    "Ticker": "BCFF11",
+    "Ultimo": 8,
+    "Decimal": 97
+  },
+  {
+    "Nome": "FDO INV IMOB - FII CAMPUS FARIA LIMA",
+    "Código": "FCFL",
+    "Ticker": "FCFL11",
+    "Ultimo": 120,
+    "Decimal": 52
+  },
+  {
+    "Nome": "FDO INV IMOB - FII CENESP",
+    "Código": "CNES",
+    "Ticker": "CNES11",
+    "Ultimo": 1,
+    "Decimal": 93
+  },
+  {
+    "Nome": "FDO INV IMOB - FII CEO CYRELA COMMERC. PROPERTIES",
+    "Código": "CEOC",
+    "Ticker": "CEOC11",
+    "Ultimo": 45,
+    "Decimal": 92
+  },
+  {
+    "Nome": "FDO INV IMOB - FII EDIFÍCIO ALMIRANTE BARROSO",
+    "Código": "FAMB",
+    "Ticker": "FAMB11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO INV IMOB - FII EDIFÍCIO GALERIA",
+    "Código": "EDGA",
+    "Ticker": "EDGA11",
+    "Ultimo": 20,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO INV IMOB - FII ELDORADO",
+    "Código": "ELDO",
+    "Ticker": "ELDO11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO INV IMOB - FII HOSPITAL DA CRIANÇA",
+    "Código": "HCRI",
+    "Ticker": "HCRI11",
+    "Ultimo": 299,
+    "Decimal": 9
+  },
+  {
+    "Nome": "FDO INV IMOB - FII HOSPITAL NOSSA SRA DE LOURDES",
+    "Código": "NSLU",
+    "Ticker": "NSLU11",
+    "Ultimo": 184,
+    "Decimal": 19
+  },
+  {
+    "Nome": "FDO INV IMOB - FII HOTEL MAXINVEST",
+    "Código": "HTMX",
+    "Ticker": "HTMX11",
+    "Ultimo": 174,
+    "Decimal": 93
+  },
+  {
+    "Nome": "FDO INV IMOB - FII MAX RETAIL",
+    "Código": "MAXR",
+    "Ticker": "MAXR11",
+    "Ultimo": 82,
+    "Decimal": 85
+  },
+  {
+    "Nome": "FDO INV IMOB - FII NCH BRASIL RECEBÍVEIS IMOB",
+    "Código": "NCHB",
+    "Ticker": "NCHB11",
+    "Ultimo": 9,
+    "Decimal": 63
+  },
+  {
+    "Nome": "FDO INV IMOB - FII NOVO HORIZONTE",
+    "Código": "NVHO",
+    "Ticker": "NVHO11",
+    "Ultimo": 10,
+    "Decimal": 82
+  },
+  {
+    "Nome": "FDO INV IMOB - FII PARQUE D. PEDRO SHOPPING CENTER",
+    "Código": "PQDP",
+    "Ticker": "PQDP11",
+    "Ultimo": 2040,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO INV IMOB - FII PATEO BANDEIRANTES",
+    "Código": "PATB",
+    "Ticker": "PATB11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO INV IMOB - FII RBR DESENVOLVIMENTO",
+    "Código": "RBRM",
+    "Ticker": "RBRM11",
+    "Ultimo": 160000,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO INV IMOB - FII RBR RENDIMENTO HIGH GRADE",
+    "Código": "RBRR",
+    "Ticker": "RBRR11",
+    "Ultimo": 93,
+    "Decimal": 42
+  },
+  {
+    "Nome": "FDO INV IMOB - FII REC RECEBIVEIS IMOBILIARIOS",
+    "Código": "RECR",
+    "Ticker": "RECR11",
+    "Ultimo": 88,
+    "Decimal": 5
+  },
+  {
+    "Nome": "FDO INV IMOB - FII REC RENDA IMOBILIARIA",
+    "Código": "RECT",
+    "Ticker": "RECT11",
+    "Ultimo": 38,
+    "Decimal": 14
+  },
+  {
+    "Nome": "FDO INV IMOB - FII SHOPPING PARQUE D. PEDRO",
+    "Código": "SHDP",
+    "Ticker": "SHDP11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO INV IMOB - FII SIA CORPORATE",
+    "Código": "SAIC",
+    "Ticker": "SAIC11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO INV IMOB - FII TORRE ALMIRANTE",
+    "Código": "ALMI",
+    "Ticker": "ALMI11",
+    "Ultimo": 650,
+    "Decimal": "01"
+  },
+  {
+    "Nome": "FDO INV IMOB - FII TORRE NORTE",
+    "Código": "TRNT",
+    "Ticker": "TRNT11",
+    "Ultimo": 120,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO INV IMOB - OURINVEST FUNDO DE FUNDOS",
+    "Código": "OUFF",
+    "Ticker": "OUFF11",
+    "Ultimo": 65,
+    "Decimal": 15
+  },
+  {
+    "Nome": "FDO INV IMOB - OURINVEST RE I",
+    "Código": "WTSP",
+    "Ticker": "WTSP11",
+    "Ultimo": 36,
+    "Decimal": 9
+  },
+  {
+    "Nome": "FDO INV IMOB - VBI LOGÍSTICO",
+    "Código": "LVBI",
+    "Ticker": "LVBI11",
+    "Ultimo": 115,
+    "Decimal": 59
+  },
+  {
+    "Nome": "FDO INV IMOB BR HOTEIS - FII",
+    "Código": "BRHT",
+    "Ticker": "BRHT11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO INV IMOB BRASIL PLURAL ABSOLUTO FDO DE FUNDOS",
+    "Código": "BPFF",
+    "Ticker": "BPFF11",
+    "Ultimo": 70,
+    "Decimal": 52
+  },
+  {
+    "Nome": "FDO INV IMOB BRASIL VAREJO - FII",
+    "Código": "BVAR",
+    "Ticker": "BVAR11",
+    "Ultimo": 1550,
+    "Decimal": 73
+  },
+  {
+    "Nome": "FDO INV IMOB BTG PACTUAL SHOPPINGS",
+    "Código": "BPML",
+    "Ticker": "BPML11",
+    "Ultimo": 100,
+    "Decimal": 3
+  },
+  {
+    "Nome": "FDO INV IMOB BTG PACTUAL TERRAS AGRÍCOLAS",
+    "Código": "BTRA",
+    "Ticker": "BTRA11",
+    "Ultimo": 52,
+    "Decimal": 1
+  },
+  {
+    "Nome": "FDO INV IMOB CAIXA CARTEIRA IMOBILIÁRIA",
+    "Código": "CXCI",
+    "Ticker": "CXCI11",
+    "Ultimo": 82,
+    "Decimal": 93
+  },
+  {
+    "Nome": "FDO INV IMOB CAIXA CEDAE",
+    "Código": "CXCE",
+    "Ticker": "CXCE11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO INV IMOB CAIXA SEQ LOGÍSTICA RENDA",
+    "Código": "CXTL",
+    "Ticker": "CXTL11",
+    "Ultimo": 233,
+    "Decimal": 95
+  },
+  {
+    "Nome": "FDO INV IMOB CENTRO TEXTIL INTERNACIONAL",
+    "Código": "CTXT",
+    "Ticker": "CTXT11",
+    "Ultimo": 9,
+    "Decimal": 61
+  },
+  {
+    "Nome": "FDO INV IMOB CJ - FII",
+    "Código": "CJFI",
+    "Ticker": "CJFI11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO INV IMOB CONTINENTAL SQUARE FARIA LIMA",
+    "Código": "FLMA",
+    "Ticker": "FLMA11",
+    "Ultimo": 142,
+    "Decimal": 28
+  },
+  {
+    "Nome": "FDO INV IMOB EDIFÍCIO OURINVEST",
+    "Código": "EDFO",
+    "Ticker": "EDFO11",
+    "Ultimo": 183,
+    "Decimal": 85
+  },
+  {
+    "Nome": "FDO INV IMOB EUROPAR",
+    "Código": "EURO",
+    "Ticker": "EURO11",
+    "Ultimo": 245,
+    "Decimal": 46
+  },
+  {
+    "Nome": "FDO INV IMOB GRAND PLAZA SHOPPING",
+    "Código": "ABCP",
+    "Ticker": "ABCP11",
+    "Ultimo": 70,
+    "Decimal": 11
+  },
+  {
+    "Nome": "FDO INV IMOB GREEN TOWERS",
+    "Código": "GTWR",
+    "Ticker": "GTWR11",
+    "Ultimo": 84,
+    "Decimal": 6
+  },
+  {
+    "Nome": "FDO INV IMOB HOSPITAL UNIMED CAMPINA GRANDE",
+    "Código": "HUCG",
+    "Ticker": "HUCG11",
+    "Ultimo": 90,
+    "Decimal": 2
+  },
+  {
+    "Nome": "FDO INV IMOB HOSPITAL UNIMED SUL CAPIXABA",
+    "Código": "HUSC",
+    "Ticker": "HUSC11",
+    "Ultimo": 112,
+    "Decimal": 31
+  },
+  {
+    "Nome": "FDO INV IMOB INDUSTRIAL DO BRASIL",
+    "Código": "FIIB",
+    "Ticker": "FIIB11",
+    "Ultimo": 517,
+    "Decimal": 47
+  },
+  {
+    "Nome": "FDO INV IMOB INFRA REAL ESTATE - FII",
+    "Código": "FINF",
+    "Ticker": "FINF11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO INV IMOB MEMORIAL OFFICE",
+    "Código": "FMOF",
+    "Ticker": "FMOF11",
+    "Ultimo": 56,
+    "Decimal": "02"
+  },
+  {
+    "Nome": "FDO INV IMOB OURINVEST LOGÍSTICA",
+    "Código": "OULG",
+    "Ticker": "OULG11",
+    "Ultimo": 29,
+    "Decimal": 25
+  },
+  {
+    "Nome": "FDO INV IMOB PANAMBY",
+    "Código": "PABY",
+    "Ticker": "PABY11",
+    "Ultimo": 15,
+    "Decimal": 47
+  },
+  {
+    "Nome": "FDO INV IMOB PEDRA NEGRA RENDA IMOB",
+    "Código": "FPNG",
+    "Ticker": "FPNG11",
+    "Ultimo": 90,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO INV IMOB POLO ESTOQUE II - FII",
+    "Código": "ESTQ",
+    "Ticker": "ESTQ11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO INV IMOB POLO SHOPPING INDAIATUBA",
+    "Código": "VPSI",
+    "Ticker": "VPSI11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO INV IMOB PROJETO ÁGUA BRANCA",
+    "Código": "FPAB",
+    "Ticker": "FPAB11",
+    "Ultimo": 191,
+    "Decimal": 18
+  },
+  {
+    "Nome": "FDO INV IMOB RBR CREDITO IMOB ESTRUTURADO",
+    "Código": "RBRY",
+    "Ticker": "RBRY11",
+    "Ultimo": 99,
+    "Decimal": 95
+  },
+  {
+    "Nome": "FDO INV IMOB RBR PROPERTIES - FII",
+    "Código": "RBRP",
+    "Ticker": "RBRP11",
+    "Ultimo": 61,
+    "Decimal": 86
+  },
+  {
+    "Nome": "FDO INV IMOB RIO BRAVO RENDA CORPORATIVA",
+    "Código": "RCRB",
+    "Ticker": "RCRB11",
+    "Ultimo": 159,
+    "Decimal": 73
+  },
+  {
+    "Nome": "FDO INV IMOB RIO BRAVO RENDA EDUCACIONAL - FII",
+    "Código": "RBED",
+    "Ticker": "RBED11",
+    "Ultimo": 139,
+    "Decimal": 25
+  },
+  {
+    "Nome": "FDO INV IMOB RIO BRAVO RENDA VAREJO - FII",
+    "Código": "RBVA",
+    "Ticker": "RBVA11",
+    "Ultimo": 110,
+    "Decimal": 59
+  },
+  {
+    "Nome": "FDO INV IMOB RIO NEGRO - FII",
+    "Código": "RNGO",
+    "Ticker": "RNGO11",
+    "Ultimo": 47,
+    "Decimal": 6
+  },
+  {
+    "Nome": "FDO INV IMOB SC 401",
+    "Código": "FISC",
+    "Ticker": "FISC11",
+    "Ultimo": 72,
+    "Decimal": 6
+  },
+  {
+    "Nome": "FDO INV IMOB SCP",
+    "Código": "SCPF",
+    "Ticker": "SCPF11",
+    "Ultimo": 3,
+    "Decimal": 82
+  },
+  {
+    "Nome": "FDO INV IMOB SHOPPING PÁTIO HIGIENÓPOLIS",
+    "Código": "SHPH",
+    "Ticker": "SHPH11",
+    "Ultimo": 852,
+    "Decimal": 99
+  },
+  {
+    "Nome": "FDO INV IMOB SMART REAL ESTATE - FII RESP LIMITADA",
+    "Código": "SMRE",
+    "Ticker": "SMRE11",
+    "Ultimo": 100,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO INV IMOB TG ATIVO REAL",
+    "Código": "TGAR",
+    "Ticker": "TGAR11",
+    "Ultimo": 125,
+    "Decimal": 48
+  },
+  {
+    "Nome": "FDO INV IMOB VBI RENDIMENTOS IMOB I FII",
+    "Código": "BARI",
+    "Ticker": "BARI11",
+    "Ultimo": 80,
+    "Decimal": 12
+  },
+  {
+    "Nome": "FDO INV IMOB VEREDA - FII",
+    "Código": "VERE",
+    "Ticker": "VERE11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO INV IMOB VIA PARQUE SHOPPING - FII",
+    "Código": "FVPQ",
+    "Ticker": "FVPQ11",
+    "Ultimo": 88,
+    "Decimal": 56
+  },
+  {
+    "Nome": "FDO INV IMOB VIDA NOVA - FII",
+    "Código": "FIVN",
+    "Ticker": "FIVN11",
+    "Ultimo": 2,
+    "Decimal": 79
+  },
+  {
+    "Nome": "FDO INV IMOB VOTORANTIM LOGISTICA",
+    "Código": "VTLT",
+    "Ticker": "VTLT11",
+    "Ultimo": 95,
+    "Decimal": "07"
+  },
+  {
+    "Nome": "FDO INV IMOB VOTORANTIM SHOPPING",
+    "Código": "VSHO",
+    "Ticker": "VSHO11",
+    "Ultimo": 75,
+    "Decimal": 26
+  },
+  {
+    "Nome": "FDO INV IMOBILIÁRIO DE UNIDADES AUTÔNOMAS",
+    "Código": "IDFI",
+    "Ticker": "IDFI11",
+    "Ultimo": 13,
+    "Decimal": 5
+  },
+  {
+    "Nome": "FDO INV. IMOB. PLURAL RECEBIVEIS",
+    "Código": "PLCR",
+    "Ticker": "PLCR11",
+    "Ultimo": 87,
+    "Decimal": 15
+  },
+  {
+    "Nome": "FDO INV. IMOB. PLUS",
+    "Código": "VTPL",
+    "Ticker": "VTPL11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO INV. IMOB. REC LOGISTICA",
+    "Código": "RELG",
+    "Ticker": "RELG11",
+    "Ultimo": 50,
+    "Decimal": 92
+  },
+  {
+    "Nome": "FDO INV. IMOB. VBI CRI",
+    "Código": "CVBI",
+    "Ticker": "CVBI11",
+    "Ultimo": 94,
+    "Decimal": 87
+  },
+  {
+    "Nome": "FDO INV. MAUA CAPITAL RECEBIVEIS IMOB. - FII",
+    "Código": "MCCI",
+    "Ticker": "MCCI11",
+    "Ultimo": 89,
+    "Decimal": 27
+  },
+  {
+    "Nome": "FDO INVEST IMOB GRAND PLAZA MALL",
+    "Código": "FGPM",
+    "Ticker": "FGPM11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO. INV. IMOB. A - TOWN",
+    "Código": "ATWN",
+    "Ticker": "ATWN11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO. INV. IMOB. ÁTRIO REIT RECEBÍVEIS IMOBILIÁRIOS",
+    "Código": "ARRI",
+    "Ticker": "ARRI11",
+    "Ultimo": 9,
+    "Decimal": "08"
+  },
+  {
+    "Nome": "FDO. INV. IMOB. BTG PACTUAL AGRO LOGÍSTICA",
+    "Código": "BTAL",
+    "Ticker": "BTAL11",
+    "Ultimo": 69,
+    "Decimal": 13
+  },
+  {
+    "Nome": "FDO. INV. IMOB. CAIXA IMÓVEIS CORPORATIVOS",
+    "Código": "CXCO",
+    "Ticker": "CXCO11",
+    "Ultimo": 79,
+    "Decimal": 21
+  },
+  {
+    "Nome": "FDO. INV. IMOB. HOUSI",
+    "Código": "HOSI",
+    "Ticker": "HOSI11",
+    "Ultimo": 85,
+    "Decimal": 99
+  },
+  {
+    "Nome": "FDO. INV. IMOB. MOGNO HOTEIS",
+    "Código": "MGHT",
+    "Ticker": "MGHT11",
+    "Ultimo": 45,
+    "Decimal": 54
+  },
+  {
+    "Nome": "FDO. INV. IMOB. REC FUNDO DE FUNDOS",
+    "Código": "RECX",
+    "Ticker": "RECX11",
+    "Ultimo": 69,
+    "Decimal": 49
+  },
+  {
+    "Nome": "FDO. INV. IMOB. VBI PRIME PROPERTIES",
+    "Código": "PVBI",
+    "Ticker": "PVBI11",
+    "Ultimo": 99,
+    "Decimal": 79
+  },
+  {
+    "Nome": "FDO. INVEST. IMOB. DEVANT FOF IMOBILIÁRIOS",
+    "Código": "DVFF",
+    "Ticker": "DVFF11",
+    "Ultimo": 7,
+    "Decimal": 85
+  },
+  {
+    "Nome": "FDO. INVEST. IMOB. RB CAPITAL I FUNDO DE FUNDOS",
+    "Código": "RFOF",
+    "Ticker": "RFOF11",
+    "Ultimo": 74,
+    "Decimal": 75
+  },
+  {
+    "Nome": "FDO. INVEST. IMOB. VOTORANTIM PATRIMONIAL V",
+    "Código": "VTPA",
+    "Ticker": "VTPA11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO. INVEST. IMOB. VOTORANTIM PATRIMONIAL XII",
+    "Código": "VTXI",
+    "Ticker": "VTXI11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FDO.INVEST. IMOB. MULTI RENDA URBANA",
+    "Código": "VVMR",
+    "Ticker": "VVMR11",
+    "Ultimo": 91,
+    "Decimal": 4
+  },
+  {
+    "Nome": "FIGTREE RENDA EDUCACIONAL FDO INV IMOB",
+    "Código": "FTRE",
+    "Ticker": "FTRE11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FII  IMOBILIÁRIO SPX SYN CRÉDITO IMOB RESP LTDA",
+    "Código": "SPXC",
+    "Ticker": "SPXC11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FII BTG PACTUAL CRÉDITO IMOBILIÁRIO",
+    "Código": "BTCI",
+    "Ticker": "BTCI11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FII HIRE RESIDENCIAL I - FDO DE INV IMOB",
+    "Código": "HRES",
+    "Ticker": "HRES11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FII INTERMEDIÁRIO NAVI TOT",
+    "Código": "N4V1",
+    "Ticker": "N4V111",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FII IRIDIUM RECEBÍVEIS IMOBILIÁRIOS",
+    "Código": "IRDM",
+    "Ticker": "IRDM11",
+    "Ultimo": 75,
+    "Decimal": 86
+  },
+  {
+    "Nome": "FRAM CAPITAL HELMER MULTI RENDA PREF FDO INV IMOB",
+    "Código": "HLMB",
+    "Ticker": "HLMB11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FRAM CAPITAL SBCLOG FDO. INV. IMOB.",
+    "Código": "SBCL",
+    "Ticker": "SBCL11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FRONTEIRA MULTI FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "FRHY",
+    "Ticker": "FRHY11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FUND. DE INVEST. IMOBILIÁRIO GUARDIAN REAL ESTATE",
+    "Código": "GARE",
+    "Ticker": "GARE11",
+    "Ultimo": 9,
+    "Decimal": "07"
+  },
+  {
+    "Nome": "FUND. INVEST. IMOB. SUCCESPAR VAREJO",
+    "Código": "SPVJ",
+    "Ticker": "SPVJ11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FUNDO DE FDO INV IMOB KINEA FII",
+    "Código": "KFOF",
+    "Ticker": "KFOF11",
+    "Ultimo": 94,
+    "Decimal": 21
+  },
+  {
+    "Nome": "FUNDO DE INV IMOB RBR CRÉD PULVERIZADO RESP LTDA",
+    "Código": "PULV",
+    "Ticker": "PULV11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FUNDO DE INVEST IMOB OURINVEST RENDA ESTRUTURADA",
+    "Código": "OURE",
+    "Ticker": "OURE11",
+    "Ultimo": 76,
+    "Decimal": 74
+  },
+  {
+    "Nome": "FUNDO DE INVEST IMOBILIARIO SUNO ENERGIAS LIMPAS",
+    "Código": "SNEL",
+    "Ticker": "SNEL11",
+    "Ultimo": 130,
+    "Decimal": 74
+  },
+  {
+    "Nome": "FUNDO DE INVESTIMENTO IMOBILIÁRIO - BLUE RECEBÍVEI",
+    "Código": "BLUR",
+    "Ticker": "BLUR11",
+    "Ultimo": 92,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FUNDO DE INVESTIMENTO IMOBILIÁRIO - DEVELOPMENT V1",
+    "Código": "LKDV",
+    "Ticker": "LKDV11",
+    "Ultimo": 997,
+    "Decimal": 23
+  },
+  {
+    "Nome": "FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII RBR DESENV",
+    "Código": "RBRI",
+    "Ticker": "RBRI11",
+    "Ultimo": 916,
+    "Decimal": 83
+  },
+  {
+    "Nome": "FUNDO DE INVESTIMENTO IMOBILIÁRIO - SPX SYN MULT",
+    "Código": "SPXS",
+    "Ticker": "SPXS11",
+    "Ultimo": 9,
+    "Decimal": 53
+  },
+  {
+    "Nome": "FUNDO DE INVESTIMENTO IMOBILIÁRIO APEX MALLS - FII",
+    "Código": "APXM",
+    "Ticker": "APXM11",
+    "Ultimo": 101,
+    "Decimal": 99
+  },
+  {
+    "Nome": "FUNDO DE INVESTIMENTO IMOBILIÁRIO BRL PROP II",
+    "Código": "BRLA",
+    "Ticker": "BRLA11",
+    "Ultimo": 155,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FUNDO DE INVESTIMENTO IMOBILIÁRIO CAIXA AGÊNCIAS",
+    "Código": "CXAG",
+    "Ticker": "CXAG11",
+    "Ultimo": 77,
+    "Decimal": 74
+  },
+  {
+    "Nome": "FUNDO DE INVESTIMENTO IMOBILIÁRIO HBC RENDA URBANA",
+    "Código": "HBCR",
+    "Ticker": "HBCR11",
+    "Ultimo": 132,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FUNDO DE INVESTIMENTO IMOBILIÁRIO MINT EDUCACIONAL",
+    "Código": "MINT",
+    "Ticker": "MINT11",
+    "Ultimo": 93,
+    "Decimal": "06"
+  },
+  {
+    "Nome": "FUNDO DE INVESTIMENTO IMOBILIARIO PATRIMONIAL IV",
+    "Código": "OPTM",
+    "Ticker": "OPTM11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "FUNDO DE INVESTIMENTO IMOBILIÁRIO RIZA TERRAX",
+    "Código": "RZTR",
+    "Ticker": "RZTR11",
+    "Ultimo": 94,
+    "Decimal": 24
+  },
+  {
+    "Nome": "FUNDO DE INVESTIMENTO IMOBILIÁRIO ROOFTOP I",
+    "Código": "ROOF",
+    "Ticker": "ROOF11",
+    "Ultimo": 727,
+    "Decimal": 2
+  },
+  {
+    "Nome": "G5 CIDADE NOVA FDO. INVEST. IMOB.",
+    "Código": "TCIN",
+    "Ticker": "TCIN11",
+    "Ultimo": 145,
+    "Decimal": 92
+  },
+  {
+    "Nome": "GALAPAGOS RECEBÍVEIS IMOBILIÁRIOS - FDO. INV. IMOB",
+    "Código": "GCRI",
+    "Ticker": "GCRI11",
+    "Ultimo": 86,
+    "Decimal": "03"
+  },
+  {
+    "Nome": "GALAPAGOS SPECIAL OPORTUNITIES FII",
+    "Código": "GCOI",
+    "Ticker": "GCOI11",
+    "Ultimo": 98,
+    "Decimal": 99
+  },
+  {
+    "Nome": "GAZIT MALLS FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "GZIT",
+    "Ticker": "GZIT11",
+    "Ultimo": 64,
+    "Decimal": 66
+  },
+  {
+    "Nome": "GENERAL SHOP E OUTLETS DO BRASIL FDO INV IMOB - FI",
+    "Código": "GSFI",
+    "Ticker": "GSFI11",
+    "Ultimo": 7,
+    "Decimal": 85
+  },
+  {
+    "Nome": "GENERAL SHOPPING ATIVO E RENDA FUNDO DE INV IMOB.",
+    "Código": "FIGS",
+    "Ticker": "FIGS11",
+    "Ultimo": 57,
+    "Decimal": 37
+  },
+  {
+    "Nome": "GENIAL LOGÍSTICA FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "GLOG",
+    "Ticker": "GLOG11",
+    "Ultimo": 64,
+    "Decimal": 99
+  },
+  {
+    "Nome": "GGR COVEPI RENDA FDO INV IMOB",
+    "Código": "GGRC",
+    "Ticker": "GGRC11",
+    "Ultimo": 11,
+    "Decimal": 22
+  },
+  {
+    "Nome": "GRUPO RCFA FDO INV IMOB",
+    "Código": "RCFA",
+    "Ticker": "RCFA11",
+    "Ultimo": 1,
+    "Decimal": "08"
+  },
+  {
+    "Nome": "HABITAT II - FDO INV IMOB",
+    "Código": "HABT",
+    "Ticker": "HABT11",
+    "Ultimo": 90,
+    "Decimal": ""
+  },
+  {
+    "Nome": "HAZ FDO INV IMOB - FII",
+    "Código": "ATCR",
+    "Ticker": "ATCR11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "HBC II FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "EVBI",
+    "Ticker": "EVBI11",
+    "Ultimo": 98,
+    "Decimal": 49
+  },
+  {
+    "Nome": "HECTARE CE - FDO INV IMOB",
+    "Código": "HCTR",
+    "Ticker": "HCTR11",
+    "Ultimo": 32,
+    "Decimal": 32
+  },
+  {
+    "Nome": "HECTARE DESENV. STUDENT HOUSING - FDO. INV. IMOB.",
+    "Código": "HCST",
+    "Ticker": "HCST11",
+    "Ultimo": 55,
+    "Decimal": "02"
+  },
+  {
+    "Nome": "HECTARE RECEBÍVEIS HIGH GRADE FDO. INV. IMOB.",
+    "Código": "HCHG",
+    "Ticker": "HCHG11",
+    "Ultimo": 71,
+    "Decimal": "02"
+  },
+  {
+    "Nome": "HEDGE AAA FDO. INV. IMOB.",
+    "Código": "HAAA",
+    "Ticker": "HAAA11",
+    "Ultimo": 40,
+    "Decimal": 41
+  },
+  {
+    "Nome": "HEDGE ATRIUM SHOPPING SANTO ANDRE FDO INV IMOB",
+    "Código": "ATSA",
+    "Ticker": "ATSA11",
+    "Ultimo": 56,
+    "Decimal": 5
+  },
+  {
+    "Nome": "HEDGE BRASIL LOGÍSTICO IND FUND INV IMOB RESP LIM",
+    "Código": "HGBL",
+    "Ticker": "HGBL11",
+    "Ultimo": 10,
+    "Decimal": 5
+  },
+  {
+    "Nome": "HEDGE BRASIL SHOPPING FDO INV IMOB",
+    "Código": "HGBS",
+    "Ticker": "HGBS11",
+    "Ultimo": 221,
+    "Decimal": 57
+  },
+  {
+    "Nome": "HEDGE DESENVOLVIMENTO LOGÍSTICO FDO INV IMOB",
+    "Código": "HDEL",
+    "Ticker": "HDEL11",
+    "Ultimo": 110,
+    "Decimal": ""
+  },
+  {
+    "Nome": "HEDGE FLORIPA SHOPPING FUNDO INV IMOBI",
+    "Código": "FLRP",
+    "Ticker": "FLRP11",
+    "Ultimo": 2100,
+    "Decimal": ""
+  },
+  {
+    "Nome": "HEDGE LOGÍSTICA FDO. INV. IMOB.",
+    "Código": "HLOG",
+    "Ticker": "HLOG11",
+    "Ultimo": 82,
+    "Decimal": 99
+  },
+  {
+    "Nome": "HEDGE OFFICE INCOME FUNDO DE INVESTIMENTO IMOB.",
+    "Código": "HOFC",
+    "Ticker": "HOFC11",
+    "Ultimo": 31,
+    "Decimal": 21
+  },
+  {
+    "Nome": "HEDGE PALADIN DESIGN OFFICES FDO INV IMOB",
+    "Código": "HDOF",
+    "Ticker": "HDOF11",
+    "Ultimo": 115,
+    "Decimal": ""
+  },
+  {
+    "Nome": "HEDGE REALTY DEVELOPMENT FDO INV IMOB",
+    "Código": "HRDF",
+    "Ticker": "HRDF11",
+    "Ultimo": 3,
+    "Decimal": 69
+  },
+  {
+    "Nome": "HEDGE RECEBIVEIS IMOB. FUNDO DE INVST. IMOB.",
+    "Código": "HREC",
+    "Ticker": "HREC11",
+    "Ultimo": 8,
+    "Decimal": 57
+  },
+  {
+    "Nome": "HEDGE SEED FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "SEED",
+    "Ticker": "SEED11",
+    "Ultimo": 100,
+    "Decimal": 67
+  },
+  {
+    "Nome": "HEDGE SHOPPING PARQUE DOM PEDRO FDO. DE INV. IMOB.",
+    "Código": "HPDP",
+    "Ticker": "HPDP11",
+    "Ultimo": 87,
+    "Decimal": 16
+  },
+  {
+    "Nome": "HEDGE TOP FOFII 3 FDO INV IMOB",
+    "Código": "HFOF",
+    "Ticker": "HFOF11",
+    "Ultimo": 75,
+    "Decimal": 91
+  },
+  {
+    "Nome": "HEDGE YEES HABITAÇÕES ECON FDO DE INV IMOB RESP L",
+    "Código": "YEES",
+    "Ticker": "YEES11",
+    "Ultimo": 102,
+    "Decimal": "05"
+  },
+  {
+    "Nome": "HGI CRÉDITOS IMOBILIÁRIOS FDO. INV. IMOB.",
+    "Código": "HGIC",
+    "Ticker": "HGIC11",
+    "Ultimo": 100,
+    "Decimal": 5
+  },
+  {
+    "Nome": "HIRE LOG I FDO DE INV IMOB",
+    "Código": "HILG",
+    "Ticker": "HILG11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "HSI ATIVOS FINANCEIROS FUNDO DE INVESTIMENTO IMOBI",
+    "Código": "HSAF",
+    "Ticker": "HSAF11",
+    "Ultimo": 83,
+    "Decimal": 81
+  },
+  {
+    "Nome": "HSI LOGÍSTICA FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "HSLG",
+    "Ticker": "HSLG11",
+    "Ultimo": 89,
+    "Decimal": 79
+  },
+  {
+    "Nome": "HSI MALL FDO INV IMOB",
+    "Código": "HSML",
+    "Ticker": "HSML11",
+    "Ultimo": 97,
+    "Decimal": 69
+  },
+  {
+    "Nome": "HSI RENDA IMOB FDO INV IMOB",
+    "Código": "HSRE",
+    "Ticker": "HSRE11",
+    "Ultimo": 106,
+    "Decimal": 87
+  },
+  {
+    "Nome": "HUSI FDO INV. IMOB.",
+    "Código": "HUSI",
+    "Ticker": "HUSI11",
+    "Ultimo": 1149,
+    "Decimal": 99
+  },
+  {
+    "Nome": "ÍCONE - FUNDO DE INVEST IMOB RES LIMITADA",
+    "Código": "ICNE",
+    "Ticker": "ICNE11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "INTER DESENVOLVIMENTO FDO DE INV IMOB",
+    "Código": "INDE",
+    "Ticker": "INDE11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "INTER TEVA INDICE DE PAPEL FUNDO DE INVESTIMENTO",
+    "Código": "ITIP",
+    "Ticker": "ITIP11",
+    "Ultimo": 80,
+    "Decimal": 76
+  },
+  {
+    "Nome": "INTER TÍTULOS IMOB. FDO INV. IMOB.",
+    "Código": "BICR",
+    "Ticker": "BICR11",
+    "Ultimo": 48,
+    "Decimal": "08"
+  },
+  {
+    "Nome": "INVISTA SCJ - FII",
+    "Código": "ISCJ",
+    "Ticker": "ISCJ11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "IRIDIUM FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "IRIM",
+    "Ticker": "IRIM11",
+    "Ultimo": 77,
+    "Decimal": 8
+  },
+  {
+    "Nome": "ITAÚ CRÉDITO IMOB IPCA FDO DE INV IMOB",
+    "Código": "ICRI",
+    "Ticker": "ICRI11",
+    "Ultimo": 97,
+    "Decimal": 7
+  },
+  {
+    "Nome": "ITAÚ TEMPUS FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "TMPS",
+    "Ticker": "TMPS11",
+    "Ultimo": 96,
+    "Decimal": 9
+  },
+  {
+    "Nome": "ITAÚ TOTAL RETURN FDO DE INV IMOB",
+    "Código": "ITRI",
+    "Ticker": "ITRI11",
+    "Ultimo": 97,
+    "Decimal": 66
+  },
+  {
+    "Nome": "JACARANDÁ 02 FUNDO DE INVESTIMENTO IMOBILIÁRIO FII",
+    "Código": "JCDB",
+    "Ticker": "JCDB11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "JACARANDÁ I FUNDO DE INVESTIMENTO IMOBILIÁRIO -FII",
+    "Código": "JCDA",
+    "Ticker": "JCDA11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "JBFO FOF FDO INV. IMOB.",
+    "Código": "JBFO",
+    "Ticker": "JBFO11",
+    "Ultimo": 82,
+    "Decimal": "01"
+  },
+  {
+    "Nome": "JFDCAM FUNDO DE INVESTIMENTO IMOBILIÁRIO FII",
+    "Código": "VJFD",
+    "Ticker": "VJFD11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "JFL LIVING FDO. INV. IMOB.",
+    "Código": "JFLL",
+    "Ticker": "JFLL11",
+    "Ultimo": 75,
+    "Decimal": 55
+  },
+  {
+    "Nome": "JGP DESENVOLVIMENTO I FDO INV IMOB RESP LIMIT",
+    "Código": "RDLS",
+    "Ticker": "RDLS11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "JHSF CAPITAL CIDADE JARDIM - FDO DE INV IMOB",
+    "Código": "JCCJ",
+    "Ticker": "JCCJ11",
+    "Ultimo": 152,
+    "Decimal": ""
+  },
+  {
+    "Nome": "JPP CAPITAL FDO INV IMOB - FII",
+    "Código": "JPPC",
+    "Ticker": "JPPC11",
+    "Ultimo": 151,
+    "Decimal": "02"
+  },
+  {
+    "Nome": "JPP CAPITAL RECEBIVEIS IMOB. FDO. INVEST. IMOB.",
+    "Código": "JPPA",
+    "Ticker": "JPPA11",
+    "Ultimo": 87,
+    "Decimal": 96
+  },
+  {
+    "Nome": "JS ATIVOS FINANCEIROS FDO DE INV IMOBILIÁRIO",
+    "Código": "JSAF",
+    "Ticker": "JSAF11",
+    "Ultimo": 101,
+    "Decimal": ""
+  },
+  {
+    "Nome": "JS REAL ESTATE MULTIGESTÃO - FII",
+    "Código": "JSRE",
+    "Ticker": "JSRE11",
+    "Ultimo": 70,
+    "Decimal": 5
+  },
+  {
+    "Nome": "JT PREV FDO INV IMOB DESENVOLVIMENTO HABITACIONAL",
+    "Código": "JTPR",
+    "Ticker": "JTPR11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "KILIMA FIC FDO. IMOB. SUNO 30",
+    "Código": "KISU",
+    "Ticker": "KISU11",
+    "Ultimo": 8,
+    "Decimal": 37
+  },
+  {
+    "Nome": "KILIMA VOLKANO RECEBÍVEIS IMOB FDO DE INV IMOB",
+    "Código": "KIVO",
+    "Ticker": "KIVO11",
+    "Ultimo": 88,
+    "Decimal": 25
+  },
+  {
+    "Nome": "KINEA AQUISIÇÕES RESIDENCIAIS FII RESP LIM",
+    "Código": "KRES",
+    "Ticker": "KRES11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "KINEA CREDITAS FDO DE INV IMOBILIÁRIO - FII",
+    "Código": "KCRE",
+    "Ticker": "KCRE11",
+    "Ultimo": 97,
+    "Decimal": 62
+  },
+  {
+    "Nome": "KINEA DESENVOLVIMENTO LOGÍSTICO FDO DE INV IMOB",
+    "Código": "KLOG",
+    "Ticker": "KLOG11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "KINEA HEDGE FUND FDO DE INV IMOB",
+    "Código": "KNHF",
+    "Ticker": "KNHF11",
+    "Ultimo": 99,
+    "Decimal": 84
+  },
+  {
+    "Nome": "KINEA HIGH YIELD CRI FDO INV IMOB - FII",
+    "Código": "KNHY",
+    "Ticker": "KNHY11",
+    "Ultimo": 105,
+    "Decimal": 51
+  },
+  {
+    "Nome": "KINEA II REAL ESTATE EQUITY FDO INV IMOB",
+    "Código": "KNRE",
+    "Ticker": "KNRE11",
+    "Ultimo": 0,
+    "Decimal": 41
+  },
+  {
+    "Nome": "KINEA ÍNDICES DE PREÇOS FDO INV IMOB - FII",
+    "Código": "KNIP",
+    "Ticker": "KNIP11",
+    "Ultimo": 97,
+    "Decimal": ""
+  },
+  {
+    "Nome": "KINEA OPOR IMOB I FUNDO DE INVEST IMB LTDA",
+    "Código": "KOPI",
+    "Ticker": "KOPI11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "KINEA OPORTUNIDADES REAL ESTATE FDO DE INV IMOB",
+    "Código": "KORE",
+    "Ticker": "KORE11",
+    "Ultimo": 108,
+    "Decimal": 29
+  },
+  {
+    "Nome": "KINEA PREMIUM PROPERTIES FDO INV IMOB",
+    "Código": "KNPR",
+    "Ticker": "KNPR11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "KINEA RENDA IMOBILIÁRIA FDO INV IMOB - FII",
+    "Código": "KNRI",
+    "Ticker": "KNRI11",
+    "Ultimo": 164,
+    "Decimal": ""
+  },
+  {
+    "Nome": "KINEA RENDIMENTOS IMOBILIÁRIOS FDO INV IMOB - FII",
+    "Código": "KNCR",
+    "Ticker": "KNCR11",
+    "Ultimo": 103,
+    "Decimal": 7
+  },
+  {
+    "Nome": "KINEA SECURITIES FDO. DE INV. IMOB. - FII",
+    "Código": "KNSC",
+    "Ticker": "KNSC11",
+    "Ultimo": 9,
+    "Decimal": "09"
+  },
+  {
+    "Nome": "KINEA UNIQUE HY CDI FUNDO DE INVESTIMENTO IMOB",
+    "Código": "KNUQ",
+    "Ticker": "KNUQ11",
+    "Ultimo": 103,
+    "Decimal": 58
+  },
+  {
+    "Nome": "LAGO DA PEDRA - FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "LPLP",
+    "Ticker": "LPLP11",
+    "Ultimo": 500,
+    "Decimal": ""
+  },
+  {
+    "Nome": "LAV SLDZ DESENVOLVIMENTO IMOB FDO INV IMOB",
+    "Código": "SLDZ",
+    "Ticker": "SLDZ11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "LEGATUS SHOPPINGS FDO. INV. IMOB. - FII",
+    "Código": "LASC",
+    "Ticker": "LASC11",
+    "Ultimo": 111,
+    "Decimal": 84
+  },
+  {
+    "Nome": "LESTE RIVA EQUITY PREFERENCIAL I FDO. INV. IMOB.",
+    "Código": "LSPA",
+    "Ticker": "LSPA11",
+    "Ultimo": 109,
+    "Decimal": ""
+  },
+  {
+    "Nome": "LIFE CAPITAL PARTNERS FUNDO DE INVESTIMENTO IMOB",
+    "Código": "LIFE",
+    "Ticker": "LIFE11",
+    "Ultimo": 10,
+    "Decimal": ""
+  },
+  {
+    "Nome": "LOFT I - FDO INV IMOB",
+    "Código": "LOFT",
+    "Ticker": "LOFT11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "LOFT II FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "LFTT",
+    "Ticker": "LFTT11",
+    "Ultimo": 30,
+    "Decimal": ""
+  },
+  {
+    "Nome": "LOGCP INTER FDO INV IMOB",
+    "Código": "LGCP",
+    "Ticker": "LGCP11",
+    "Ultimo": 85,
+    "Decimal": 9
+  },
+  {
+    "Nome": "LUGGO FDO. INV. IMOB.",
+    "Código": "LUGG",
+    "Ticker": "LUGG11",
+    "Ultimo": 77,
+    "Decimal": 4
+  },
+  {
+    "Nome": "MALLS BRASIL PLURAL FDO INV IMOB",
+    "Código": "MALL",
+    "Ticker": "MALL11",
+    "Ultimo": 114,
+    "Decimal": 9
+  },
+  {
+    "Nome": "MANATÍ CAPITAL HEDGE FUND FDO INV IMOB",
+    "Código": "MANA",
+    "Ticker": "MANA11",
+    "Ultimo": 9,
+    "Decimal": 35
+  },
+  {
+    "Nome": "MARESIAS FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "MMVE",
+    "Ticker": "MMVE11",
+    "Ultimo": 161,
+    "Decimal": 87
+  },
+  {
+    "Nome": "MAUÁ CAPITAL HEDGE FUND - FDO. INVEST. IMOB.",
+    "Código": "MCHF",
+    "Ticker": "MCHF11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "MAUÁ CAPITAL REAL ESTATE FDO DE INV IMOB",
+    "Código": "MCHY",
+    "Ticker": "MCHY11",
+    "Ultimo": 9,
+    "Decimal": 65
+  },
+  {
+    "Nome": "MAXI RENDA FDO INV IMOB - FII",
+    "Código": "MXRF",
+    "Ticker": "MXRF11",
+    "Ultimo": 10,
+    "Decimal": 24
+  },
+  {
+    "Nome": "MÉRITO CEMITÉRIOS FII - FDO DE INV IMOB",
+    "Código": "MCEM",
+    "Ticker": "MCEM11",
+    "Ultimo": 109,
+    "Decimal": 99
+  },
+  {
+    "Nome": "MÉRITO DESENVOLVIMENTO IMOBILIÁRIO I FII - FII",
+    "Código": "MFII",
+    "Ticker": "MFII11",
+    "Ultimo": 103,
+    "Decimal": 78
+  },
+  {
+    "Nome": "MERITO FDO. AÇÕES IMOB. FII - FDO INV. IMOB.",
+    "Código": "MFAI",
+    "Ticker": "MFAI11",
+    "Ultimo": 62,
+    "Decimal": ""
+  },
+  {
+    "Nome": "MÉRITO RECEBÍVEIS IMOBILIÁRIOS FII - FDO INV IMOB",
+    "Código": "MFCR",
+    "Ticker": "MFCR11",
+    "Ultimo": 26,
+    "Decimal": 55
+  },
+  {
+    "Nome": "MOGNO PROPERTIES FUNDO DE INVESTIMENTO IMOBILIARIO",
+    "Código": "MGRI",
+    "Ticker": "MGRI11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "MULTI SHOPPINGS FDO INV IMOB - FII",
+    "Código": "SHOP",
+    "Ticker": "SHOP11",
+    "Ultimo": 59,
+    "Decimal": 29
+  },
+  {
+    "Nome": "MULTIGESTÃO RENDA COMERCIAL FDO INV IMOB - FII",
+    "Código": "DRIT",
+    "Ticker": "DRIT11",
+    "Ultimo": 78,
+    "Decimal": 31
+  },
+  {
+    "Nome": "MULTIOFFICES 2 - FDO. INV. IMOB.",
+    "Código": "MOFF",
+    "Ticker": "MOFF11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "NAVI CRÉDITO IMOBILIÁRIO - FDO INV IMOB",
+    "Código": "NCRI",
+    "Ticker": "NCRI11",
+    "Ultimo": 8,
+    "Decimal": 78
+  },
+  {
+    "Nome": "NAVI IMOBILIÁRIO TOTAL RETURN FDO. INVEST. IMOB.",
+    "Código": "NAVT",
+    "Ticker": "NAVT11",
+    "Ultimo": 94,
+    "Decimal": 65
+  },
+  {
+    "Nome": "NAVI RESIDENCIAL FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "APTO",
+    "Ticker": "APTO11",
+    "Ultimo": 9,
+    "Decimal": 53
+  },
+  {
+    "Nome": "NEWPORT LOGÍSTICA FDO INV. IMOB.",
+    "Código": "NEWL",
+    "Ticker": "NEWL11",
+    "Ultimo": 121,
+    "Decimal": 87
+  },
+  {
+    "Nome": "NEWPORT RENDA URBANA FDO INV IMOB",
+    "Código": "NEWU",
+    "Ticker": "NEWU11",
+    "Ultimo": 77,
+    "Decimal": 83
+  },
+  {
+    "Nome": "NOVA I - FDO INV IMOB - FII",
+    "Código": "NVIF",
+    "Ticker": "NVIF11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "OCTO FDO DE INV IMOB",
+    "Código": "OCRE",
+    "Ticker": "OCRE11",
+    "Ultimo": 100,
+    "Decimal": 95
+  },
+  {
+    "Nome": "ONDA DESENVOLVIMENTO IMOB FDO DE INV IMOB",
+    "Código": "ONDV",
+    "Ticker": "ONDV11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "OPPORTUNITY BALASSIANO FDO DE INV IMOB",
+    "Código": "OBAL",
+    "Ticker": "OBAL11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "OPPORTUNITY FDO INV IMOB",
+    "Código": "FTCE",
+    "Ticker": "FTCE11",
+    "Ultimo": 2815,
+    "Decimal": 69
+  },
+  {
+    "Nome": "OURINVEST JPP FDO INV IMOB - FII",
+    "Código": "OUJP",
+    "Ticker": "OUJP11",
+    "Ultimo": 91,
+    "Decimal": 3
+  },
+  {
+    "Nome": "PANORAMA CREDITO RESIDENCIAL  FDO DE INV IMOB",
+    "Código": "PNCR",
+    "Ticker": "PNCR11",
+    "Ultimo": 82,
+    "Decimal": 95
+  },
+  {
+    "Nome": "PANORAMA DESENVOLVIMENTO LOGÍSTICO FDO. INV. IMOB.",
+    "Código": "PNDL",
+    "Ticker": "PNDL11",
+    "Ultimo": 1099,
+    "Decimal": ""
+  },
+  {
+    "Nome": "PANORAMA LAST MILE SBC FDO INV IMOB",
+    "Código": "PNLM",
+    "Ticker": "PNLM11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "PANORAMA PROPERTIES FDO. INVEST. IMOB.",
+    "Código": "PNPR",
+    "Ticker": "PNPR11",
+    "Ultimo": 106,
+    "Decimal": ""
+  },
+  {
+    "Nome": "PANORAMA REAL ESTATE CRÉDITO FDO INV IMOB",
+    "Código": "PNRC",
+    "Ticker": "PNRC11",
+    "Ultimo": 102,
+    "Decimal": 32
+  },
+  {
+    "Nome": "PARAMIS HEDGE FUND FDO DE INV IMOB",
+    "Código": "PMIS",
+    "Ticker": "PMIS11",
+    "Ultimo": 9,
+    "Decimal": 18
+  },
+  {
+    "Nome": "PARKING PARTNERS FDO. INVEST. IMOB.",
+    "Código": "VTVI",
+    "Ticker": "VTVI11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "PARQUE ANHANGUERA FDO. INVEST. IMOB.",
+    "Código": "PQAG",
+    "Ticker": "PQAG11",
+    "Ultimo": 58,
+    "Decimal": 89
+  },
+  {
+    "Nome": "PATAGÔNIA CAPITAL MULTIESTRATÉGIA FDO DE INV IMOB",
+    "Código": "PATA",
+    "Ticker": "PATA11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "PÁTRIA EDIFÍCIOS CORPORATIVOS FDO INV IMOB - FII",
+    "Código": "PATC",
+    "Ticker": "PATC11",
+    "Ultimo": 36,
+    "Decimal": 58
+  },
+  {
+    "Nome": "PÁTRIA LOGÍSTICA FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "PATL",
+    "Ticker": "PATL11",
+    "Ultimo": 61,
+    "Decimal": 19
+  },
+  {
+    "Nome": "PERFORMA REAL ESTATE - FDO. INV. IMOB.",
+    "Código": "PEMA",
+    "Ticker": "PEMA11",
+    "Ultimo": 38,
+    "Decimal": ""
+  },
+  {
+    "Nome": "PERSONALE I FDO INV IMOB - FII",
+    "Código": "PRSN",
+    "Ticker": "PRSN11",
+    "Ultimo": 1,
+    "Decimal": 12
+  },
+  {
+    "Nome": "POLO CREDITO IMOBILIARIO- FII",
+    "Código": "PORD",
+    "Ticker": "PORD11",
+    "Ultimo": 9,
+    "Decimal": 25
+  },
+  {
+    "Nome": "POLO FDO INV IMOB - FII RECEBÍVEIS IMOBILIÁRIOS I",
+    "Código": "PLRI",
+    "Ticker": "PLRI11",
+    "Ultimo": 15,
+    "Decimal": 95
+  },
+  {
+    "Nome": "PRAIA DO CASTELO FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "PCAS",
+    "Ticker": "PCAS11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "PRAZO - FUNDO DE INVESTIMENTO IMOBILIÁRIO - FII",
+    "Código": "PRZS",
+    "Ticker": "PRZS11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "PRESIDENTE VARGAS FDO INV IMOB",
+    "Código": "PRSV",
+    "Ticker": "PRSV11",
+    "Ultimo": 66,
+    "Decimal": 92
+  },
+  {
+    "Nome": "PROLOGIS BRAZIL LOGISTICS VENTURE FDO INV IMOB",
+    "Código": "PBLV",
+    "Ticker": "PBLV11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "QUASAR AGRO - FDO INV. IMOB.",
+    "Código": "QAGR",
+    "Ticker": "QAGR11",
+    "Ultimo": 47,
+    "Decimal": ""
+  },
+  {
+    "Nome": "RAIZZ DESENVOLVIMENTO II FII RESP. LIMITADA",
+    "Código": "RZZI",
+    "Ticker": "RZZI11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "RB CAPITAL DESENV RESID III FDO INV IMOB - FII",
+    "Código": "RSPD",
+    "Ticker": "RSPD11",
+    "Ultimo": 1089,
+    "Decimal": 99
+  },
+  {
+    "Nome": "RB CAPITAL DESENV. RESID. II FDO INV IMOB - FII",
+    "Código": "RBDS",
+    "Ticker": "RBDS11",
+    "Ultimo": 2,
+    "Decimal": "08"
+  },
+  {
+    "Nome": "RB CAPITAL DESENV. RESIDENCIAL IV FDO. INV. IMOB.",
+    "Código": "RBIR",
+    "Ticker": "RBIR11",
+    "Ultimo": 89,
+    "Decimal": 85
+  },
+  {
+    "Nome": "RB CAPITAL LOGÍSTICO FDO. INV. IMOB.YE",
+    "Código": "RBLG",
+    "Ticker": "RBLG11",
+    "Ultimo": 100,
+    "Decimal": ""
+  },
+  {
+    "Nome": "RB CAPITAL RECEBÍVEIS IMOB. FDO. INVEST. IMOB FII",
+    "Código": "RRCI",
+    "Ticker": "RRCI11",
+    "Ultimo": 83,
+    "Decimal": ""
+  },
+  {
+    "Nome": "RB CAPITAL RENDA I FDO INV IMOB - FII",
+    "Código": "FIIP",
+    "Ticker": "FIIP11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "RB CAPITAL RENDA II FDO INV IMOB - FII",
+    "Código": "RBRD",
+    "Ticker": "RBRD11",
+    "Ultimo": 40,
+    "Decimal": 4
+  },
+  {
+    "Nome": "RB CAPITAL TFO SITUS FDO INV IMOB - FII",
+    "Código": "RBTS",
+    "Ticker": "RBTS11",
+    "Ultimo": 849,
+    "Decimal": 98
+  },
+  {
+    "Nome": "RBR ALPHA MULTIESTRATÉGIA REAL ESTATE FDO INV IMOB",
+    "Código": "RBRF",
+    "Ticker": "RBRF11",
+    "Ultimo": 8,
+    "Decimal": "09"
+  },
+  {
+    "Nome": "RBR DESENV COMERCIAL FEEDER FOF FDO INVEST IMOB",
+    "Código": "RCFF",
+    "Ticker": "RCFF11",
+    "Ultimo": 95,
+    "Decimal": ""
+  },
+  {
+    "Nome": "RBR DESENVOLVIMENTO LOGÍSTICO I - FII RESP LIMITAD",
+    "Código": "RDLI",
+    "Ticker": "RDLI11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "RBR LOG FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "RBRL",
+    "Ticker": "RBRL11",
+    "Ultimo": 80,
+    "Decimal": 93
+  },
+  {
+    "Nome": "RBR PLUS MULTIESTRATÉGIA REAL ESTATE FII",
+    "Código": "RBRX",
+    "Ticker": "RBRX11",
+    "Ultimo": 9,
+    "Decimal": 5
+  },
+  {
+    "Nome": "RBR PREMIUM RECEBÍVEIS IMOBILIÁRIOS FDO INV IMOB",
+    "Código": "RPRI",
+    "Ticker": "RPRI11",
+    "Ultimo": 96,
+    "Decimal": 8
+  },
+  {
+    "Nome": "REAG MULTI ATIVOS IMOBILIÁRIOS - FII",
+    "Código": "RMAI",
+    "Ticker": "RMAI11",
+    "Ultimo": 69,
+    "Decimal": 78
+  },
+  {
+    "Nome": "REAL INVESTOR FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "RINV",
+    "Ticker": "RINV11",
+    "Ultimo": 112,
+    "Decimal": ""
+  },
+  {
+    "Nome": "RIO BRAVO CREDITO IMOB HIGH GRADE FUND DE INVEST",
+    "Código": "RBHG",
+    "Ticker": "RBHG11",
+    "Ultimo": 89,
+    "Decimal": 52
+  },
+  {
+    "Nome": "RIO BRAVO CRÉDITO IMOB. HIGH YIELD FDO. INV. IMOB.",
+    "Código": "RBHY",
+    "Ticker": "RBHY11",
+    "Ultimo": 88,
+    "Decimal": 65
+  },
+  {
+    "Nome": "RIO BRAVO CRÉDITO IMOBILIÁRIO II FDO INV IMOB -FII",
+    "Código": "RBVO",
+    "Ticker": "RBVO11",
+    "Ultimo": 12,
+    "Decimal": 14
+  },
+  {
+    "Nome": "RIO BRAVO FUNDO DE FUNDOS DE INVESTIMENTO IMOB",
+    "Código": "RBFF",
+    "Ticker": "RBFF11",
+    "Ultimo": 61,
+    "Decimal": 34
+  },
+  {
+    "Nome": "RIO BRAVO OPORTUNIDADES IMOBILIÁRIAS FII",
+    "Código": "RBOP",
+    "Ticker": "RBOP11",
+    "Ultimo": 391,
+    "Decimal": 49
+  },
+  {
+    "Nome": "RIO BRAVO RENDA RESIDENCIAL FDO. INVEST. IMOB.",
+    "Código": "RBRS",
+    "Ticker": "RBRS11",
+    "Ultimo": 47,
+    "Decimal": 22
+  },
+  {
+    "Nome": "RIZA AKIN FDO. INV. IMOB. FII",
+    "Código": "RZAK",
+    "Ticker": "RZAK11",
+    "Ultimo": 86,
+    "Decimal": 22
+  },
+  {
+    "Nome": "RIZA ARCTIUM REAL ESTATE FDO INV IMOB",
+    "Código": "RZAT",
+    "Ticker": "RZAT11",
+    "Ultimo": 99,
+    "Decimal": 73
+  },
+  {
+    "Nome": "ROCK - FII FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "RCKF",
+    "Ticker": "RCKF11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "SANTANDER PAPEIS IMOB CDI FDO INV IMOB",
+    "Código": "SADI",
+    "Ticker": "SADI11",
+    "Ultimo": 89,
+    "Decimal": 95
+  },
+  {
+    "Nome": "SANTANDER PAPÉIS IMOBILIÁRIOS FDO DE INV IMOB",
+    "Código": "SAPI",
+    "Ticker": "SAPI11",
+    "Ultimo": 91,
+    "Decimal": 11
+  },
+  {
+    "Nome": "SANTANDER RENDA DE ALUGUÉIS FDO. INVEST. IMOB.",
+    "Código": "SARE",
+    "Ticker": "SARE11",
+    "Ultimo": 46,
+    "Decimal": 95
+  },
+  {
+    "Nome": "SÃO CARLOS RENDA IMOBILIÁRIA FDO. INV. IMOB.",
+    "Código": "SACL",
+    "Ticker": "SACL11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "SAO DOMINGOS FDO INV IMOB - FII",
+    "Código": "FISD",
+    "Ticker": "FISD11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "SEQUOIA III RENDA IMOBILIÁRIA - FDO. INV. IMOB.",
+    "Código": "SEQR",
+    "Ticker": "SEQR11",
+    "Ultimo": 55,
+    "Decimal": 39
+  },
+  {
+    "Nome": "SHOPPING WEST PLAZA FDO INV IMOB",
+    "Código": "WPLZ",
+    "Ticker": "WPLZ11",
+    "Ultimo": 59,
+    "Decimal": 79
+  },
+  {
+    "Nome": "SINGULARE FDO INV IMOB - FII",
+    "Código": "REIT",
+    "Ticker": "REIT11",
+    "Ultimo": 155,
+    "Decimal": "01"
+  },
+  {
+    "Nome": "SJ AU LOGÍSTICA FDO. INV. IMOB.",
+    "Código": "SJAU",
+    "Ticker": "SJAU11",
+    "Ultimo": 69,
+    "Decimal": 99
+  },
+  {
+    "Nome": "SOLARIUM FII - FDO INV. IMOB.",
+    "Código": "SOLR",
+    "Ticker": "SOLR11",
+    "Ultimo": 1051,
+    "Decimal": 35
+  },
+  {
+    "Nome": "SP DOWNTOWN FDO INV IMOB - FII",
+    "Código": "SPTW",
+    "Ticker": "SPTW11",
+    "Ultimo": 43,
+    "Decimal": "03"
+  },
+  {
+    "Nome": "SPA FDO INV IMOB - FII",
+    "Código": "SPAF",
+    "Ticker": "SPAF11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "SPECIALE BLUE REAL ASSET FDO DE INV IMOB",
+    "Código": "LTMT",
+    "Ticker": "LTMT11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "SPECIALE REAL ESTATE DEVELOPMENT FDO DE INV IMOB",
+    "Código": "DVLP",
+    "Ticker": "DVLP11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "SPECIALE REAL ESTATE FUND OF FUNDS FDO DE INV IMOB",
+    "Código": "PMFO",
+    "Ticker": "PMFO11",
+    "Ultimo": 100,
+    "Decimal": ""
+  },
+  {
+    "Nome": "STARX FDO INV IMOB - FII",
+    "Código": "STRX",
+    "Ticker": "STRX11",
+    "Ultimo": 168,
+    "Decimal": ""
+  },
+  {
+    "Nome": "SUNO FUNDO DE FUNDOS DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "SNFF",
+    "Ticker": "SNFF11",
+    "Ultimo": 88,
+    "Decimal": ""
+  },
+  {
+    "Nome": "SUNO LOG FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "SNLG",
+    "Ticker": "SNLG11",
+    "Ultimo": 29,
+    "Decimal": "03"
+  },
+  {
+    "Nome": "SUNO MULTIESTRATÉGIA FDO DE INV IMOB",
+    "Código": "SNME",
+    "Ticker": "SNME11",
+    "Ultimo": 9,
+    "Decimal": 7
+  },
+  {
+    "Nome": "SUNO RECEBÍVEIS IMOBILIÁRIOS FDO DE INV IMOB",
+    "Código": "SNCI",
+    "Ticker": "SNCI11",
+    "Ultimo": 95,
+    "Decimal": 99
+  },
+  {
+    "Nome": "SUPREMO FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "SPMO",
+    "Ticker": "SPMO11",
+    "Ultimo": 144,
+    "Decimal": ""
+  },
+  {
+    "Nome": "TELLUS DESENVOLVIMENTO LOGÍSTICO FDO. INVEST. IMOB",
+    "Código": "TELD",
+    "Ticker": "TELD11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "TELLUS MULTIESTRATÉGIA - FDO INV IMOB",
+    "Código": "TELM",
+    "Ticker": "TELM11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "TELLUS PROPERTIES - FDO INV. IMOB",
+    "Código": "TEPP",
+    "Ticker": "TEPP11",
+    "Ultimo": 96,
+    "Decimal": 28
+  },
+  {
+    "Nome": "TISHMAN SPEYER RENDA CORPORATIVA FDO. INV. IMOB.",
+    "Código": "TSER",
+    "Ticker": "TSER11",
+    "Ultimo": 100,
+    "Decimal": ""
+  },
+  {
+    "Nome": "TIVIO RENDA IMOBILIÁRIA FUNDO DE INVESTIMENTO IMOB",
+    "Código": "TVRI",
+    "Ticker": "TVRI11",
+    "Ultimo": 101,
+    "Decimal": 34
+  },
+  {
+    "Nome": "TJK RENDA IMOBILIÁRIA FDO INV IMOB",
+    "Código": "TJKB",
+    "Ticker": "TJKB11",
+    "Ultimo": 282,
+    "Decimal": ""
+  },
+  {
+    "Nome": "TORDESILHAS EI FDO. INV. IMOB.",
+    "Código": "TORD",
+    "Ticker": "TORD11",
+    "Ultimo": 1,
+    "Decimal": 8
+  },
+  {
+    "Nome": "TRANSINC FDO INV IMOB - FII",
+    "Código": "TSNC",
+    "Ticker": "TSNC11",
+    "Ultimo": 0,
+    "Decimal": "01"
+  },
+  {
+    "Nome": "TREECORP REAL ESTATE FDO INV IMOB - I",
+    "Código": "TCPF",
+    "Ticker": "TCPF11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "TRX REAL ESTATE FDO. INV. IMOB. - FII",
+    "Código": "TRXF",
+    "Ticker": "TRXF11",
+    "Ultimo": 109,
+    "Decimal": 77
+  },
+  {
+    "Nome": "TRX REAL ESTATE II FDO. INVEST. IMOB.",
+    "Código": "TRXB",
+    "Ticker": "TRXB11",
+    "Ultimo": 138,
+    "Decimal": 97
+  },
+  {
+    "Nome": "URCA PRIME RENDA FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "URPR",
+    "Ticker": "URPR11",
+    "Ultimo": 84,
+    "Decimal": 9
+  },
+  {
+    "Nome": "V2 EDIFICIOS CORPORATIVOS FDO INV IMOB - FII",
+    "Código": "VVCO",
+    "Ticker": "VVCO11",
+    "Ultimo": 13,
+    "Decimal": 3
+  },
+  {
+    "Nome": "V2 RECEBÍVEIS IMOBILIÁRIOS FUNDO DE INVESTIMENTO I",
+    "Código": "VVCR",
+    "Ticker": "VVCR11",
+    "Ultimo": 9,
+    "Decimal": 62
+  },
+  {
+    "Nome": "V2 RENDA IMOBILIÁRIA FDO DE INV IMOB",
+    "Código": "VVRI",
+    "Ticker": "VVRI11",
+    "Ultimo": 97,
+    "Decimal": ""
+  },
+  {
+    "Nome": "VALORA CRI CDI FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "VGIR",
+    "Ticker": "VGIR11",
+    "Ultimo": 9,
+    "Decimal": 77
+  },
+  {
+    "Nome": "VALORA CRI ÍNDICE DE PREÇO FDO INVEST. IMOB. FII",
+    "Código": "VGIP",
+    "Ticker": "VGIP11",
+    "Ultimo": 91,
+    "Decimal": 66
+  },
+  {
+    "Nome": "VALORA CRI INFRA II FII DE RESP. LTDA",
+    "Código": "VGII",
+    "Ticker": "VGII11",
+    "Ultimo": 101,
+    "Decimal": 41
+  },
+  {
+    "Nome": "VALORA HEDGE FUND FDO. INV. IMOB.",
+    "Código": "VGHF",
+    "Ticker": "VGHF11",
+    "Ultimo": 9,
+    "Decimal": "08"
+  },
+  {
+    "Nome": "VALORA RENDA IMOB FUNDO DE INVES IMOB -RESP LIMIT",
+    "Código": "VGRI",
+    "Ticker": "VGRI11",
+    "Ultimo": 9,
+    "Decimal": 38
+  },
+  {
+    "Nome": "VBI OFFICE FUND II - FDO. INVEST. IMOB.",
+    "Código": "BLMO",
+    "Ticker": "BLMO11",
+    "Ultimo": 89,
+    "Decimal": "01"
+  },
+  {
+    "Nome": "VBI REITS MULTIESTRATÉGIA FDO. INV. IMOB",
+    "Código": "RVBI",
+    "Ticker": "RVBI11",
+    "Ultimo": 78,
+    "Decimal": 56
+  },
+  {
+    "Nome": "VBI TR FARIA LIMA 4440 FII",
+    "Código": "FLFL",
+    "Ticker": "FLFL11",
+    "Ultimo": 100,
+    "Decimal": ""
+  },
+  {
+    "Nome": "VECTIS JUROS REAL FDO INV. IMOB. - FII",
+    "Código": "VCJR",
+    "Ticker": "VCJR11",
+    "Ultimo": 92,
+    "Decimal": 9
+  },
+  {
+    "Nome": "VECTIS RENDA RESIDENCIAL FDO. INV. IMOB.",
+    "Código": "VCRR",
+    "Ticker": "VCRR11",
+    "Ultimo": 69,
+    "Decimal": 16
+  },
+  {
+    "Nome": "VECTOR QUELUZ ATIVOS IMOB FDO INV IMOB",
+    "Código": "VLJS",
+    "Ticker": "VLJS11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "VENUS - FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "SALI",
+    "Ticker": "SALI11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "VERA CRUZ THREE FDO DE INV IMOB RESP LIM",
+    "Código": "VCTH",
+    "Ticker": "VCTH11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "VERSALHES RECEBÍVEIS IMOBILIÁRIOS - FDO. INV. IMOB",
+    "Código": "VSLH",
+    "Ticker": "VSLH11",
+    "Ultimo": 3,
+    "Decimal": 51
+  },
+  {
+    "Nome": "VIC DESENVOLVIMENTO VINTAGE 20/21 FUND INVEST IMOB",
+    "Código": "VIDS",
+    "Ticker": "VIDS11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "VIC DESENVOLVIMENTO VINTAGE 22/23 FDO DE INV IMOB",
+    "Código": "VDSV",
+    "Ticker": "VDSV11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "VINCI CREDIT SECURITIES FUNDO DE INVESTIMENTO IMOB",
+    "Código": "VCRI",
+    "Ticker": "VCRI11",
+    "Ultimo": 8,
+    "Decimal": 52
+  },
+  {
+    "Nome": "VINCI IMÓVEIS URBANOS FDO. DE INV. IMOB.",
+    "Código": "VIUR",
+    "Ticker": "VIUR11",
+    "Ultimo": 7,
+    "Decimal": 16
+  },
+  {
+    "Nome": "VINCI INSTRUMENTOS FINANCEIROS FDO INV IMOB - FII",
+    "Código": "VIFI",
+    "Ticker": "VIFI11",
+    "Ultimo": 8,
+    "Decimal": 1
+  },
+  {
+    "Nome": "VINCI LOGÍSTICA FDO INV IMOB - FII",
+    "Código": "VILG",
+    "Ticker": "VILG11",
+    "Ultimo": 93,
+    "Decimal": 76
+  },
+  {
+    "Nome": "VINCI OFFICES FDO INV IMOB",
+    "Código": "VINO",
+    "Ticker": "VINO11",
+    "Ultimo": 8,
+    "Decimal": "06"
+  },
+  {
+    "Nome": "VINCI SHOPPING CENTERS FDO INVEST IMOB - FII",
+    "Código": "VISC",
+    "Ticker": "VISC11",
+    "Ultimo": 121,
+    "Decimal": 49
+  },
+  {
+    "Nome": "VOTORANTIM SECURITIES MASTER FDO INV IMOB - FII",
+    "Código": "VOTS",
+    "Ticker": "VOTS11",
+    "Ultimo": 81,
+    "Decimal": 97
+  },
+  {
+    "Nome": "VX XVI - FDO INV. IMOB.",
+    "Código": "VXXV",
+    "Ticker": "VXXV11",
+    "Ultimo": 1053,
+    "Decimal": ""
+  },
+  {
+    "Nome": "WARREN SECURITIES FDO DE INV IMOB - FII",
+    "Código": "WSEC",
+    "Ticker": "WSEC11",
+    "Ultimo": 84,
+    "Decimal": 51
+  },
+  {
+    "Nome": "WHG FINVEST SP REALTY FDO DE INV IMOB - FII",
+    "Código": "SPDE",
+    "Ticker": "SPDE11",
+    "Ultimo": 0,
+    "Decimal": ""
+  },
+  {
+    "Nome": "WHG REAL ESTATE FUNDO DE INVESTIMENTO IMOBILIÁRIO",
+    "Código": "WHGR",
+    "Ticker": "WHGR11",
+    "Ultimo": 9,
+    "Decimal": 71
+  },
+  {
+    "Nome": "XP CORPORATE MACAÉ FDO INV IMOB - FII",
+    "Código": "XPCM",
+    "Ticker": "XPCM11",
+    "Ultimo": 9,
+    "Decimal": "02"
+  },
+  {
+    "Nome": "XP CREDITO IMOBILIÁRIO - FDO INV IMOB",
+    "Código": "XPCI",
+    "Ticker": "XPCI11",
+    "Ultimo": 87,
+    "Decimal": 48
+  },
+  {
+    "Nome": "XP INDUSTRIAL FDO INV IMOB - FII",
+    "Código": "XPIN",
+    "Ticker": "XPIN11",
+    "Ultimo": 78,
+    "Decimal": 21
+  },
+  {
+    "Nome": "XP LOG FDO INV IMOB - FII",
+    "Código": "XPLG",
+    "Ticker": "XPLG11",
+    "Ultimo": 104,
+    "Decimal": 95
+  },
+  {
+    "Nome": "XP MALLS FDO INV IMOB FII",
+    "Código": "XPML",
+    "Ticker": "XPML11",
+    "Ultimo": 116,
+    "Decimal": 18
+  },
+  {
+    "Nome": "XP PROPERTIES FDO. INV. IMOB.",
+    "Código": "XPPR",
+    "Ticker": "XPPR11",
+    "Ultimo": 20,
+    "Decimal": 15
+  },
+  {
+    "Nome": "XP SELECTION FDO DE FUNDOS INV IMOB - FII",
+    "Código": "XPSF",
+    "Ticker": "XPSF11",
+    "Ultimo": 8,
+    "Decimal": 16
+  },
+  {
+    "Nome": "YUCA FDO INV. IMOB.",
+    "Código": "YUFI",
+    "Ticker": "YUFI11",
+    "Ultimo": 90,
+    "Decimal": ""
+  },
+  {
+    "Nome": "ZAGROS MULTIESTRATÉGIA FDO DE INV IMOB",
+    "Código": "ZAGH",
+    "Ticker": "ZAGH11",
+    "Ultimo": 105,
+    "Decimal": ""
+  },
+  {
+    "Nome": "ZAVIT CRÉDITO IMOBILIÁRIO - FDO INV IMOB",
+    "Código": "ZAVC",
+    "Ticker": "ZAVC11",
+    "Ultimo": 10,
+    "Decimal": ""
+  },
+  {
+    "Nome": "ZAVIT REAL ESTATE FUND - FDO INV IMOB",
+    "Código": "ZAVI",
+    "Ticker": "ZAVI11",
+    "Ultimo": 124,
+    "Decimal": 17
+  },
+  {
+    "Nome": "ZION CAPITAL FUNDO DE INVESTIMENTO IMOBILIÁRIO FII",
+    "Código": "ZIFI",
+    "Ticker": "ZIFI11",
+    "Ultimo": 926,
+    "Decimal": ""
+  }
+]

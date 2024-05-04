@@ -25,6 +25,6 @@ public abstract class EntityBase
     protected void ValidaCampoNumerico(int campoNumerico, string nomeCampo)
     {
         if (campoNumerico <= 0)
-            _msgErro.Append($"O campo {campoNumerico} deve ser maior que zero!");
+            _msgErro.Append($"O campo {nomeCampo} deve ser maior que zero!");
     }
 }

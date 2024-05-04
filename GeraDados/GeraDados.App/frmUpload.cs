@@ -27,7 +27,7 @@ public partial class frmUpload : Form
     {
         try
         {
-            IList<PessoaJson>? pessoas = LerArquivoJsonPessoas();
+            IList<PessoaJson>? pessoas = LerArquivoJson<PessoaJson>(txtArquivo.Text);
 
             if (pessoas != null)
                 foreach (var item in pessoas)
@@ -44,6 +44,9 @@ public partial class frmUpload : Form
                         repository.Contato.Salvar(contato);
                     repository.Endereco.Salvar(endereco);
 
+                    CarteiraConfigurada carteiraConfigurada = SetCarteiraConfigurada();
+                    ValidaSeCampoCotaEstaZerado(carteiraConfigurada.Acoes, pessoa, carteiraConfigurada.ValorPorAcoes);
+                    ValidaSeCampoCotaEstaZerado(carteiraConfigurada.Fiis, pessoa, carteiraConfigurada.ValorPorFiis);
                     repository.SaveChanges();
                 }
 
@@ -54,6 +57,17 @@ public partial class frmUpload : Form
         {
             MessageBox.Show(ex.Message, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
+    }
+
+    private void ValidaSeCampoCotaEstaZerado(List<Ativo> Ativos, Pessoa pessoa, double valorPorAtivo)
+    {
+        foreach (var ativo in Ativos)
+        {
+            Carteira carteira = NovoAtivoParaCarteira(pessoa, ativo, valorPorAtivo);
+            if (carteira.Cota > 0)
+                repository.Carteira.Salvar(carteira);                
+        }
+
     }
     #endregion
 
@@ -66,21 +80,85 @@ public partial class frmUpload : Form
             SalvaTipoDeAtivosNoBanco();
         TipoDeAtivo? acao = repository.TipoDeAtivo.ObterPorId((int)eTipoDeAtivo.Acao);
         if (repository.Ativo.ObtemAtivosPorTipoDeAtivo(acao).Count.Equals(0))
-            SalvarAtivosDoTipoAcao(acao);
+            SalvarAtivosNoBancoDeDados(acao);
+        TipoDeAtivo? fii = repository.TipoDeAtivo.ObterPorId((int)eTipoDeAtivo.FundoImobiliario);
+        if (repository.Ativo.ObtemAtivosPorTipoDeAtivo(fii).Count.Equals(0))
+            SalvarAtivosNoBancoDeDados(fii);
     }
-    private void SalvarAtivosDoTipoAcao(TipoDeAtivo? tipoDeAtivo)
+
+    private Carteira NovoAtivoParaCarteira(Pessoa pessoa, Ativo ativo, double valorPorAtivo)
     {
-        var acoes = LerArquivoJsonAcoes(@"C:\\Users\\erick\\Downloads\\csvjson.json");
-        if (acoes != null)
-            foreach (AtivoAcoesJson item in acoes)
+        var carteira = new Carteira()
+        {
+            Pessoa = pessoa,
+            Ativo = ativo,
+            Cota = Carteira.QuantidadeDeUmAtivo(valorPorAtivo, (double)ativo.UltimaNegociacao),
+            DataCadastro = DateTime.Now,
+            DataAtualizacao = DateTime.Now,
+        };
+        //carteira.Valida();
+        return carteira;
+    }
+
+    private CarteiraConfigurada SetCarteiraConfigurada()
+    {
+        var valorInicial = Carteira.InicializaValorInicialDaPessoa();
+        var valorParaAcoes = Carteira.PorcentagelDoValorParaUmTipoDeAtivo(valorInicial);
+        var qtdAcoes = new Random().Next(5, 25);
+        var valorPorAcoes = valorParaAcoes / qtdAcoes;
+        //var qtdDoAtivoAcoes = Carteira.QuantidadeDeUmAtivo(valorPorAcoes, 10.39);
+        var valorParaFiis = valorInicial - valorParaAcoes;
+        var qtdFiis = new Random().Next(5, 15);
+        var valorPorFiis = valorParaFiis / qtdFiis;
+        //var qtdDoAtivoFiis = Carteira.QuantidadeDeUmAtivo(valorPorFiis, 90.00);
+        var valorTotal = valorParaAcoes + valorParaFiis;
+        var listaAcoes = repository.Ativo.ObtemAtivosPorTipoDeAtivo(repository.TipoDeAtivo.ObterPorId((int)eTipoDeAtivo.Acao));
+        var listaFiis = repository.Ativo.ObtemAtivosPorTipoDeAtivo(repository.TipoDeAtivo.ObterPorId((int)eTipoDeAtivo.FundoImobiliario));
+        var ordenaLista = new Random();
+        CarteiraConfigurada carteiraConfigurada = new CarteiraConfigurada()
+        {
+            ValorInicial = valorInicial,
+            ValorParaAcoes = valorParaAcoes,
+            QuantidadeDeAcoes = qtdAcoes,
+            ValorPorAcoes = valorPorAcoes,
+            ValorParaFiis = valorParaFiis,
+            QuantidaDeFiis = qtdFiis,
+            ValorPorFiis = valorPorFiis,
+            ValorTotal = (int)valorTotal,
+            Acoes = listaAcoes.OrderBy(acoes => ordenaLista.Next()).Take(qtdAcoes).ToList(),
+            Fiis = listaFiis.OrderBy(fiis => ordenaLista.Next()).Take(qtdFiis).ToList(),
+        };
+        return carteiraConfigurada;
+    }
+
+    private void SalvarAtivosNoBancoDeDados(TipoDeAtivo? tipoDeAtivo)
+    {
+        if (tipoDeAtivo != null)
+            if (tipoDeAtivo.ID.Equals((int)eTipoDeAtivo.Acao))
             {
-                Ativo ativo = NovoAtivo(item, tipoDeAtivo);
-                repository.Ativo.Salvar(ativo);
-                repository.SaveChanges();
+                IList<AtivoJson>? acoes = LerArquivoJson<AtivoJson>(@"..\..\..\CargaDeAtivos\acoes.json");
+                if (acoes != null)
+                    SalvaListaDeAtivos(acoes.ToList(), tipoDeAtivo);
+            }
+            else if (tipoDeAtivo.ID.Equals((int)eTipoDeAtivo.FundoImobiliario))
+            {
+                IList<AtivoJson>? fii = LerArquivoJson<AtivoJson>(@"..\..\..\CargaDeAtivos\fiis.json");
+                if (fii != null)
+                    SalvaListaDeAtivos(fii.Where(fii => fii.Ultimo != "0").ToList(), tipoDeAtivo);
             }
     }
-    private Ativo NovoAtivo(AtivoAcoesJson item, TipoDeAtivo? tipoDeAtivo)
+    private void SalvaListaDeAtivos(List<AtivoJson> ativos, TipoDeAtivo tipoDeAtivo)
     {
+        foreach (AtivoJson item in ativos)
+        {
+            Ativo ativo = NovoAtivo(item, tipoDeAtivo);
+            repository.Ativo.Salvar(ativo);
+            repository.SaveChanges();
+        }
+    }
+    private Ativo NovoAtivo(AtivoJson? item, TipoDeAtivo? tipoDeAtivo)
+    {
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
         Ativo ativo = new Ativo()
         {
             TipoDeAtivo = tipoDeAtivo,
@@ -90,13 +168,10 @@ public partial class frmUpload : Form
             DataCadastro = DateTime.Now,
             DataAtualizacao = DateTime.Now,
         };
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
 
         ativo.Valida();
         return ativo;
-    }
-    private IList<AtivoAcoesJson>? LerArquivoJsonAcoes(string caminho)
-    {
-        return JsonConvert.DeserializeObject<IList<AtivoAcoesJson>>(LeitorDeArquivo(caminho));
     }
     private void SalvaTipoDeAtivosNoBanco()
     {
@@ -112,9 +187,9 @@ public partial class frmUpload : Form
             repository.TipoContato.Salvar(tipoContato);
         repository.SaveChanges();
     }
-    private IList<PessoaJson>? LerArquivoJsonPessoas()
+    private IList<T>? LerArquivoJson<T>(string caminho)
     {
-        return JsonConvert.DeserializeObject<IList<PessoaJson>>(LeitorDeArquivo(txtArquivo.Text));
+        return JsonConvert.DeserializeObject<IList<T>>(LeitorDeArquivo(caminho));
     }
     private string LeitorDeArquivo(string caminho)
     {
@@ -161,7 +236,7 @@ public partial class frmUpload : Form
             new Contato()
             {
                 Pessoa = pessoa,
-                TipoContato = repository.TipoContato.ObterPorId((int)eTipoContato.Email),
+                TipoContato = CarregaTipoContato((int)eTipoContato.Email),
                 Valor = pessoaJson.Email,
                 DataCadastro = DateTime.Now,
                 DataAtualizacao = DateTime.Now
@@ -169,7 +244,7 @@ public partial class frmUpload : Form
              new Contato()
             {
                 Pessoa = pessoa,
-                TipoContato = repository.TipoContato.ObterPorId((int)eTipoContato.Fixo),
+                TipoContato = CarregaTipoContato((int)eTipoContato.Fixo),
                 Valor = pessoaJson.Telefone_fixo,
                 DataCadastro = DateTime.Now,
                 DataAtualizacao = DateTime.Now
@@ -177,7 +252,7 @@ public partial class frmUpload : Form
             new Contato()
             {
                 Pessoa = pessoa,
-                TipoContato = repository.TipoContato.ObterPorId((int)eTipoContato.Celular),
+                TipoContato = CarregaTipoContato((int)eTipoContato.Celular),
                 Valor = pessoaJson.Celular,
                 DataCadastro = DateTime.Now,
                 DataAtualizacao = DateTime.Now
@@ -186,6 +261,11 @@ public partial class frmUpload : Form
         foreach (var item in contatos)
             item.Valida();
         return contatos;
+    }
+
+    private TipoContato? CarregaTipoContato(int id)
+    {
+        return repository.TipoContato.ObterPorId(id);
     }
     #endregion
 }

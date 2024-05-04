@@ -1,8 +1,8 @@
 ﻿namespace Geradados.DataAccess.DB.Dtos
 {
-    public class AtivoAcoesJson
+    public class AtivoJson
     {
-        public AtivoAcoesJson()
+        public AtivoJson()
         {
             Ticker = string.Empty;
             Nome = string.Empty;
