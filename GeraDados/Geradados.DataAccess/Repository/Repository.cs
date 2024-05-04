@@ -1,4 +1,5 @@
 ﻿using Geradados.DataAccess.DB;
+using GeraDados.DataModel.models;
 using GeraDados.DataModel.repository;
 
 namespace Geradados.DataAccess.Repository;
@@ -28,6 +29,9 @@ public class Repository : IRepository
 
     IAtivoRepository? ativo;
     public IAtivoRepository Ativo { get { return ativo ?? (ativo = new AtivoRepository(ctx)); } }
+
+    ICarteiraRepository? carteira;
+    public ICarteiraRepository Carteira  {get { return carteira ?? (carteira = new CarteiraRepository(ctx)); } }
 
     public void SaveChanges()
     {
