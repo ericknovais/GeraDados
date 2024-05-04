@@ -19,5 +19,18 @@ namespace GeraDados.DataModel.models
             ValidaCampoNumerico(Cota, "Cota");
             base.Valida();
         }
+
+        public int InicializaValorInicialDaPessoa()
+        {
+            Random random = new Random();
+            return random.Next(200, 1000000);
+        }
+
+        public Double PorcentagelDoValorParaUmTipoDeAtivo(int valorInicial)
+        {
+            Random random = new Random();
+            double porcentagem = Convert.ToDouble(random.Next(1, 100) / 100.00);
+            return ((Double)valorInicial * (porcentagem));
+        }
     }
 }

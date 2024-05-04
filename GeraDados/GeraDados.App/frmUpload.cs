@@ -14,6 +14,11 @@ public partial class frmUpload : Form
     {
         InitializeComponent();
         InicializaDadosNoBanco();
+        var carteira = new Carteira();
+        var valorInicial = carteira.InicializaValorInicialDaPessoa();
+        var valorParaAcoes = carteira.PorcentagelDoValorParaUmTipoDeAtivo(valorInicial);
+        var valorParaFiis = valorInicial - valorParaAcoes;
+        var valorTotal = valorParaAcoes + valorParaFiis;
     }
     private void btnUpload_Click(object sender, EventArgs e)
     {
