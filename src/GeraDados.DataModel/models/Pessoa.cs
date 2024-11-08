@@ -20,6 +20,8 @@ public class Pessoa : EntityBase
         RG = rg;
         Sexo = sexo;
         DataNascimento = dataNascimento;
+        DataCadastro = DateTime.Now;
+        DataAtualizacao = DateTime.Now;
         Valida();
     }
 
