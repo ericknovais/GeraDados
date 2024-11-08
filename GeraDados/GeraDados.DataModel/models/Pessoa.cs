@@ -13,6 +13,16 @@ public class Pessoa : EntityBase
         Sexo = string.Empty;
     }
 
+    public Pessoa(string nome, string cpf, string rg, string sexo, DateTime dataNascimento)
+    {
+        Nome = nome;
+        CPF = cpf;
+        RG = rg;
+        Sexo = sexo;
+        DataNascimento = dataNascimento;
+        Valida();
+    }
+
     public string Nome { get; set; }
     public string CPF { get; set; }
     public string RG { get; set; }

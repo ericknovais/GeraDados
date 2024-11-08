@@ -12,6 +12,15 @@ public class TipoContato : EntityBase
         Descricao = string.Empty;
     }
 
+    public TipoContato(TipoContato tipoContato)
+    {
+        ID = tipoContato.ID;
+        Descricao = tipoContato.Descricao;
+        DataCadastro = tipoContato.DataCadastro;
+        DataAtualizacao = DateTime.Now;
+        Valida();
+    }
+
     public string Descricao { get; set; }
 
     public List<TipoContato> CarregaListaTipoContato()

@@ -13,9 +13,30 @@ public class Contato : EntityBase
         Valor = string.Empty;
     }
 
+    public Contato(Pessoa pessoa, TipoContato tipoContato, string valor)
+    {
+        Pessoa = pessoa;
+        TipoContato = tipoContato;
+        Valor = valor;
+        DataCadastro = DateTime.Now;
+        DataAtualizacao = DateTime.Now;
+        Valida();
+    }
     public Pessoa Pessoa { get; set; }
     public TipoContato? TipoContato { get; set; }
     public string Valor { get; set; }
+
+    public static List<Contato> Contatos(Pessoa pessoa, IList<TipoContato> tipoContatos, string[] valoresContatos)
+    {
+        List<Contato> contatos = new List<Contato>();
+        int cont = 0;
+        foreach (TipoContato tipoContato in tipoContatos) 
+        {
+            contatos.Add(new Contato(pessoa, tipoContato, valoresContatos[cont]));
+            cont++;
+        }
+        return contatos;
+    }
 
     public override void Valida()
     {
@@ -50,4 +71,6 @@ public class Contato : EntityBase
         if (!Valor.Contains("@"))
             _msgErro.Append($"E-mail com formato invalido! {Environment.NewLine}");
     }
+
+
 }
