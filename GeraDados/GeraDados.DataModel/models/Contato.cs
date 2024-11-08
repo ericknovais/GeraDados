@@ -71,6 +71,4 @@ public class Contato : EntityBase
         if (!Valor.Contains("@"))
             _msgErro.Append($"E-mail com formato invalido! {Environment.NewLine}");
     }
-
-
 }

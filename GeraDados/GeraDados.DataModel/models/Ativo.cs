@@ -41,5 +41,4 @@ public class Ativo : EntityBase
     {
         return listaAtivo.OrderBy(acoes => ordenaLista.Next()).Take(quantidade).ToList();
     }
-
 }
