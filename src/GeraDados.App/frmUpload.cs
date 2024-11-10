@@ -8,13 +8,16 @@ namespace GeraDados.App;
 public partial class frmUpload : Form
 {
     Repository repository = new Repository();
-    private IList<TipoContato> listaTipoContatos = new List<TipoContato>();
+    private IList<TipoContato> listaTipoContatos;
+    private List<Ativo> acoes;
+    private List<Ativo> fiis;
 
     #region Métodos Do Forms
     public frmUpload()
     {
         InitializeComponent();
         InicializaDadosNoBanco();
+        CarregaListas();
     }
     private void btnUpload_Click(object sender, EventArgs e)
     {
@@ -41,17 +44,13 @@ public partial class frmUpload : Form
                     Pessoa pessoa = new Pessoa(pessoaJson.Nome, pessoaJson.CPF, pessoaJson.RG, pessoaJson.Sexo, Convert.ToDateTime(pessoaJson.Data_nasc));
                     List<Contato> contatos = Contato.ListaDeContatos(pessoa, listaTipoContatos, valoresContatos);
                     Endereco endereco = new Endereco(pessoa, pessoaJson.CEP, pessoaJson.Endereco, pessoaJson.Numero, pessoaJson.Bairro, pessoaJson.Cidade, pessoaJson.Estado);
-                    CarteiraConfigurada carteiraConfigurada = 
-                        CarteiraConfigurada.NovaCarteiraConfiguracao(
-                            ObtemListaDeAtivosPorTipoDeAtivo((int)eTipoDeAtivo.Acao),
-                            ObtemListaDeAtivosPorTipoDeAtivo((int)eTipoDeAtivo.FundoImobiliario)
-                        );
+                    CarteiraConfigurada carteiraConfigurada = CarteiraConfigurada.NovaCarteiraConfiguracao(acoes, fiis);
 
                     repository.Pessoa.Salvar(pessoa);
                     contatos.ForEach(contato => repository.Contato.Salvar(contato));
                     repository.Endereco.Salvar(endereco);
                     carteiraConfigurada.Acoes.ForEach(
-                        acao => 
+                        acao =>
                             repository.Carteira.Salvar(new Carteira(pessoa, acao, carteiraConfigurada.ValorParaAcoes))
                     );
                     carteiraConfigurada.Fiis.ForEach(
@@ -88,7 +87,12 @@ public partial class frmUpload : Form
         TipoDeAtivo? fii = repository.TipoDeAtivo.ObterPorId((int)eTipoDeAtivo.FundoImobiliario);
         if (repository.Ativo.ObtemAtivosPorTipoDeAtivo(fii).Count.Equals(0))
             SalvarAtivosNoBancoDeDados(fii);
+    }
+    private void CarregaListas()
+    {
         listaTipoContatos = repository.TipoContato.ObterTodos();
+        acoes = ObtemListaDeAtivosPorTipoDeAtivo((int)eTipoDeAtivo.Acao);
+        fiis = ObtemListaDeAtivosPorTipoDeAtivo((int)eTipoDeAtivo.FundoImobiliario);
     }
     private void SalvarAtivosNoBancoDeDados(TipoDeAtivo? tipoDeAtivo)
     {
@@ -108,12 +112,18 @@ public partial class frmUpload : Form
     }
     private void SalvaListaDeAtivos(List<AtivoJson> ativos, TipoDeAtivo tipoDeAtivo)
     {
-        foreach (AtivoJson item in ativos)
-        {
-            Ativo ativo = new Ativo(tipoDeAtivo, item.Ticker, item.Nome, ultimaNegociacao: $"{item.Ultimo},{item.Decimal}");
-            repository.Ativo.Salvar(ativo);
-            repository.SaveChanges();
-        }
+        ativos.ForEach(
+                ativoJson => 
+                    repository.Ativo.Salvar(
+                        new Ativo(  
+                            tipoDeAtivo, 
+                            ativoJson.Ticker, 
+                            ativoJson.Nome, 
+                            ultimaNegociacao: $"{ativoJson.Ultimo},{ativoJson.Decimal}"
+                        )
+                    )
+        );
+        repository.SaveChanges();
     }
     private void SalvaTipoDeAtivosNoBanco()
     {
