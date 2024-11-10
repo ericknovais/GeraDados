@@ -1,7 +1,6 @@
 using Geradados.DataAccess.DB.Dtos;
 using Geradados.DataAccess.Repositories;
 using GeraDados.DataModel.Models;
-using Newtonsoft.Json;
 
 namespace GeraDados.App;
 
