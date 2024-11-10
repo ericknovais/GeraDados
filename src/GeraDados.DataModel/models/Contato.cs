@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GeraDados.DataModel.Models;
 
@@ -26,7 +25,7 @@ public class Contato : EntityBase
     public TipoContato? TipoContato { get; set; }
     public string Valor { get; set; }
 
-    public static List<Contato> Contatos(Pessoa pessoa, IList<TipoContato> tipoContatos, string[] valoresContatos)
+    public static List<Contato> ListaDeContatos(Pessoa pessoa, IList<TipoContato> tipoContatos, string[] valoresContatos)
     {
         List<Contato> contatos = new List<Contato>();
         int cont = 0;

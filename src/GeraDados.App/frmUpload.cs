@@ -28,9 +28,10 @@ public partial class frmUpload : Form
     {
         try
         {
-            IList<PessoaJson>? pessoas = LerArquivoJson<PessoaJson>(txtArquivo.Text);
+            IList<PessoaJson>? pessoas = Arquivo.LerArquivoJson<PessoaJson>(txtArquivo.Text);
 
-            if (pessoas != null)
+            if (pessoas != null && pessoas.Count > 0)
+            {
                 foreach (PessoaJson pessoaJson in pessoas)
                 {
                     if (repository.Pessoa.ObtemPessoaPorCPF(pessoaJson.CPF) != null)
@@ -38,22 +39,33 @@ public partial class frmUpload : Form
 
                     string[] valoresContatos = { pessoaJson.Email, pessoaJson.Telefone_fixo, pessoaJson.Celular };
                     Pessoa pessoa = new Pessoa(pessoaJson.Nome, pessoaJson.CPF, pessoaJson.RG, pessoaJson.Sexo, Convert.ToDateTime(pessoaJson.Data_nasc));
-                    List<Contato> contatos = Contato.Contatos(pessoa, listaTipoContatos, valoresContatos);
+                    List<Contato> contatos = Contato.ListaDeContatos(pessoa, listaTipoContatos, valoresContatos);
                     Endereco endereco = new Endereco(pessoa, pessoaJson.CEP, pessoaJson.Endereco, pessoaJson.Numero, pessoaJson.Bairro, pessoaJson.Cidade, pessoaJson.Estado);
-                    CarteiraConfigurada carteiraConfigurada = CarteiraConfigurada.NovaCarteiraConfiguracao(
-                        ObtemListaDeAtivosPorTipoDeAtivo((int)eTipoDeAtivo.Acao),
-                        ObtemListaDeAtivosPorTipoDeAtivo((int)eTipoDeAtivo.FundoImobiliario));
+                    CarteiraConfigurada carteiraConfigurada = 
+                        CarteiraConfigurada.NovaCarteiraConfiguracao(
+                            ObtemListaDeAtivosPorTipoDeAtivo((int)eTipoDeAtivo.Acao),
+                            ObtemListaDeAtivosPorTipoDeAtivo((int)eTipoDeAtivo.FundoImobiliario)
+                        );
 
                     repository.Pessoa.Salvar(pessoa);
-                    foreach (Contato contato in contatos)
-                        repository.Contato.Salvar(contato);
+                    contatos.ForEach(contato => repository.Contato.Salvar(contato));
                     repository.Endereco.Salvar(endereco);
-                    ValidaSeCampoCotaEstaZerado(carteiraConfigurada.Acoes, pessoa, carteiraConfigurada.ValorPorAcoes);
-                    ValidaSeCampoCotaEstaZerado(carteiraConfigurada.Fiis, pessoa, carteiraConfigurada.ValorPorFiis);
+                    carteiraConfigurada.Acoes.ForEach(
+                        acao => 
+                            repository.Carteira.Salvar(new Carteira(pessoa, acao, carteiraConfigurada.ValorParaAcoes))
+                    );
+                    carteiraConfigurada.Fiis.ForEach(
+                        fii =>
+                            repository.Carteira.Salvar(new Carteira(pessoa, fii, carteiraConfigurada.ValorPorFiis))
+                    );
                     repository.SaveChanges();
                 }
 
-            MessageBox.Show("Cadastro realizado com sucesso!");
+                MessageBox.Show("Cadastro realizado com sucesso!", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+                MessageBox.Show($"O arquivo {Arquivo.ObtemNomeDoArquivo(txtArquivo.Text)} não contem dados!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
             txtArquivo.Text = string.Empty;
         }
         catch (Exception ex)
@@ -83,13 +95,13 @@ public partial class frmUpload : Form
         if (tipoDeAtivo != null)
             if (tipoDeAtivo.ID.Equals((int)eTipoDeAtivo.Acao))
             {
-                IList<AtivoJson>? acoes = LerArquivoJson<AtivoJson>(@"..\..\..\CargaDeAtivos\acoes.json");
+                IList<AtivoJson>? acoes = Arquivo.LerArquivoJson<AtivoJson>(@"..\..\..\CargaDeAtivos\acoes.json");
                 if (acoes != null)
                     SalvaListaDeAtivos(acoes.ToList(), tipoDeAtivo);
             }
             else if (tipoDeAtivo.ID.Equals((int)eTipoDeAtivo.FundoImobiliario))
             {
-                IList<AtivoJson>? fii = LerArquivoJson<AtivoJson>(@"..\..\..\CargaDeAtivos\fiis.json");
+                IList<AtivoJson>? fii = Arquivo.LerArquivoJson<AtivoJson>(@"..\..\..\CargaDeAtivos\fiis.json");
                 if (fii != null)
                     SalvaListaDeAtivos(fii.Where(fii => fii.Ultimo != "0").ToList(), tipoDeAtivo);
             }
@@ -117,41 +129,12 @@ public partial class frmUpload : Form
             repository.TipoContato.Salvar(tipoContato);
         repository.SaveChanges();
     }
-    private void ValidaSeCampoCotaEstaZerado(List<Ativo> Ativos, Pessoa pessoa, double valorPorAtivo)
-    {
-        foreach (var ativo in Ativos)
-        {
-            Carteira carteira = NovoAtivoParaCarteira(pessoa, ativo, valorPorAtivo);
-            if (carteira.Cota > 0)
-                repository.Carteira.Salvar(carteira);
-        }
-    }
     #endregion
 
     #region Métodos com return
-    private IList<T>? LerArquivoJson<T>(string caminho)
-    {
-        return JsonConvert.DeserializeObject<IList<T>>(LeitorDeArquivo(caminho));
-    }
-    private string LeitorDeArquivo(string caminho)
-    {
-        StreamReader reader = new StreamReader(caminho);
-        return reader.ReadToEnd();
-    }
     private List<Ativo> ObtemListaDeAtivosPorTipoDeAtivo(int idTipoAtivo)
     {
         return repository.Ativo.ObtemAtivosPorTipoDeAtivo(repository.TipoDeAtivo.ObterPorId(idTipoAtivo));
-    }
-    private Carteira NovoAtivoParaCarteira(Pessoa pessoa, Ativo ativo, double valorPorAtivo)
-    {
-        return new Carteira()
-        {
-            Pessoa = pessoa,
-            Ativo = ativo,
-            Cota = Carteira.QuantidadeDeUmAtivo(valorPorAtivo, (double)ativo.UltimaNegociacao),
-            DataCadastro = DateTime.Now,
-            DataAtualizacao = DateTime.Now,
-        };
     }
     #endregion
 }

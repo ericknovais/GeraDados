@@ -10,6 +10,16 @@ namespace GeraDados.DataModel.Models
             Pessoa = new Pessoa();
             Ativo = new Ativo();
         }
+
+        public Carteira(Pessoa pessoa, Ativo ativo, double valorPorAtivo)
+        {
+            Pessoa = pessoa;
+            Ativo = ativo;
+            Cota = Carteira.QuantidadeDeUmAtivo(valorPorAtivo, (double)ativo.UltimaNegociacao);
+            DataCadastro = DateTime.Now;
+            DataAtualizacao = DateTime.Now;
+        }
+
         public Pessoa Pessoa { get; set; }
         public Ativo Ativo { get; set; }
         public int Cota { get; set; }
@@ -31,7 +41,7 @@ namespace GeraDados.DataModel.Models
             return (valorInicial * porcentagem);
         }
 
-        public static int QuantidadeDeUmAtivo(double valorParaAtivo, double valorDoAtivo) 
+        public static int QuantidadeDeUmAtivo(double valorParaAtivo, double valorDoAtivo)
         {
             return (int)(valorParaAtivo / valorDoAtivo);
         }
