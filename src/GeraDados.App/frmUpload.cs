@@ -1,8 +1,7 @@
 using Geradados.DataAccess.DB.Dtos;
-using Geradados.DataAccess.Repository;
-using GeraDados.DataModel.models;
+using Geradados.DataAccess.Repositories;
+using GeraDados.DataModel.Models;
 using Newtonsoft.Json;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace GeraDados.App;
 

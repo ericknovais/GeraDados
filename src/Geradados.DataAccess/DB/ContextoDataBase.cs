@@ -1,4 +1,4 @@
-﻿using GeraDados.DataModel.models;
+﻿using GeraDados.DataModel.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Geradados.DataAccess.DB;

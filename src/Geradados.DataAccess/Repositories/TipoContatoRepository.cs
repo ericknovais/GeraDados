@@ -1,8 +1,8 @@
 ﻿using Geradados.DataAccess.DB;
-using GeraDados.DataModel.models;
-using GeraDados.DataModel.repository;
+using GeraDados.DataModel.Models;
+using GeraDados.DataModel.Repositories;
 
-namespace Geradados.DataAccess.Repository;
+namespace Geradados.DataAccess.Repositories;
 
 public class TipoContatoRepository : RepositoryBase<TipoContato>, ITipoContatoRepository
 {

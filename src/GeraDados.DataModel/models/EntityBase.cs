@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace GeraDados.DataModel.models;
+namespace GeraDados.DataModel.Models;
 
 public abstract class EntityBase
 {

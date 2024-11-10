@@ -1,6 +1,6 @@
-﻿using GeraDados.DataModel.models;
+﻿using GeraDados.DataModel.Models;
 
-namespace GeraDados.DataModel.repository;
+namespace GeraDados.DataModel.Repositories;
 
 public interface IEnderecoRepository: IRepositoryBase<Endereco>
 {

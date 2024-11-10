@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GeraDados.DataModel.models;
+namespace GeraDados.DataModel.Models;
 
 [Table("Contatos")]
 public class Contato : EntityBase

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GeraDados.DataModel.models;
+namespace GeraDados.DataModel.Models;
 
 [NotMapped]
 public class CarteiraConfigurada

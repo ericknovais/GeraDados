@@ -1,4 +1,4 @@
-﻿namespace GeraDados.DataModel.repository;
+﻿namespace GeraDados.DataModel.Repositories;
 
 public interface IRepository
 {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GeraDados.DataModel.models;
+namespace GeraDados.DataModel.Models;
 
 [Table("Enderecos")]
 public class Endereco : EntityBase
